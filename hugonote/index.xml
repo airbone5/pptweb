@@ -1,396 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>HUGO的相關測試 on 我的測試區</title>
-    <link>/hugonote.html</link>
-    <description>Recent content in HUGO的相關測試 on 我的測試區</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/hugonote/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何擴充hugo</title>
-      <link>/hugonote/%E5%A6%82%E4%BD%95%E6%93%B4%E5%85%85hugo.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E5%A6%82%E4%BD%95%E6%93%B4%E5%85%85hugo.html</guid>
-      <description>基本上,沒有傳統觀念上的plugin,而是利用REST,呼叫網路上的&amp;quot;函數&amp;quot;,然後利用JSON接收資料。 基本上要參考https://gohugo.io/templates/data-templates/#call-the-functions-with-a-url
-第一次測試  參考 2  資料檔案名為User0123.json 檔案位置,如下
-├─content ├─data 👍這是位置 ├─resources ├─static └─themes  內容是
-{ &amp;quot;Achievements&amp;quot;: [ &amp;quot;Can create a Key, Value list from Data File&amp;quot;, &amp;quot;Learns Hugo&amp;quot;, &amp;quot;Reads documentation&amp;quot; ], &amp;quot;Name&amp;quot;: &amp;quot;User0123&amp;quot;, &amp;quot;Short Description&amp;quot;: &amp;quot;He is a **jolly good** fellow.&amp;quot; }  測試怎樣讀取 data.content 然後再partial 中可以放入以下內容
-&amp;lt;div&amp;gt;Short Description of {{.Site.Data.User0123.Name}}: &amp;lt;p&amp;gt;{{ index .Site.Data.User0123 &amp;quot;Short Description&amp;quot; | markdownify }}&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;  前面用.Name 可以拿到 Key(Name)的值,後面用的是index ( ,&amp;quot;Short Description&amp;quot;) 可能是因為KEY有空白。</description>
-    </item>
-    
-    <item>
-      <title>解說HUGO內定的參數</title>
-      <link>/hugonote/parameters.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/parameters.html</guid>
-      <description>📝 比較好用的是本頁的的路徑:{{ .Page.File.Path}}
- .Site.Pages = All pages in site. [.Data.Pages&#39;(https://gohugo.io/variables/taxonomy/#taxonomy-terms-page-variables) = The list of pages in the taxonomy .Paginator.Pages can also be used in place of .Data.Pages to enable pagination.
-{{ $paginator := .Paginate (where .Data.Pages &amp;quot;Type&amp;quot; &amp;quot;posts&amp;quot;) }}   posts 指的是content下的子目錄posts
-Pagination For layout pages like layouts/_default/list.html and layouts/_default/taxonomy.html, pagination take place by default. 如果是上面的講法,我不會用到阿,幹嘛改他?
-You can overwrite the default pagination behaviour using the following code.</description>
-    </item>
-    
-    <item>
-      <title>如何內嵌ppt</title>
-      <link>/hugonote/powerpoint.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/powerpoint.html</guid>
-      <description> 小徒刑 why not thing 
-內簽的powerpoint &amp;lt;iframe src=&#39;https://view.officeapps.live.com/op/embed.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39; width=&amp;quot;402&amp;quot; height=&amp;quot;327&amp;quot; frameborder=&#39;0&#39;&amp;gt; office &amp;lt;/iframe&amp;gt;   &amp;lt;iframe src=&#39;https://view.officeapps.live.com/op/view.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39; width=&amp;quot;402&amp;quot; height=&amp;quot;327&amp;quot; frameborder=&#39;0&#39;&amp;gt; office &amp;lt;/iframe&amp;gt;  
-&amp;lt;a href=&#39;https://view.officeapps.live.com/op/embed.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39;&amp;gt;what&amp;lt;/a&amp;gt;  
-google
-&amp;lt;iframe src=&#39;https://docs.google.com/viewer?url=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39;&amp;gt;width=&#39;100%&#39; height=&#39;600px&#39; frameborder=&#39;0&#39;&amp;gt; google &amp;lt;/iframe&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>短碼 preview-external</title>
-      <link>/hugonote/sc_preview.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/sc_preview.html</guid>
-      <description>背景 目的 連結可以出現預視
- 參考  使用方法 {{&amp;lt; preview-external src=&amp;quot;http://www2.nkust.edu.tw/~linchao/test&amp;quot; &amp;gt;}} ,例如
-後台技巧 在瀏覽器打https://api.microlink.io/?url=連結,例如https://api.microlink.io/?url=http://www.chinatimes.com.tw,傳回的資料如下: 傳回的JSON資料```{&amp;#34;status&amp;#34;:&amp;#34;success&amp;#34;,&amp;#34;data&amp;#34;:{&amp;#34;title&amp;#34;:&amp;#34;中時新聞網 - Chinatimes.com&amp;#34;,&amp;#34;description&amp;#34;:&amp;#34;《中時新聞網》前身為《中時電子報》，於1995年創立，是全台第一家且歷史最悠久的網路媒體，開啟新聞數位時代。近來以最具影響力的政治新聞引領先驅外，首創娛樂、生活、社會專題式新聞報導，帶起同業間仿效風潮；精闢的言論、財經、國際、兩岸、軍事、體育、網推頻道，網羅忠實讀者群；新型態的汽車、房屋、玩食、科技頻道，成為閱聽眾休閒必看選擇。視覺影音上，結合中天新聞直播、FB直播、中時新聞網APP等平台的精彩內容皆能滿足數位時代所有的閱聽者。&amp;#34;,&amp;#34;lang&amp;#34;:&amp;#34;zh&amp;#34;,&amp;#34;author&amp;#34;:&amp;#34;中時新聞網&amp;#34;,&amp;#34;publisher&amp;#34;:&amp;#34;中時新聞網&amp;#34;,&amp;#34;image&amp;#34;:{&amp;#34;url&amp;#34;:&amp;#34;https://static.chinatimes.com/images/2020/logo-chinatimes2020-1200x635.png&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;png&amp;#34;,&amp;#34;size&amp;#34;:47886,&amp;#34;height&amp;#34;:635,&amp;#34;width&amp;#34;:1200,&amp;#34;size_pretty&amp;#34;:&amp;#34;47.9 kB&amp;#34;},&amp;#34;date&amp;#34;:&amp;#34;2021-06-17T06:22:00.000Z&amp;#34;,&amp;#34;url&amp;#34;:&amp;#34;https://www.chinatimes.com&amp;#34;,&amp;#34;logo&amp;#34;:{&amp;#34;url&amp;#34;:&amp;#34;https://logo.clearbit.com/chinatimes.com&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;png&amp;#34;,&amp;#34;size&amp;#34;:9524,&amp;#34;height&amp;#34;:128,&amp;#34;width&amp;#34;:128,&amp;#34;size_pretty&amp;#34;:&amp;#34;9.52 kB&amp;#34;}},&amp;#34;statusCode&amp;#34;:200,&amp;#34;headers&amp;#34;:{&amp;#34;date&amp;#34;:&amp;#34;Thu, 17 Jun 2021 14:22:16 GMT&amp;#34;,&amp;#34;content-type&amp;#34;:&amp;#34;text/html; charset=utf-8&amp;#34;,&amp;#34;cf-ray&amp;#34;:&amp;#34;660cedd769101791-EWR&amp;#34;,&amp;#34;vary&amp;#34;:&amp;#34;Accept-Encoding&amp;#34;,&amp;#34;via&amp;#34;:&amp;#34;1.1 google&amp;#34;,&amp;#34;cf-cache-status&amp;#34;:&amp;#34;DYNAMIC&amp;#34;,&amp;#34;alt-svc&amp;#34;:&amp;#34;h3-27=\&amp;#34;:443\&amp;#34;; ma=86400, h3-28=\&amp;#34;:443\&amp;#34;; ma=86400, h3-29=\&amp;#34;:443\&amp;#34;; ma=86400, h3=\&amp;#34;:443\&amp;#34;; ma=86400&amp;#34;,&amp;#34;cf-request-id&amp;#34;:&amp;#34;0abbf2fa9c0000179141157000000001&amp;#34;,&amp;#34;expect-ct&amp;#34;:&amp;#34;max-age=604800, report-uri=\&amp;#34;https://report-uri.</description>
-    </item>
-    
-    <item>
-      <title>解說attachemt</title>
-      <link>/hugonote/%E8%A7%A3%E8%AA%AAattachment.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E8%A7%A3%E8%AA%AAattachment.html</guid>
-      <description>short siteparams 後面加上config.toml 中要找的參數,例如editURL, 就會去找對應的值出來
-{{- $paramName := (.Get 0) -}} {{- $siteParams := .Site.Params -}} {{- with $paramName -}} {{- with $siteParams -}} {{- index . (lower $paramName) -}} {{- end -}} {{- end -}}   第一行,讀取本指令(shortcode)的第一個參數 第二行,讀取所有toml 參數 index 找出KEY,例如 editURL對應的值  程式碼解說2 #🏷adfprintf(&amp;#34;dfdfd&amp;#34;)#    {{ $_hugo_config := `{ &amp;quot;version&amp;quot;: 1 }` }} &amp;lt;section class=&amp;quot;attachments {{ with .Get &amp;quot;style&amp;quot;}}{{.}}{{ end }}&amp;quot;&amp;gt; &amp;lt;label&amp;gt; &amp;lt;i class=&amp;quot;fas fa-paperclip&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; {{with .</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Grid</title>
-      <link>/hugonote/bootstrap_grid.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/bootstrap_grid.html</guid>
-      <description> Grid related site  中文  </description>
-    </item>
-    
-    <item>
-      <title>hugo shortcode</title>
-      <link>/hugonote/shortcode.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/shortcode.html</guid>
-      <description>shortcode  內建shortcode 循環列出static目錄 readfile 有範例 hugo 的shortcode MD說明 md產生的html  我用來核對逃脫的程式碼  短碼參考
- ❤️迴圈  shortcode 範例 imgur 檔案名稱: imgur.html
-內容只有一行:
-&amp;lt;img src=&amp;quot;{{ .Get 0 }}&amp;quot;&amp;gt;  blogdown中的使用方法:
-```{r} htmltools::HTML(&#39;{{&amp;lt; imgur &amp;quot;resource/img1_left.jpg&amp;quot; &amp;gt;}}&#39;) ```  imgur 會載入resource 目錄中的檔&amp;quot;img1_left.jpg&amp;quot;。 其中, {{ .Get 0 }} 的內容是 &amp;quot;resource/img1_left.jpg&amp;quot;&amp;quot;   fileindex htmltools::HTML(&#39;{{/* fileindex dir=&amp;quot;content/part0/resource/&amp;quot; baseurl=&amp;quot;/part0/resource/&amp;quot; */}}&#39;)  highlight 客戶端的打色,可以用Highlight.js
-在目標HTML網頁中或template(例如header.html)中,加入下面的 css 和 js 用來初始 Highlight.js:
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css&amp;quot;&amp;gt; &amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;hljs.</description>
-    </item>
-    
-    <item>
-      <title>4.03b mlogit</title>
-      <link>/hugonote/s403_mlogit.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/s403_mlogit.html</guid>
-      <description>產生資料 使用 s403_logit_1to6.Rmarkdown 的資料transfer/targetds
-跑mlogit 1237  . use ../transfer/targetds,replace . // 產生../tmp/targetds. //只留小兒科. keep if hsect==&amp;#34;PED&amp;#34;(89,478 observations deleted). //排除18以上. drop if age&amp;gt;18(685 observations deleted). //排除死亡,自動出院,自殺. drop if inlist(estatus, 1,2,3)(38 observations deleted). // . save ../tmp/targetds,replace file ../tmp/targetds.dta saved  主程式 //mlogit, rrr //eststo mlogit
-. use ../tmp/targetds,clear . . foreach period in y2018 y2019{ 2. hugocmd expand,hbody(title=&amp;quot;mlogit`period&#39;，利用transfer/target.ds&amp;quot;) 3.</description>
-    </item>
-    
-    <item>
-      <title>baseURL的路徑測試</title>
-      <link>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</guid>
-      <description>背景 目的 看看config.toml 中的baseURL 怎樣影響文章的路徑。
-材料和程式碼 baseURL: {{ .Site.BaseURL}} {{ $pages := (where (where .Site.Pages &amp;quot;Type&amp;quot; &amp;quot;pages&amp;quot;) &amp;quot;IsPage&amp;quot; true) }} {{ range first 5 $pages }} &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Title }} &amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Permalink }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;absURL: {{ .Permalink | absURL }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;relURL: {{ .Permalink | relURL }}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/ul&amp;gt; {{ end }}  實驗記錄 根據不同的 baseURL (config.toml 中的設定)來看結果:
-📝.Site.BaseURL =&amp;gt; 在config.toml 中設定(不知道有沒有分大小寫,但是在.Site.Params.* 的時候,*不分大小寫。
-如果 baseURL = &amp;quot;localhost:1313/&amp;quot; baseURL: //localhost:1313/ my ppt(copy to spida) //localhost:1313/pages/powerpoint.</description>
-    </item>
-    
-    <item>
-      <title>blogdown 的工作流程</title>
-      <link>/hugonote/blogdown%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/blogdown%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.html</guid>
-      <description>背景相關 HUGO 建立靜態網站的兩個方式,一種是development,一種是production　,前者是打hugo server後者打hugo(會產生一堆靜態文件用來上傳),在blogdown中,對應的念是local與否。例如hugo server 前者不產生文件的,稱為local。
- 設定blogdown 可以用來熟悉blogdown的指令  檔案:.gitignore
-.Rproj.user .Rhistory .RData .Ruserdata .DS_Store Thumbs.db /public/ /resources/  官方文件 備忘錄 我需要的是打勾的部分: - blogdown::build_site() vs ✔blogdown::serve_site() 其實前面那個是要實際建立網頁,也就是要發布之前的動作。而serve_site()預設local為真 所以只是預覽。 - blogdown::build_site() vs ✔blogdown::hugo_build() 應該是後者比較符合我的需要,說是這樣只是產生MD給HUGO繼續下一步。 工作流程參考 另一個 實作工作流程   如果都沒有RMD檔案,就只是系統調用HUGO,,否則有2種方法編譯RMD
- 函數 blogdown::build_site():  build_site(local = FALSE, run_hugo = TRUE, build_rmd = FALSE, ...) .Rprofile 中的blogdown.method(可以是custom,或是html)會影響到這個函數 如果blogdown.method設定為 &#39;html&#39;, 則build_site() 編譯 *.Rmd 產生 *.html, 或 *.Rmarkdown 產生 *.</description>
-    </item>
-    
-    <item>
-      <title>css 提要</title>
-      <link>/hugonote/cssnote.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/cssnote.html</guid>
-      <description>如果要從網路引入css
--datatables.min.js 相關
-&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css&amp;quot;/&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>Encode image in html</title>
-      <link>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</guid>
-      <description>HUGO 變數 執行碼: {{&amp;lt; HugoVarTest &amp;gt;}}
- 執行結果live .Page.CurrentSection: Page(/hugonote/_index.md)  .Section: can not evaluate  .Page.Section: hugonote
- .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc000c249f0}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
-(.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage 
-(.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage
-
-$anyfile := $page.Resources.GetMatch &amp;quot;*.docx&amp;quot;:
- 結果紀錄not live.Page.CurrentSection: Page(/basiclearn/_index.md) .Section: can not evaluate .Page.Section: basiclearn .Page: {Page(/basiclearn/hugo_variable.md) nopPage 0xc00c8b0870} .Page.Name: Hugo variable .Page.Parent: Page(/basiclearn/_index.md) (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): Page(/report/_index.</description>
-    </item>
-    
-    <item>
-      <title>hugo toml 的設定</title>
-      <link>/hugonote/hugo_toml.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/hugo_toml.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo快速設定</title>
-      <link>/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</guid>
-      <description>Hugo related site hugo 的設定 提到是不是要hardlinebreak ,markdown 設定 範例❓ example
-[blackfriday] angledQuotes = true fractions = false plainIDAnchors = true extensions = [&amp;quot;hardLineBreak&amp;quot;]  👍 footnote
-This is a footnote.[^1] [^1]: the footnote text.  網頁建立工具  font awesome 版面(Bootstrap Grid System) blogdown,Github
- hugo-learn-theme,github 無痛苦建立漂亮頁面。
- hugo 中文 hugo 中文2 hugo 如何列表
- 解 - demo
- 2  section template
- hugo demo hugo shortcode hugo shortcode 中文shortcode</description>
-    </item>
-    
-    <item>
-      <title>learn theme 日誌</title>
-      <link>/hugonote/learnthemetopic.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/learnthemetopic.html</guid>
-      <description> 頁面結構:
-&amp;lt;body&amp;gt; &amp;lt;nav id=&amp;quot;sidebar&amp;quot;&amp;gt;左側版面&amp;lt;/nav&amp;gt; &amp;lt;section id=&amp;quot;body&amp;quot;&amp;gt; ( 右側版面 ) &amp;lt;div id=&amp;quot;overlay&amp;quot;&amp;gt;裡面沒東西&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;padding highlightable&amp;quot;&amp;gt;文件內容都在這裡 &amp;lt;div&amp;gt; &amp;lt;div id=&amp;quot;top-bar-sticky-wrapper&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;head-tags&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;body-inner&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;navigation&amp;quot;&amp;gt;頂端&amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;/body&amp;gt;  總之分成兩欄,右邊版面的捲動會影響到左面板跟著捲動。因此有了perfect scroll的JS。
-這裡要複製JS😛  麵包屑的CSS 新增按鈕到頂版的時候,很難設定到中間,到最後關鍵3行是:
-position: relative; top: 50%; transform: translateY(-50%);  </description>
-    </item>
-    
-    <item>
-      <title>preview os-summary</title>
-      <link>/hugonote/preview.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/preview.html</guid>
-      <description>og-summary A classic French dessert gets a savory spin with this bell pepper and zucchini clafoutisThis creamy clafouti is filled with sautéed bell peppers and zucchini, with white sharp cheddar for balance.
-Continue reading...
-Liverpool take step closer to record totalThe records are on course, again, to be broken. Liverpool could yet secure the highest points total in top-flight history in England and even break the elite European league record set by Juventus six</description>
-    </item>
-    
-    <item>
-      <title>tocbot test</title>
-      <link>/hugonote/toc-test.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/toc-test.html</guid>
-      <description>.js-toc { background-color: yellow; float:right; } 
- 背景 需要附件也列表成TOC
-測試 //tocbot.init(); tocbot.init({ // Where to render the table of contents. tocSelector: &#39;.js-toc&#39;, // Where to grab the headings to build the table of contents. contentSelector: &#39;.js-toc-content&#39;, // Which headings to grab inside of the contentSelector element. headingSelector: &#39;h1,h2,h3&#39;, // Null, // Headings that match the ignoreSelector will be skipped. ignoreSelector: &#39;.js-toc-ignore&#39;, // For headings inside relative or absolute positioned containers within content hasInnerContainers: false, // Main class to add to links.</description>
-    </item>
-    
-    <item>
-      <title>在markdown 中顯示短碼</title>
-      <link>/hugonote/%E5%9C%A8markdown%E4%B8%AD%E9%A1%AF%E7%A4%BA%E7%9F%AD%E7%A2%BC.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E5%9C%A8markdown%E4%B8%AD%E9%A1%AF%E7%A4%BA%E7%9F%AD%E7%A2%BC.html</guid>
-      <description>下面的檔案來自參考
-{{&amp;lt; logfile file=&amp;quot;在markdown中顯示短碼.files/validway1.txt&amp;quot; &amp;gt;}}
-同等替代+++ title = 如何註解HUGO程式碼 date = 2017-11-02T12:49:00-04:00 draft = false +++ 如何註解HUGO程式碼 ## With special shortcode comment chars {#with-special-shortcode-comment-chars} ```md {{&amp;lt;/* figure src=&amp;#34;/images/org-mode-unicorn-logo.png&amp;#34; title=&amp;#34;Org Mode + Hugo Rock!&amp;#34; */&amp;gt;}} ``` ## Without special shortcode comment chars {#without-special-shortcode-comment-chars} If you use shortcodes, **even in code blocks!**, Hugo will try to expand those. So below will not work.. i.e. in the Hugo generated HTML you will **not** see a **shortcode code snippet**.</description>
-    </item>
-    
-    <item>
-      <title>影像資源測試1(boundle test)</title>
-      <link>/hugonote/demo_boundle.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/demo_boundle.html</guid>
-      <description>相關知識 _index.md vs index.md index.md 是一個正常網頁,這個網頁可以有其他網頁,或是影像等等資源,所以基本上所有在同一個目錄中的檔案都是一個boundle。
-_index.md 則是一個所謂的content page用來列出其他網頁。像是 home page, section page, taxonomy lists and taxonomy terms這些有子網頁的列表. 也可以包含像是images, JSON files 等等資源,但是沒有其他。而且這個boundle 限制在同一個目錄階層。
- 舉例,在content中有一個檔案叫做mymd.md,這個檔案在hugo的處理(uglyURLS=false)下會產生一個子目錄(mymd),然後裡面的內容會被搬到index.html中 例如
-content/pages/mymd.md 若 uglyURLs=false 會變成 content └─pages └─mymd └─index.html  然而,當uglyURLs=false
-content/pages/mymd.md 若 uglyURLs=true 會變成 content └─pages └─mymd.html  因此,在uglyURLs=false,如果要達成類似uglyURLs=true的檔案結構,作法如下:
--在某個子目錄下,例如mymd下,建立一個檔案,叫做index.md這個檔案也會變成index.html。
- resource of boundle pages  新建立一個子目錄(如content/pages/figtest)  ❓ 好像放在content 下無效?  在目錄中建立一個檔案index.md,最簡單內容是,前窗(front panel)的內容:
---- title: 測試圖形 resources: - { name: image1, src: images/test_bpntrain_1.</description>
-    </item>
-    
-    <item>
-      <title>影像資源測試2</title>
-      <link>/hugonote/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html</guid>
-      <description>短碼 reportimg  參數
- pattern: ✔️pic[.]* 這個會符合&amp;quot;pic.&amp;quot;,凡是中括號裡面都視為文字 section:指的是子目錄裡面有_index.md,只要是在content的裡面(不管幾層)  也不管uglyURLs。 ⁉但是不能在boundle pages裡面  在section的部分,如果使用index.md且前版指定headless=true,則是所謂的headless。  推論:如果是uglyURLs=false,一個xx.md檔案會被放到xx子目錄,產生index.md,所以這不是section。所以針對某一個md檔案,如果要存取這個檔案的image(resource),要放在同一層🤷‍♂️。我的評論是,這樣一個目錄會很亂,不適合整理。
-所以有boundle page,此時某一個資料夾裡面是index.md然後,所有相關的資源都在這個子目錄。
-但是,如果我有好幾個md檔案都要存取共同一個地方的影像呢?
-  測試的短碼 {{&amp;lt; reportimg pattern=&amp;quot;/xxx//.jpg&amp;quot; section=&amp;quot;pages&amp;quot; &amp;gt;}}
-{{ $pattern := default &amp;quot;\\.(gif|jpg|jpeg|tiff|png|bmp)&amp;quot; (.Get &amp;quot;pattern&amp;quot;) }} {{ $folder := default &amp;quot;report&amp;quot; (.Get &amp;quot;section&amp;quot;)}} {{ with .Site.GetPage &amp;quot;section&amp;quot; $folder }} &amp;lt;!-- 只拿content/report/子目錄下的資源黨--&amp;gt; {{ $resources := .Resources.ByType &amp;quot;image&amp;quot;}} {{ range $resources }} {{ with . }} &amp;lt;!--&amp;lt;img style=&amp;quot;max-width: 100%;&amp;quot; src=&amp;quot;{{ .RelPermalink }}&amp;quot;&amp;gt;--&amp;gt; {{ $isimg := lower .</description>
-    </item>
-    
-    <item>
-      <title>怎樣存取.Site.Data</title>
-      <link>/hugonote/sitedata.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/sitedata.html</guid>
-      <description>背景  怪怪,好像不是很正確的參考  目的 怎樣存取.Site.Data 裡面的json
-實驗和材料 ├─content │ └─blogs | └─sitedata.md 🔑 執行短碼whatdata(.html)的文件,實驗時候是本文。 ├─data │ │ │ ├─xxx | │ └─xx.toml 🔑實驗要存取的對象 | └──x2.toml 🔑實驗要存取的對象 ├─resources ├─static └─themes   簡單記憶的話,就是.Site.Pages 是content 子目錄下的檔案,而.Site.Data就是Data子目錄下的檔案。  所以,這個data子目錄,和content是平行的,如上圖。 在這個子目錄下可以有多個yml 或toml 每個yml 如下 yml```ymlname: Leo Tolstoybio: &amp;#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&amp;#34;sources:- title: &amp;#34;Anna Karenina&amp;#34;quotes:- entry: &amp;#34;quote no.</description>
-    </item>
-    
-    <item>
-      <title>打光</title>
-      <link>/hugonote/highlight.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/highlight.html</guid>
-      <description>如果要利用hightlight.min.js 有行號的打法
- 打號碼,不好用 &amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;hljs.initLineNumbersOnLoad(); &amp;lt;/script&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>排序測試</title>
-      <link>/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</guid>
-      <description>測試用的程式碼 wsort1.html
-{{/* {{ range .Site.Sections }} &amp;lt;h1&amp;gt;{{ .Name }} &amp;lt;/h1&amp;gt; {{ $pages := partial &amp;quot;sort1.html&amp;quot; . }} {{ range $pages }} 🏷{{ .weight }} &amp;lt;br/&amp;gt; {{end}} {{ end }} */}} {{ $root := .Site.GetPage &amp;quot;hugonote&amp;quot; }} {{ $normal :=slice }} {{ range where $root.Pages &amp;quot;Kind&amp;quot; &amp;quot;page&amp;quot; }} {{ $weight := index (findRE &amp;quot;^.?([\\d][\\d|.]?[\\d|.]*)&amp;quot; .Title) 0 }} {{ $sw:=split $weight &amp;quot;.&amp;quot;}} {{ $data := newScratch }} {{ $data.Set &amp;quot;tmp&amp;quot; &amp;quot;&amp;quot; }} {{ with $weight }} {{range $idx:=(seq 0 2) }} {{if lt $idx (len $sw) }} {{ $data.</description>
-    </item>
-    
-    <item>
-      <title>搜尋和註解相關檔案</title>
-      <link>/hugonote/%E6%90%9C%E5%B0%8B%E7%9A%84%E9%81%8B%E4%BD%9C.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E6%90%9C%E5%B0%8B%E7%9A%84%E9%81%8B%E4%BD%9C.html</guid>
-      <description>HUGO產生索引的大概流程  設定
- config.tom中的內容是這樣:
-[outputs] 原來的 home = [ &amp;quot;HTML&amp;quot;, &amp;quot;RSS&amp;quot;, &amp;quot;JSON&amp;quot;]   上面的意思是說,.Page.Kind的類型如果是HOME就會產生3個輸出,分別對應HTML,RSS,JSON。
- 流程 產生網站(例如在docs目錄中產生)的時候,會根據layout\index.json(這是一個短碼)用來在根目錄(docs)中產生索引index.json。這個產生的檔案內容大概是這樣
-{ &amp;quot;uri&amp;quot;: &amp;quot;/tags/gitea.html&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;gitea&amp;quot;, &amp;quot;tags&amp;quot;: [], &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;文本內容&amp;quot; },   應該是每一個檔案,就有一個{}。  然後使用者搜尋的時候,會利用lunr.js來搜尋。
-  參考 lunr.js的應用 也是lurn.js的搜尋
-config.toml中的設定
-outputFormats: SearchIndex: baseName: search mediaType: application/json outputs: home: - HTML - RSS - SearchIndex  比較yaml格式:
-outputFormats: SearchIndex: baseName: search mediaType: application/json outputs: home: - HTML - RSS - SearchIndex  紀錄 -lunr 的源碼</description>
-    </item>
-    
-    <item>
-      <title>整合gitea api</title>
-      <link>/hugonote/gitea%E6%95%B4%E5%90%88.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/gitea%E6%95%B4%E5%90%88.html</guid>
-      <description>背景 問題 github 的短碼,可以列出檔案內容,例如{{*&amp;lt; github repo=&amp;quot;airbone5/elderReport&amp;quot; file=&amp;quot;CombinData.md&amp;quot; &amp;gt;*}} test&amp;lt;p&amp;gt;檔案CombinData.md:內容&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;--- title: &amp;#34;處理變數 v3.2&amp;#34; author: &amp;#34;lin&amp;#34; date: &amp;#34;01 九月, 2020, 17:15&amp;#34; header-includes: - \usepackage{xeCJK} - \setCJKmainfont{標楷體} output: html_document: toc: yes toc_float: collapsed: false smooth_scroll: false df_print: paged highlight: tango keep_md: true word_document: toc: yes pdf_document: latex_engine: xelatex toc: yes knit: myknit --- # 檢查 ## 副程式 subrouting combinOldNew_v2.do ```stata // 合併新舊世代成為新資料表 elder104 global outposix &amp;#34;out_combin&amp;#34; use ../transfer/work_old_v32,clear quietly append using .</description>
-    </item>
-    
-    <item>
-      <title>數學符號</title>
-      <link>/hugonote/%E6%95%B8%E5%AD%B8%E7%AC%A6%E8%99%9F.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E6%95%B8%E5%AD%B8%E7%AC%A6%E8%99%9F.html</guid>
-      <description>測試數學符號  可以參考的  行內: $ 數學式 $ \( 數學式\)
-單行: $$ 數學式 $$ \[ 數學式\]
-$$ S_n = \sum\_{i=1}^n X_i $$ $ \mathcal{N}(0,\,1) $ \\[ S_n = \sum\_{i=1}^n X_i \\] $ ax^2 + \sqrt{bx} + c = 0 $  範例:
-單行 $$ S_n = \sum_{i=1}^n X_i $$
-行內$ \mathcal{N}(0,\,1) $
-單行\[ S_n = \sum_{i=1}^n X_i \]
-單行$$ ax^2 + \sqrt{bx} + c = 0 $$ $ ax^2 + \sqrt{bx} + c = 0 $ 另一個 $ ax^2 + \sqrt{bx} + c = 0 $</description>
-    </item>
-    
-    <item>
-      <title>文字測試</title>
-      <link>/hugonote/%E6%96%87%E5%AD%97%E6%B8%AC%E8%A9%A6.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E6%96%87%E5%AD%97%E6%B8%AC%E8%A9%A6.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>環境變數測試</title>
-      <link>/hugonote/%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>短碼 recentposts</title>
-      <link>/hugonote/%E7%9F%AD%E7%A2%BC_recentposts.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E7%9F%AD%E7%A2%BC_recentposts.html</guid>
-      <description>參考 👍頁綁定 uglyURLs vs canonifyurls
-實測紀錄 範例1 看個大概,全部列表,每個文章兩筆資料
-{{ range .Site.RegularPages }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot; style=&amp;quot;color:red&amp;quot;&amp;gt;{{ .Type }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{end}}  範例 前3筆,不知道甚麼順序
-{{ range ( where .Site.RegularPages &amp;quot;Type&amp;quot; &amp;quot;pages&amp;quot; | first 3 ) }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{end}}  範例 可以列出最近的3筆,但是需要先給定section 參數
-{{ $section := default &amp;quot;pages&amp;quot; (.Get &amp;quot;section&amp;quot;) }} {{ range ( last 3 ( where .Site.Pages &amp;quot;Type&amp;quot; $section ).</description>
-    </item>
-    
-    <item>
-      <title>短碼quote</title>
-      <link>/hugonote/%E7%9F%AD%E7%A2%BCquote.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E7%9F%AD%E7%A2%BCquote.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>空白</title>
-      <link>/hugonote/empty.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/empty.html</guid>
-      <description>vscode extension</description>
-    </item>
-    
-    <item>
-      <title>第三方搜尋測試</title>
-      <link>/hugonote/%E7%AC%AC3%E6%96%B9%E6%90%9C%E5%B0%8B.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/%E7%AC%AC3%E6%96%B9%E6%90%9C%E5%B0%8B.html</guid>
-      <description>&lt;p&gt;測試各種搜尋引擎&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>自動發布到ftp</title>
-      <link>/hugonote/hugotoftp.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/hugotoftp.html</guid>
-      <description>背景 目的 hugo 修改完以後,自動更新到ftp
-材料 檔案內容.drone.yml
-kind: pipeline type: docker name: default trigger: branch: - master steps: - name: submodules image: alpine/git commands: - git submodule init - git submodule update --recursive --remote - name: Version check image: linchao/hugo-builder pull: never commands: - echo &amp;quot;Checking Hugo version. e&amp;quot; - hugo version - name: Build image: linchao/hugo-builder volumes: - name: srcsite path: /drone/src/build pull: never commands: - hugo --destination /drone/src/build #- minify -r -o /drone/src/build /drone/src/build - name: deploy image: cschlosser/drone-ftps volumes: - name: srcsite path: /_site environment: FTP_USERNAME: from_secret: linchao FTP_PASSWORD: from_secret: a2236527 PLUGIN_HOSTNAME: www2.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,19 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>短碼 on 我的測試區</title>
-    <link>/tags/%E7%9F%AD%E7%A2%BC.html</link>
-    <description>Recent content in 短碼 on 我的測試區</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/%E7%9F%AD%E7%A2%BC/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>整合gitea api</title>
-      <link>/hugonote/gitea%E6%95%B4%E5%90%88.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hugonote/gitea%E6%95%B4%E5%90%88.html</guid>
-      <description>背景 問題 github 的短碼,可以列出檔案內容,例如{{*&amp;lt; github repo=&amp;quot;airbone5/elderReport&amp;quot; file=&amp;quot;CombinData.md&amp;quot; &amp;gt;*}} test&amp;lt;p&amp;gt;檔案CombinData.md:內容&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;--- title: &amp;#34;處理變數 v3.2&amp;#34; author: &amp;#34;lin&amp;#34; date: &amp;#34;01 九月, 2020, 17:15&amp;#34; header-includes: - \usepackage{xeCJK} - \setCJKmainfont{標楷體} output: html_document: toc: yes toc_float: collapsed: false smooth_scroll: false df_print: paged highlight: tango keep_md: true word_document: toc: yes pdf_document: latex_engine: xelatex toc: yes knit: myknit --- # 檢查 ## 副程式 subrouting combinOldNew_v2.do ```stata // 合併新舊世代成為新資料表 elder104 global outposix &amp;#34;out_combin&amp;#34; use ../transfer/work_old_v32,clear quietly append using .</description>
-    </item>
-    
-  </channel>
-</rss>

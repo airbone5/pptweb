@@ -1,25 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>guide on 我的測試區</title>
-    <link>/series/guide.html</link>
-    <description>Recent content in guide on 我的測試區</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/series/guide/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>短碼github.html</title>
-      <link>/basic/%E7%9F%AD%E7%A2%BCgithub.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/basic/%E7%9F%AD%E7%A2%BCgithub.html</guid>
-      <description>插入github 上的程式碼 顯示github上的程式碼 ,可以利用短碼
-⛳範例(來自)
-例如要插入的檔案在https://github.com/airbone5/blogtest/blob/master/content/post/2015-01-01-lorem-ipsum.md,則指令如下
-{{&amp;lt; github repo=&amp;quot;airbone5/blogtest&amp;quot; file=&amp;quot;/content/post/2015-01-01-lorem-ipsum.md&amp;quot; lang=&amp;quot;md&amp;quot; &amp;gt;}}  參數只有repo和 file 參看下圖 短碼github.files/filelocation.png
-more   div.galleryimgs+a{ display:block; } 
- $(document).ready(function(){ $(&#39;.gallery-1c5c13b68fad1e4fd36d2a20af977a37&#39;).featherlightGallery({ gallery: { next: &#39;&#39; } }); });  執行結果 &amp;gt; 檔案/content/post/2015-01-01-lorem-ipsum.md:內容
---- date: &amp;#34;2015-01-01T13:09:13-06:00&amp;#34; title: Lorem Ipsum --- **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore _magna aliqua_. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
-    </item>
-    
-  </channel>
-</rss>

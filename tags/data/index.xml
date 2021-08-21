@@ -1,21 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>data on 我的測試區</title>
-    <link>/tags/data.html</link>
-    <description>Recent content in data on 我的測試區</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>讀取json</title>
-      <link>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E8%AE%80%E5%8F%96json.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E8%AE%80%E5%8F%96json.html</guid>
-      <description> 測試和結果紀錄 實驗1  資料放在Site/Data/三行.toml, 內容name = &amp;quot;張三root&amp;quot; github = &amp;quot;bep&amp;quot; roles = [&amp;quot;admin&amp;quot;,&amp;quot;user&amp;quot;]  
- 測試程式碼
-{{ range $.Site.Data.三行 }} {{ . }}&amp;lt;br&amp;gt; {{ end }}  執行結果bep張三root[admin user]  </description>
-    </item>
-    
-  </channel>
-</rss>

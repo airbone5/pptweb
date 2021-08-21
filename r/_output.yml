@@ -1,7 +1,0 @@
-blogdown::html_page:
-#  out.width: '80%'
-#  dev: 'svg'
-#  toc: true
-#  self_contained: true
-  keep_md: false
-  
