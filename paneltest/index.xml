@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>panel test on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/paneltest.html</link>
+    <description>Recent content in panel test on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/paneltest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bs_panel測試</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/bs_panel%E6%B8%AC%E8%A9%A6.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/bs_panel%E6%B8%AC%E8%A9%A6.html</guid>
+      <description>PageTitlemain.container {padding: 60px 15px 0;}我的測試區空模板 步驟s1nav class=&#34;navbar navbar-expand-md navbar-dark fixed-top bg-dark&#34; Fixed navbarHomeLink 1Link 2Link 3Template with fixed navbarA starter template with a navbar HTML and CSS.</description>
+    </item>
+    
+    <item>
+      <title>flex 測試1</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/flex1.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/flex1.html</guid>
+      <description>body {background: black;color: white;}div {background: black;}div .prev,.next {border: solid 1px pink;display: flex;align-items: center;flex:0 1 20px;}div.outter {width: 100%;display: flex;flex-direction: row;border: 2px solid green;resize: both;overflow: auto;}div.sidebar {border: solid 1px pink;color: white;border: 1px solid white;display: flex;flex-direction: column;justify-content: left;resize: vertical;width: max-content;padding: 20px;overflow: auto;flex: 0 1 30%;}div.</description>
+    </item>
+    
+    <item>
+      <title>googledrive</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/googledrive.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/googledrive.html</guid>
+      <description>Save to Drive Demo: Explicit Renderwindow.___gcfg = {parsetags: &#39;explicit&#39;};Render the Save to Drive buttonfunction renderSaveToDrive() {gapi.savetodrive.render(&#39;savetodrive-div&#39;, {src: &#39;//example.com/path/to/myfile.pdf&#39;,filename: &#39;My Statement.pdf&#39;,sitename: &#39;My Company Name&#39;});}document.getElementById(&#39;render-link&#39;).addEventListener(&#39;click&#39;, renderSaveToDrive);function upload(e){gapi.savetodrive.render(&#39;savetodrive-div&#39;, {src: e.files[0],filename: &#39;My Statement.pdf&#39;,sitename: &#39;My Company Name&#39;}); e.value=null; }</description>
+    </item>
+    
+    <item>
+      <title>提點</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%8F%90%E9%BB%9E.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%8F%90%E9%BB%9E.html</guid>
+      <description>看過的文章  顏色  📌  flex 實驗 水平置中,垂直置中 bootstrap 基本 製表 製表  經過  CodePen 短碼 hugo 排版 中文flex build json REST api HUGO+bootstrap 頭尾 修改themes stack 甚麼是SEO 加評論 網頁搜尋  工具 http request
+有用 回到原來位置(bootstrap keep same position after click)
+節錄  {{.TableOfContent}} 會產生深的ul li ,用這個移除
+{{ .TableOfContents | replaceRE &amp;quot;&amp;lt;ul&amp;gt;[[:space:]]*&amp;lt;li&amp;gt;[[:space:]]*&amp;lt;ul&amp;gt;&amp;quot; &amp;quot;&amp;lt;ul&amp;gt;&amp;quot; | replaceRE &amp;quot;&amp;lt;/ul&amp;gt;[[:space:]]*&amp;lt;/li&amp;gt;[[:space:]]*&amp;lt;/ul&amp;gt;&amp;quot; &amp;quot;&amp;lt;/ul&amp;gt;&amp;quot; | safeHTML }}  但是原意是逃脫使用者的設定。
+ 相關文章可以用 {{ $related := .</description>
+    </item>
+    
+    <item>
+      <title>正常menu.html</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%AD%A3%E5%B8%B8menu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%AD%A3%E5%B8%B8menu.html</guid>
+      <description>🚩Encode image in html </description>
+    </item>
+    
+    <item>
+      <title>測試javascript in textarea</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/jspanel.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/jspanel.html</guid>
+      <description>#pjs-input {overflow: auto;resize: both;border: 1px solid grey;outline: 1px;background-color: transparent;width: 100%;padding: 2px 4px;height: auto;min-height: 10rem;max-height: 20rem;}#pjs-log {overflow: auto;border: 1px solid grey;}value = &#34;HUGO 變數 執行碼: {{&amp;lt; HugoVarTest &amp;gt;}}\n\r執行結果live\r.Page.CurrentSection: Page(/pages/_index.md) used, which then provides data to the partial few issues come up then.\r.Name is not the name of the res ot; .</description>
+    </item>
+    
+    <item>
+      <title>移植(✔bootstrap)</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/boostrap%E6%9C%89.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/boostrap%E6%9C%89.html</guid>
+      <description>Demo - 移植測試 .sidebar li .submenu {list-style: none;margin: 0;padding: 0;padding-left: 1rem;padding-right: 1rem;}.sidebar .nav-link {font-weight: 500;color: var(--bs-dark);}.sidebar .nav-link:hover {color: var(--bs-primary);}Demo page  我的測試區var baseurl = &#34;http:\/\/localhost:1313\/~linchao\/test\/&#34;;HUGO的相關測試  4.03b mlogit Encodeimage in html Hugo 和我的參數 JS,css 的相關註解 partial 的用法(列出所有章節) preview os-summary relativeurls in config.</description>
+    </item>
+    
+    <item>
+      <title>移植(❌bootstrap)</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/bootstrap%E6%B2%92%E6%9C%89.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/bootstrap%E6%B2%92%E6%9C%89.html</guid>
+      <description>Demo - 移植測試 --.sidebar li .submenu {list-style: none;margin: 0;padding: 0;padding-left: 1rem;padding-right: 1rem;}.sidebar .nav-link {font-weight: 500;color: var(--bs-dark);}.sidebar .nav-link:hover {color: var(--bs-primary);}Demo page  我的測試區var baseurl = &#34;http:\/\/localhost:1313\/~linchao\/test\/&#34;;HUGO的相關測試  4.03b mlogit Encodeimage in html Hugo 和我的參數 JS,css 的相關註解 partial 的用法(列出所有章節) preview os-summary relativeurls in config.</description>
+    </item>
+    
+    <item>
+      <title>空版2加入quicknote</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%89%882%E5%8A%A0%E5%85%A5quicknote.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%89%882%E5%8A%A0%E5%85%A5quicknote.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>空版第2版</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%89%882.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%89%882.html</guid>
+      <description>空白.CtxtMenu_InfoClose {top: .2em;right: .2em;}.CtxtMenu_InfoContent {overflow: auto;text-align: left;font-size: 80%;padding: .4em .6em;border: 1px inset;margin: 1em 0px;max-height: 20em;max-width: 30em;background-color: #EEEEEE;white-space: normal;}.CtxtMenu_Info.CtxtMenu_MousePost {outline: none;}.CtxtMenu_Info {position: fixed;left: 50%;width: auto;text-align: center;border: 3px outset;padding: 1em 2em;background-color: #DDDDDD;color: black;cursor: default;font-family: message-box;font-size: 120%;font-style: normal;text-indent: 0;text-transform: none;line-height: normal;letter-spacing: normal;word-spacing: normal;word-wrap: normal;white-space: nowrap;float: none;z-index: 201;border-radius: 15px;/* Opera 10.</description>
+    </item>
+    
+    <item>
+      <title>空的</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%9A%84.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%A9%BA%E7%9A%84.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>練習css-形狀位置</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92css-margin.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92css-margin.html</guid>
+      <description>.tags {display: inline-block;line-height: 2em;font-size: 0.8em;position: relative;margin: 0 16px 8px 0;padding: 0 10px 0 12px;background: #8451a1;color:white; }.tags a{text-decoration: none;color:white;}.tags a:before {content: &#34;&#34;;position: absolute;top: 0;left: -1em;width: 0;height: 0;border-color: transparent #8451a1 transparent transparent;border-style: solid;border-width: 1em 1em 1em 0;}測試下面的形狀如何產生,主要目的練習除錯器和熟悉margin,padding,absolute,relative之間的關係。  提示:將高度從0改為100px,大概就可以知道為甚麼。不會連到任何地方</description>
+    </item>
+    
+    <item>
+      <title>練習overflow</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92overflow.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92overflow.html</guid>
+      <description>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&#34;en&#34;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;&gt;
+    &lt;meta name=&#34;keywords&#34; content=&#34;htmlcss bootstrap aside menu, vertical, sidebar nav menu CSS examples&#34; /&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;Bootstrap 5 sidebar navigation menu example&#34; /&gt;
+
+    &lt;title&gt;Demo - Bootstrap 5 sidebar vertical menu sample. html code example &lt;/title&gt;
+
+    &lt;link href=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css&#34; rel=&#34;stylesheet&#34;
+        crossorigin=&#34;anonymous&#34;&gt;
+    &lt;link href=&#34;../css/fontawesome-all.min.css&#34; rel=&#34;stylesheet&#34;&gt;        
+    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js&#34;
+        crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+
+    &lt;!-- ======= Icons used for dropdown (you can use your own) ======== --&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css&#34;&gt;
+ 
+
+&lt;/head&gt;
+
+&lt;body class=&#34;bg-light&#34;&gt;
+
+  除了置中外.另一個常見的困擾就是,有時候某些字超出範圍,不顯示。
+  </description>
+    </item>
+    
+    <item>
+      <title>練習找中文</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%89%BE%E4%B8%AD%E6%96%87.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%89%BE%E4%B8%AD%E6%96%87.html</guid>
+      <description>各種中文匹配 中文,英文範圍: ^[\u4e00-\u9fa5_a-zA-Z0-9]+$ console.log( &amp;quot;貓的中文很爛,連喵都不標準&amp;quot; .split(&amp;quot;&amp;quot;) .filter(char =&amp;gt; /\p{Script=Han}/u.test(char)) .join(&amp;quot;&amp;quot;) );  value = &amp;quot;HUGO 變數 執行碼: {{&amp;amp;lt; HugoVarTest &amp;amp;gt;}}\n\r執行結果live\r.Page.CurrentSection: Page(/pages/_index.md) used, which then provides data to the partial {{ partial &amp;amp;quot;partial.html&amp;amp;quot; . }}.\rA few issues come up then.\r.Name is not the name of the resource file, but of the calling index.md file\r.Resources.GetMatch &amp;amp;quot;*&amp;amp;quot; doesn&#39;t return a result\r$.Site.Resources or $.Resources d {{ range sort .Resources }}\r{{ $.Scratch.Set &amp;amp;quot;data&amp;amp;quot; . }}\r{{ partial &amp;amp;quot;fragments/test.</description>
+    </item>
+    
+    <item>
+      <title>速記測試</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/quicknotetest.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/quicknotetest.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

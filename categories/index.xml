@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/categories.html</link>
+    <description>Recent content in Categories on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blogdown</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/blogdown.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/blogdown.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/hugo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/hugo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo.code</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/hugo.code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/hugo.code.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/image.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/image.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcode</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/shortcode.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/shortcode.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stata</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/stata.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/stata.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/themes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/themes.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>歷史紀錄</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/%E6%AD%B7%E5%8F%B2%E7%B4%80%E9%8C%84.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/%E6%AD%B7%E5%8F%B2%E7%B4%80%E9%8C%84.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>設定</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/categories/%E8%A8%AD%E5%AE%9A.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/categories/%E8%A8%AD%E5%AE%9A.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

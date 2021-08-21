@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>排序 on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/tags/%E6%8E%92%E5%BA%8F.html</link>
+    <description>Recent content in 排序 on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/%E6%8E%92%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>函數</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/hugo%E7%9A%84%E6%8E%92%E5%BA%8F.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/hugo%E7%9A%84%E6%8E%92%E5%BA%8F.html</guid>
+      <description>sort menu.html 裡面section page 的排序,可以這樣:
+ 法1
+{{ range sort $pages &amp;quot;.Weight&amp;quot; }}  法2
+{{ range $pages.ByWeight }}  如果自訂排序
++++ title = &amp;quot;The page title&amp;quot; date = 2017-08-24T22:14:52-07:00 author = &amp;quot;Me&amp;quot; banner = &amp;quot;img/default.jpg&amp;quot; my-param = &amp;quot;100&amp;quot; +++  In your template, add something like the following:
+{{ range $paginator.Pages.ByParam &amp;quot;my-param&amp;quot; }}   暫時的紀錄
+ {{ range sort $pages &amp;quot;.Weight&amp;quot; }} {{ if and .Params.hidden (not $.</description>
+    </item>
+    
+    <item>
+      <title>分類</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E5%88%86%E9%A1%9E.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E5%88%86%E9%A1%9E.html</guid>
+      <description>參考 快提  DEBUG範例: {{printf &amp;quot;%#v&amp;quot; 變數}} 💯甚麼是💲 程式技巧 程式技巧 卡片設計 hugo return👌  snippet 網頁分組
+ 利用面板參數分組 如果是自訂面板參數分組.Pages.GroupByParam  實驗註記 uglyurls=false 如果設定 uglyurls=false,並且面板上有tags: [&amp;quot;xx&amp;quot;]則,輸入http://localhost/tags 會顯示列表。
+但是如果自訂taxonomies
+ 參考 例如,我在config.toml中加入下面的設定
+[taxonomies] series = &amp;quot;series&amp;quot;  ❓此時有問題: localhost:1313/tags失效。也就是說,HUGO預設你關掉了預設tags,categories,因此必須自己處理。
+  💡怎樣處理?
+ 再自己加上
+[taxonomies] tag = &amp;quot;tags&amp;quot; category = &amp;quot;categories&amp;quot; series = &amp;quot;series&amp;quot;  以series為例，增加模板 layouts/_default/series.terms.html，內容範例
+{{ define &amp;quot;main&amp;quot; }} &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;article-wrapper u-cf single&amp;quot;&amp;gt; &amp;lt;a class=&amp;quot;bubble&amp;quot; href=&amp;quot;{{ &amp;quot;/series/&amp;quot; | relURL }}&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-fw fa-list-alt&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;article class=&amp;quot;article&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt; &amp;lt;h3&amp;gt;{{ i18n &amp;quot;series&amp;quot; | default &amp;quot;series&amp;quot; }}&amp;lt;/h3&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;ul id=&amp;quot;all-series&amp;quot;&amp;gt; {{ range $name, $taxonomy := .</description>
+    </item>
+    
+  </channel>
+</rss>

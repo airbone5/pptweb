@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html><head>
+  <title>列出資料夾中所有檔案1</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='/~linchao/test/images/favicon.ico'/>
+      
+    <script src="/~linchao/test/js/jquery-3.3.1.min.js?1629552236"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='/~linchao/test/js/tocbot.min.js'></script>
+    <link href='/~linchao/test/css/tocbot.css' rel="stylesheet">
+
+    <script src='/~linchao/test/js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="/~linchao/test/css/fontawesome-all.min.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/atom-one-dark-reasonable.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/syntax.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme-mine.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme.css?1629552236" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://www2.nkust.edu.tw/~linchao/test/scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='/~linchao/test/' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a>
+<ul>
+<li><a href="#列出content-下第一層的section">列出content 下第一層的section</a></li>
+<li><a href="#列出某個section除了index-以外的所有網頁">列出某個section除了index,以外的所有網頁</a></li>
+<li><a href="#執行指令-listsection-section-pages">執行指令:<code>{{&lt; listsection section=&quot;pages&quot; &gt;}}</code></a></li>
+<li><a href="#執行指令-listsection-section-report">執行指令:<code>{{&lt; listsection section=&quot;report&quot; &gt;}}</code></a></li>
+</ul></li>
+<li><a href="#利用-getpage">利用.GetPage</a>
+<ul>
+<li><a href="#列出當前頁面下的所有檔案">列出當前頁面下的所有檔案</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改August 7, 2021'>列出資料夾中所有檔案1</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="/~linchao/test/tags/demo.html">
+    <i class="fas fa-tag"></i>demo
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/reuri.html" data-bs-toggle="tooltip" title="重導用的URI">重導用的URI</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="http://www2.nkust.edu.tw/~linchao/test/categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html"> <i class="far fa-clock" ></i>t2 token實驗[2021-08-21 PM 06:06]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 02:31]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/%E6%8B%BFtoken.html"> <i class="far fa-clock" ></i>拿token[2021-08-21 PM 12:25]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    <h2 id="背景">背景</h2>
+
+<ul>
+<li><a href="https://gohugo.io/content-management/sections/">可以用來判斷是不是子頁的函數</a></li>
+</ul>
+
+<h3 id="列出content-下第一層的section">列出content 下第一層的section</h3>
+
+<pre><code class="language-html">{{ range .Site.Sections }}
+  &lt;li&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/li&gt;
+{{ end }}
+</code></pre>
+
+<ul>
+<li><code>range where .Site.Pages &quot;Kind&quot; &quot;section&quot;</code>
+
+<ul>
+<li>💯<code>所有</code>的section</li>
+</ul></li>
+<li><code>range.Site.Home.Sections</code></li>
+<li><code>.Site.Home.Content</code> 忘記這是做甚麼</li>
+</ul>
+
+<h3 id="列出某個section除了index-以外的所有網頁">列出某個section除了index,以外的所有網頁</h3>
+
+<p>💡一樣只能找第一層</p>
+
+<p>扣除的方法有兩種</p>
+
+<ul>
+<li><code>{{ if ne .Kind &quot;section&quot; }}</code></li>
+<li><code>.Site.RegularPages</code></li>
+</ul>
+
+<p>listsection.html 檔案內容:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">{{ $title := &#34;Your Section Title&#34; }}
+{{ $section := default &#34;report&#34; (.Get &#34;section&#34;) }}
+{{ $section }}
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-heading&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-title&#34;</span><span class="p">&gt;</span>{{ $title }}<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-body&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav nav-pills nav-stacked&#34;</span><span class="p">&gt;</span>
+      {{ range (where .Site.RegularPages.ByTitle &#34;Section&#34; $section ) }}
+        {{ .Name }}
+        {{ .Permalink }}
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Permalink }}&#34;</span><span class="p">&gt;</span>{{ .Params.title | humanize | title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      {{ end }}
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div></p>
+
+<h3 id="執行指令-listsection-section-pages">執行指令:<code>{{&lt; listsection section=&quot;pages&quot; &gt;}}</code></h3>
+
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>執行結果</span>
+    </div><div class="expand-content incode">Name: about section
+.Permalink: //localhost:1313/pages/aboutsection.html
+.RelPermalink: /pages/aboutsection.html  🤦‍♂️這是hugo產生的HTML檔案
+.Path: pages\aboutsection.md 🤦‍♂️ 這裡是反斜線,而且這裡是原始MD檔案。
+.Params.title: about section
+
+.Name: expand
+.Permalink: //localhost:1313/pages/expandbeta.html
+.RelPermalink: /pages/expandbeta.html
+.Path: pages\expandbeta.md
+.Params.title: expand
+
+.Name: preview os-summary
+.Permalink: //localhost:1313/pages/preview.html
+.RelPermalink: /pages/preview.html
+.Path: pages\preview.md
+.Params.title: preview os-summary
+
+.Name: 報告檔案
+.Permalink: //localhost:1313/pages/report.html
+.RelPermalink: /pages/report.html
+.Path: pages\report\index.md
+.Params.title: 報告檔案
+
+.Name: 影像資源測試1
+.Permalink: //localhost:1313/pages/figtest.html
+.RelPermalink: /pages/figtest.html
+.Path: pages\figtest\index.md
+.Params.title: 影像資源測試1
+
+.Name: 影像資源測試2
+.Permalink: //localhost:1313/pages/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html
+.RelPermalink: /pages/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html
+.Path: pages\影像資源測試2.md
+.Params.title: 影像資源測試2
+
+.Name: 颼颼
+.Permalink: //localhost:1313/pages/searchtest.html
+.RelPermalink: /pages/searchtest.html
+.Path: pages\searchTest.html
+.Params.title: 颼颼</div></div>
+
+<p>📝 上面的結果對照目錄結構參考
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>目錄結構</span>
+    </div><div class="expand-content incode">hugo 專案目錄
+│
+├─content
+│  │  _index.md
+│  │
+│  ├─pages
+│  │  │  aboutsection.md
+│  │  │  expandbeta.md
+│  │  │  pic2.jpg
+│  │  │  preview.md
+│  │  │  searchTest.html
+│  │  │  _index.md
+│  │  │  影像資源測試2.md
+│  │  │
+│  │  ├─figtest
+│  │  │  │  index.md
+│  │  │  │
+│  │  │  └─images
+│  │  │          pic1.jpg
+│  │  │
+│  │  └─report
+│  │          index.md
+│  │          pic1.jpg
+│  │          pic2.jpg
+│  │
+│  ├─paneltest
+│  │      panel1.html
+│  │      panel2.html
+│  │      panel3.html
+│  │      paneldiv.md
+│  │      _index.md
+│  │
+│  └─x1
+│      │  _index.md
+│      │
+│      └─xx1
+│              index.md
+│              pic3.jpg</div></div></p>
+
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>HUGO產生的目錄結構</span>
+    </div><div class="expand-content incode">├─Hugo output root
+│  │
+│  ├─pages
+│  │  │  index.html
+│  │  │  index.xml
+│  │  │  pic2.jpg
+│  │  │
+│  │  ├─expandbeta
+│  │  │      index.html
+│  │  │
+│  │  ├─figtest
+│  │  │  │  index.html
+│  │  │  │
+│  │  │  └─images
+│  │  │          pic1.jpg
+│  │  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_1300x0_resize_q75_box.jpg
+│  │  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_320x0_resize_q75_box.jpg
+│  │  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_32x0_resize_q75_box.jpg
+│  │  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_800x0_resize_q75_box.jpg
+│  │  │
+│  │  ├─getresource
+│  │  │      index.html
+│  │  │
+│  │  ├─preview
+│  │  │      index.html
+│  │  │
+│  │  ├─searchtest
+│  │  │      index.html
+│  │  │
+│  │  └─xxx
+│  │          pic3.jpg
+│  │</div></div>
+
+<h3 id="執行指令-listsection-section-report">執行指令:<code>{{&lt; listsection section=&quot;report&quot; &gt;}}</code></h3>
+
+<p>💣 此時report 在pages不是contents的第一層,找不到。</p>
+
+<h2 id="利用-getpage">利用.GetPage</h2>
+
+<p>執行指令範例: <code>{{&lt; listsection section=&quot;/pages/test&quot; &gt;}}</code></p>
+
+<pre><code class="language-go-html-template">{{ $section := default &quot;report&quot; (.Get &quot;section&quot;) }}
+&lt;ul &gt;
+   {{/* 
+      這是舊的寫法* , .Site.GetPage $section 就可以.
+   /}}
+   {{ $apage :=.Site.GetPage &quot;section&quot; $section}} 
+   {{ range $apage.Pages}}
+     &lt;li&gt;{{ .Title }} &lt;/li&gt;
+   {{ end }}  
+&lt;/ul&gt;
+</code></pre>
+
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>假設目前目錄如下</span>
+    </div><div class="expand-content incode">```dos 
+C:\WORK\RMI_WEB
+├─content
+│  ├─git
+│  │  ├─gitnote.files
+│  │  └─ppt
+│  ├─tools
+│  │  ├─blogdown
+│  │  ├─hugo
+│  │  │  └─短碼範例.files
+│  │  └─snippet
+│  │      └─dos
+│  └─web  # 🏷例如 .Site.GetPage (/web),就可以拿到這個page
+│      ├─html_css
+│      │  ├─css
+│      │  │  ├─css1_basic_demo.files
+│      │  │  └─selector
+│      │  └─html
+│      │      ├─demo_form.files
+│      │      ├─element
+│      │      └─task1_layout.files
+│      │          └─table_layout
+│      ├─javascript
+│      │  ├─part10app
+│      │  │  ├─mdeditor
+│      │  │  │  ├─js
+│      │  │  │  └─test
+│      │  │  │      └─img
+│      │  │  └─punch
+│      │  └─tool
+│      └─測試區
+│          ├─drawdom
+│          └─testpage.files 
+└─utils
+```</div></div>
+
+<p><code>.GetPage</code>:傳回<code>一個</code>網頁而不是Section 下的所有網頁。使用範例為<code>.Site.GetPage (/web)</code>(拿到的內容為<code>Page(/web/_index.md)</code>)。</p>
+
+<p>例如上例$apage(就是說.Kind==&quot;section&quot;),然後可以用函數<code>$apage.Pages</code> 可以得到其他MD,同理,tags也是這樣,參考下一節。</p>
+
+<h3 id="列出當前頁面下的所有檔案">列出當前頁面下的所有檔案</h3>
+
+<pre><code class="language-go-html-template">{{ $f := .Site.RegularPages }}
+{{ range $f }}
+ {{ $.Scratch.Add &quot;list&quot; (slice .LogicalName) }}
+{{end}}
+
+{{ $list := .Scratch.Get &quot;list&quot; }}
+{{ range $i, $sequence :=  (seq (len $list) ) }}
+{{ $i }}: {{ index $list $i}}
+{{ end }}
+
+</code></pre>
+
+<p>執行程式
+{{&lt; test1 &gt;}} 不用參數</p>
+
+<p>上面的程式碼,迴圈是故意那樣放,作為範例,比較簡單的迴圈是</p>
+
+<pre><code class="language-go-html-template">{{ $f := .Site.RegularPages }}
+{{ range $f }}
+ {{ $.Scratch.Add &quot;list&quot; (slice .LogicalName) }}
+{{end}}
+
+{{ $list := .Scratch.Get &quot;list&quot; }}
+{{ range $list  }}
+ {{.}}
+{{ end }}
+</code></pre>
+
+<p>修改上面的迴圈,只是找出附檔名</p>
+
+<pre><code class="language-go-html-template">{{ $list := .Scratch.Get &quot;list&quot; }}
+{{ range $list  }}
+  {{ findRE &quot;\\w+$&quot; . }}
+{{ end }}
+</code></pre>
+
+<div class="notices">
+    <div class= tip>
+        <code>findRE</code>傳回的是slice,如果要抽字串,則<code>index (findRE &quot;\\w+$&quot; .) 0</code>。
+    </div>
+</div>
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="/~linchao/test/css/quicknote.css?1629552236" rel="stylesheet">
+<script src="/~linchao/test/js/quicknote.js?1629552236"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/jscss%E8%A8%BB%E8%A7%A3.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=JS,css&#32;的相關註解>前</a>
+                   
+          
+            <a href="/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E5%88%97%E5%87%BA%E8%B3%87%E6%96%99%E5%A4%BE%E4%B8%AD%E6%89%80%E6%9C%89%E6%AA%94%E6%A1%882.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=列出資料夾中所有檔案2>後</a>            
+          
+          
+
+  
+<script src="/~linchao/test/js/packhtml.js?1629552236"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="/~linchao/test/js/featherlight.min.js?1629552236"></script>
+  <script src="/~linchao/test/js/featherlight.gallery.min.js?1629552236"></script>
+  <link href="/~linchao/test/css/featherlight.min.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/featherlight.gallery.min.css?1629552236" rel="stylesheet">
+
+  <script src="/~linchao/test/js/highlight.pack.js?1629552236"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="/~linchao/test/css/demoContainer.css?1629552236" rel="stylesheet"><link href="/~linchao/test/css/rmd.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/mystyle.css?1629552236" rel="stylesheet">    
+  <script src='/~linchao/test/js/variant.js?1629552236'></script>
+
+<script>
+  var idxfile = "\/~linchao\/test/index.json"
+</script>
+<script src='/~linchao/test/js/localsearch.js?1629552236'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector(".active-category .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

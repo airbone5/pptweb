@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html><head>
+  <title>影像資源測試1(boundle test)</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='/~linchao/test/images/favicon.ico'/>
+      
+    <script src="/~linchao/test/js/jquery-3.3.1.min.js?1629552236"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='/~linchao/test/js/tocbot.min.js'></script>
+    <link href='/~linchao/test/css/tocbot.css' rel="stylesheet">
+
+    <script src='/~linchao/test/js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="/~linchao/test/css/fontawesome-all.min.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/atom-one-dark-reasonable.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/syntax.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme-mine.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme.css?1629552236" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://www2.nkust.edu.tw/~linchao/test/scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='/~linchao/test/' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#相關知識">相關知識</a>
+<ul>
+<li><a href="#index-md-vs-index-md">_index.md vs index.md</a></li>
+</ul></li>
+<li><a href="#resource-of-boundle-pages">resource of boundle pages</a>
+<ul>
+<li><a href="#短碼urlimg">短碼urlimg</a></li>
+<li><a href="#url短碼測試">url短碼測試</a></li>
+</ul></li>
+<li><a href="#headless-resource">headless resource</a></li>
+<li><a href="#綁定頁的資源測試-短碼-boundleimgs-html">綁定頁的資源測試,短碼<code>boundleimgs.html</code></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改July 31, 2021'>影像資源測試1(boundle test)</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="/~linchao/test/tags/shortcode.html">
+    <i class="fas fa-tag"></i>shortcode
+</a><a class="btn btn-outline-dark p-0" style="font-size:12px" href="/~linchao/test/tags/resource.html">
+    <i class="fas fa-tag"></i>resource
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/reuri.html" data-bs-toggle="tooltip" title="重導用的URI">重導用的URI</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="http://www2.nkust.edu.tw/~linchao/test/categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html"> <i class="far fa-clock" ></i>t2 token實驗[2021-08-21 PM 06:06]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 02:31]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/%E6%8B%BFtoken.html"> <i class="far fa-clock" ></i>拿token[2021-08-21 PM 12:25]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    
+
+<h2 id="相關知識">相關知識</h2>
+
+<h3 id="index-md-vs-index-md">_index.md vs index.md</h3>
+
+<p><strong><code>index.md</code></strong> 是一個正常網頁,這個網頁可以有其他網頁,或是影像等等資源,所以基本上所有在同一個目錄中的檔案都是一個boundle。</p>
+
+<p><strong><code>_index.md</code></strong> 則是一個所謂的content page用來列出其他網頁。像是 home page, section page, taxonomy lists and taxonomy terms這些有子網頁的列表. 也可以包含像是images, JSON files 等等資源,但是沒有其他。而且這個boundle 限制在同一個目錄階層。</p>
+
+<blockquote>
+<p>舉例,在content中有一個檔案叫做<code>mymd.md</code>,這個檔案在hugo的處理(uglyURLS=false)下會產生一個子目錄(mymd),然後裡面的內容會被搬到<code>index.html</code>中
+例如</p>
+
+<pre><code>content/pages/mymd.md
+若 uglyURLs=false 會變成
+content
+  └─pages
+     └─mymd
+        └─index.html
+</code></pre>
+
+<p>然而,當uglyURLs=<code>false</code></p>
+
+<pre><code>content/pages/mymd.md
+若 uglyURLs=true 會變成
+content
+  └─pages
+     └─mymd.html
+        
+</code></pre>
+
+<p>因此,在uglyURLs=<code>false</code>,如果要達成類似uglyURLs=<code>true</code>的檔案結構,作法如下:</p>
+
+<p>-在某個子目錄下,例如<code>mymd</code>下,建立一個檔案,叫做<code>index.md</code>這個檔案也會變成<code>index.html</code>。</p>
+</blockquote>
+
+<h2 id="resource-of-boundle-pages">resource of boundle pages</h2>
+
+<ul>
+<li>新建立一個子目錄(如content/pages/figtest)
+
+<ul>
+<li>❓ 好像放在content 下無效?</li>
+</ul></li>
+
+<li><p>在目錄中建立一個檔案<code>index.md</code>,最簡單內容是,前窗(front panel)的內容:</p>
+
+<pre><code class="language-yaml">---
+title: 測試圖形
+resources:
+- { name: image1, src: images/test_bpntrain_1.png, title: Description of the image }
+---
+</code></pre></li>
+</ul>
+
+<p>上面的目錄結構(這樣就叫做page boundle)</p>
+
+<pre><code>(content)
+└─pages
+   └─figtest
+       │  index.md
+       │
+       └─images
+               pic1.jpg
+</code></pre>
+
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>hugo 的翻譯(uglyURLs=true)</span>
+    </div><div class="expand-content incode">```
+輸出根目錄(uglyURLs=true)
+│
+├─pages
+│  │  figtest.html 📌(也就是說會根據resources中的指定,把相關影像搬到如下的目錄)
+│  │
+│  ├─figtest📌
+│  │  └─images
+│  │          pic1.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_1300x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_320x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_32x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_800x0_resize_q75_box.jpg
+│  │
+│  └─xxx
+│          pic3.jpg
+│
+```</div></div>
+
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>hugo 的翻譯(uglyURLs=false</span>
+    </div><div class="expand-content incode">輸出根目錄(uglyURLs=false)
+├─pages
+│  │
+│  ├─figtest📌
+│  │  │  index.html📌
+│  │  │
+│  │  └─images
+│  │          pic1.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_1300x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_320x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_32x0_resize_q75_box.jpg
+│  │          pic1_hua70eca40b85d07a93091890349b1f291_28354_800x0_resize_q75_box.jpg
+│  │
+│   </div></div>
+
+<p>📝 不管uglyRULs=true或false,都會有md檔案名稱對應的子目錄(eg.figtest)</p>
+
+<blockquote>
+<p>🈸從上面的目錄結構,是不是可以推論utlyURLs=<code>true</code><code>false</code>的時候,只要子目錄裡面有<code>index.md</code>,而且前版有指定<code>resources:</code>都可以拿到resource,❓但是若是<code>false</code>可以在,任何檔案(
+答案是❌)</p>
+
+<p>實驗步驟</p>
+
+<ul>
+<li>config.toml : uglyURLs=false</li>
+
+<li><p>把本文的內容,複製到pages子目錄的另一個檔案,然後images搬到和這個複製文件的同一個子目錄,</p>
+
+<pre><code>└─pages
+├─mytest.md
+│
+└─images
+      20210627001800.jpg
+&gt;
+</code></pre></li>
+</ul>
+
+<p>實驗結果是,這個images子目錄的內容,找不到。💣。因為images這個子目錄沒有被搬到對應的子目錄<code>mytest</code>中(參看下面的目錄)。</p>
+
+<pre><code>output root(uglyURLs=false)
+  └─pages
+     ├──mytest(原來的mytest.md)
+     │   └─index.html (mytest.md 的內容在這裡)
+     ├──images 
+</code></pre>
+
+<p>因為HUGO的預期如下:</p>
+
+<pre><code>   └─mytest
+       │  index.md
+       │
+       └─images
+               pic1.jpg
+</code></pre>
+</blockquote>
+
+<div class="notices">
+    <div class= tip>
+        使用上限制太大,只能在一個資料夾上編輯index.md 而且同一個資料夾上的md也不會顯示。
+🔑 不同MD檔案無法共用這缺點。
+    </div>
+</div>
+
+<h3 id="短碼urlimg">短碼urlimg</h3>
+
+<p>這裡是一個範例,用來展示怎樣存取上面的影像<code>image</code></p>
+
+<ul>
+<li><p>shortcode <code>urlimg.html</code> (我覺得page boundle不好用,但是,這裡的影像處理需要<code>resource</code>)</p>
+
+<pre><code class="language-html">{{/*
+boundle page 用的
+*/}}
+
+{{ $image := .Page.Resources.GetMatch (.Get &quot;name&quot;) }}
+{{ $image32 := $image.Resize &quot;32x&quot; }}
+{{ $image320 := $image.Resize &quot;320x&quot; }}
+{{ $image800 := $image.Resize &quot;800x&quot; }}
+{{ $image1300 := $image.Resize &quot;1300x&quot; }}
+
+&lt;figure&gt;
+&lt;img class=&quot;lazy&quot; sizes=&quot;100vw&quot; 
+src=&quot;data:image/jpeg;base64,{{ $image800.Content | base64Encode }}&quot; 
+data-srcset=&quot;{{ $image320.RelPermalink }} 320w, {{ $image800.RelPermalink }} 800w, {{ $image1300.RelPermalink }} 1300w&quot;
+{{ with $image.Title }} alt=&quot;{{.}}&quot; {{ end }}
+&gt;
+{{ with $image.Title }}
+&lt;figcaption&gt;{{.}}&lt;/figcaption&gt;
+{{ end }}
+&lt;/figure&gt;
+
+</code></pre></li>
+</ul>
+
+<h3 id="url短碼測試">url短碼測試</h3>
+
+<p>執行<code>{{&lt; urlimg name=image1 &gt;}}</code><br />
+
+
+
+
+
+
+
+
+<figure>
+  <img class="lazy" sizes="100vw" 
+    src="data:image/jpeg;base64,/9j/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAcQDIAMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5&#43;gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4&#43;Tl5ufo6ery8/T19vf4&#43;fr/2gAMAwEAAhEDEQA/APOwMc4pS4pHYdqrSSYrFHEifzcdP5Unn47/AKVnvPjvUT3FNlJGobjPf9KrST&#43;9UftB9aa02azaHYllmPPNVXmJpHbNMxmhDshC&#43;aTrTttKFouNsYFpQtSiOpBHSchEAU04IasCOnhOOlK4it5dHl1YK4pMe1S2BDso2VOFpwQUuYL2K&#43;ymlKtBaQpSUgvcplM00x1cKe1MMdWphcplKQpmrhj46UwpV847lQrSHpVgpUZSr5rhe5FRg04jFA5poY2pFQmnImasxxcVEp2FciSKrCRZqdIc9qtRwY7VzTqkuRVWHPYVIluR2FXkg9qmWHHasXVJcigLb2FTpbewq&#43;sXFSLGorN1CeYprb&#43;wp4tz6CrgCjtS8CochXKRt&#43;OlMMFXmIqF2q4yYXKbwgVCY8VbkeqznNaXuHMyPbQFyaXvT1XNArscseamSL2pUWrCL7VDYrkYh9qPI9hVpQKdx3qOYCkYaieE81olRUbximqgzNMeKjZKvtH7VA6VvCsNMpFaTbVhlxUeK7IVLlpkZWkKCn4oxWtwuQmPNMEdWcUKtFxkHl0eXVsR57U7yvai4FVUpcYqcpjtUL5qJK6KjuJ5hHQ0vm56moHNM3GsHA2LJfNQv0poYmg81cY2IkytKMmqrjBq861XdK2RKKhFJU7JxURSmaoQdakRqjAxS0GiLkb1ZR/es6Nqso1RJBYuBj604tVcPShqzsBITS9qZTwMimIQdanQ4qIDmpB0qWKwM1V3NTNULDIoAozGqpzuq5KuarMvNax2EkOjPSrsJ5qkoxVmImlMtI04jUpbNVIm4qcNWYmOyaTvS5oq0QxynBpW55pF60rdKqWxBEx5qFutSsKicVyyWtwYwmm7qfimkUkQ0NzRQaKoQUUUuKB2L8k3vVKWbrzTZJeOtU3kyetdaGkOklPrUBkJppbNNp2KSJVY0/JqJKlAqZDegoFPVaFXNSqlZkXGhc04JUqp7U9U9qQiMJUoSnhMCnBeKVhDQtIVwM1JimOeKpICFjTC3vSSNioC9DiMsBqkU5qop5qdDWUkKxYApcCmKTTxWQWsG0UhSninU02TchKVG0dW8CkKA1SkO5QaOomStFouOlV2j5rVMZnsnNCpzVpo&#43;aFipuZVxIo81dij4AqOJMVciXgVz1JGbZLFFVlYwOtRoQBUoYVyybJbJVCgdKeMYqHd70bveo1JJd1G&#43;od1NL0AWTJxTTJVff70wye9VYCyZKheSojJUTPnvVpAkPZ81Czc01m96aWrRDJQalTFV1PFTI3FDEW0NTKaqo1ShqyYrFkNzSlhVcPTt2aloRNuFJuqPNLmoHcccGoXWpc0hGRTTGU3Sq7rV2Rfaq8i11U5spMrmkzTmHNMrsUtChc1MigVAOTU6daJSKSJ0XNTCPjpSRAVYUACsnUNEipJFxxVKZCDWu2KpzID0q1O47GU4qHvVuVOTVcrg1ejGwVakC0LinZqjFkbLmomjqzjNIVpphcpMgxUDpV90qu607lxkUmXFMqeRagIppmqkKGxUyviq4HNSCky73LQenq1VlNSA1DQ7FkNUitxVVWqZTxSETqcmpR0quh96lB4qGTcGqMjipCc1GTzUgV5RVVl5q64quy81aYEQFSJwaMc0DrTeo7luJuKm3VUQ4xU4ORUbCbuTB6cDmolqQCrTJZItPPSmCl596siwlRkVIaQ0nBMLkZFM21KaQjisZU7bDZARSHAqRuKhc1NmTygSM05OtSR2Msqb1BpRazoeYyfpRYaRmSSHHWoScmnkUm3mutFbIbijbzUgWnBKdyXIai1Oq0JHUypWcmJsRUyamVRQq4p4qSRQBTxTBxS5osA/NGaZmjNNIQ5jUEj09jVeQmtEgIpGqEnmpmFNCZNDQ0CVYSmpGamSM1lKJSHL0pwpwTFKVrFxFIFp1NAxS1FjOw4UtNBpRRYBaYyZ7VKOlLVJjuU2j56UgXmrTLmmbKhyBsagxU6nFR4pyg1D1IsTBqeGqGnA8Vm0DJg9LuqIcUualoQ8tTCxppamk00gFLGmF6RjUZrRILDmemlqaaQ1SQCls03PNFFMB4NSI1RCnikxFhWqUPVZakFZtAycH3qRTUANPU1DRJMDS5qMU8GoAeMmnY4pgNO3cUWHcY9V3FTt0qB2remhpkDrzURWpmOTTcV1rYsiVanUYpoGKeOKmTLiTRtgc1N53bNUmbFRGUg9a52mbI0TIMdaglkGMA1V&#43;0D1qOSb3rSKZSHSsKqSNzSSS571A0ldMUTJFgPinb81SEnNSCSrMmi2GxS76qeZ70eZ70IVidmBqF8c0zf70hamFiJ1qBhVgnNRstUi4sixTgKdtpQKo0TExT80mKdikyuYValU1F0p27FQ0TcsKaeG4qurcVIDxUSGSlqbupvWj8azYCMc1GRSscUwnNNIBMClApucU5TTA6Lw54R1DxLDdzWc1pDFahTK9zLsUBiQOcH0rXHw21LGRrOgf8AgwH/AMTV3wEA3gzxYCAfktuD/wBdK9qvNL0Kx01Hg0LTLq78pGFuxSNmB6nJFPludtHD03TUp3u21pb9TwofDjUh/wAxnQP/AAYD/wCJpw&#43;HOo5/5DHh/wD8Dh/hXrXnQdB8P9OP/b3D/wDE0sMtpJdwrN4J063tycSymaJto9cY7UL&#43;tzq&#43;oQ3af3x/zPKF&#43;HWpMONY0E/9v4/wp3/Cu9R76voH/gcP8K7f4q2OkW&#43;kaZc6Va2saTSMfMgRRuGPWsCz&#43;H6Xeg2OrPrdpaRXS/cuVKkHJ4BHXpUSlJSslc6aOVYSpRjVnNx5na1r6/Ixz8OdQP8AzF9A/wDA8f4U3/hXOo9tX0In2vh/hXSn4WuNO/tD/hItL&#43;x/89vm29cenrVdvhuDo97qFtr9hdC1UuyxZKkAcjPY0e0qL7JX9lZffSs&#43;2z3&#43;45PWvB&#43;oaHpi3891Yz25lEJNrPvIYjPoPSsDtXVz4HwyuSBx/ayf&#43;izXJg5ropvnim0eLjsOsNiJUU72In71Wc81akHWqj9RVqByI6OwlEdoOOtX4ZIXOJEzWXbf8ei89DUykg8GvNu02c0pSUjlMc0bKl2U5UrsubtkYSpVSpAgp4GKLk3GKmKeOKWjNIVxw6UhNJmkJoAUtRuphajOapCRJupc8UwUuKdhsQmoyMmpSM0COrAg2ZNSrF7VKsWT0qxHEKBohSKp1i4qxFBnnFT&#43;SAOlRJ2GUSvHSoyMVeaIDtVd0xWTaEV6KcQc0mKhiEpwpQKcBUiAdKfihRTgtJiY3bTSlThaXZWEnqQVttOxipjH7UmzFTzARYpRUm0UhouDEPSm04000IBDTW60tNPWqQDTTCTmnmm1QDSaQ0rUm3NUhCUU7bijApjAU8UwDmpVqWIcKeDTBThUgyQU8HFRine9QxEuacpqMGlzUWETZxQWqHfSM9BQ53qB2oZqjJNdEBoM80uabS9q6Chc01pcUxjioWPWk1c2pokaSoWbIqNn7Um4mp5DVqyAtiomlOKexzULCrjEI7ETydahLkmpHHWoCMV0RQMkD07zKrE4NODVViLFjfS76r55pc0corFgPTs5FVw1O30WFYkzS8VDup2&#43;iwrEnFAFRh6cHoKQ/FOpA1GcUBcDSE0hamE0rC6kqtUwbiqm&#43;nq/FTKJoiyGoJqINmlzWTQxHNRk4pxPNRsapBYdmlB5qLNOTrTsXynpfw/OfBni3/rna/8Ao2vTPFV2B4j0nTo/D1lqdxc2alTOxVhgHjd6V5l8Pv8AkTfFv&#43;5a/wDo2vTNbjkm&#43;JHhyKOdoXaxIDhQSvynpmk/8vzPYy5JwTfTm/CKOW0qC5h1zXLdfClndiBhI8MkuVtjj7obHP8A9aodKE9j4butYl8NWF7bySNKJZpf9Wp42hR2B963vDA103Ot6fpuo2MNvDdOsrXkYLy5JySe/SuW0vQrS58J&#43;I7&#43;5jUz2EgWF0kYDOeeM4xzxXO1a3zPb50&#43;bnta8dm29dO6tf1&#43;82fHrQP4F0Ga2sVsY5XZxApyFyO3tW3p1s8/w&#43;8POItMnCB8w6g&#43;1TnPIPrWJ47DH4eeFx1wn9K19Phhm8NeCLadFdJLk7kYZBGHq/ty9Ec8tMJDynLz2T9DoZ4T/wAILBH/AGfoRAm5gaXFt1JyG7msYWDWnhbxXOYdPiWeENixk3R5A9O39acl1BL4&#43;Xwu&#43;gQ/2ZDOzRuQ21TsJ3Y6Vl6XBDB4f8fRW8IhhjldERTkADI61rJrW3mctOm479XGXyb9fI4G5/5JjP8A9hZP/RZrkFNdjP8A8kxnHrqqf&#43;izXIlKdD4Eebnf&#43;/1PX9ERvVWSrjrxVOUV1I8tGpYTGS3K55HNWkcntWXpjYk2&#43;vFaaRsSRjvXnVqdp2Rz1V7xj7RShak2UAYrUu4mMUlK3Sm0XJFzSE0hPFNNAxSRTc0lFMBaUU0U9apDHAVJjNIq1Kq5qkhDVSpFjp6pUqpWgxqR1PHGCRxRipo6mTsBPFGB2qUx8U2NgBUm8YrhqVNS0ivIntVOZRmrsrgCqEr81kpu4NEBFNA5p5bNMJwa0UjJodxSgUzdS7qq4iQVItQBhUiGok9BNFheadtpimpl5rmkySMimkVK1MI5qExEZFNp7UyrQDSKQ9KdTTTTGMIpmKlxTcVVwIyKTFSlc03bVXGRFeaXHFP207aMUXAhxS7ak20bcUXERYwaeBS4p2KLgAFOApQKcBQ2IKWlorNiYUmaD1pKB2AtTCTSnrTCaaQ7Cmko3U5SCa3ghobtNLg4qULmlK8GthlR6gerjpUDJQjem7FQqc0oBAqxspGWmU5Fcrk0wx96n20mKCbspuntUDpgGtFkqrMlaRkLm1M9himZqaQVAetdEWWh4NKDmmUZxTY7EmaN1MzRmla4WH76N5qLNGadgsTB6eHquDTw1S0FiwHxQZKhzSFuKQmiUvTN/vTN1NJppAkSb6esnvVfdxSBqbiWkXVk96f5me9UVepVkrNwKsWN1NNMDUu7NTaw1EDSqcGkpRQyj0v4fsF8GeLy2cCO2J4z/wAtK9Bm8TeF7nxdputSa0Vis7Xy/L8h9xfn/Z6c14Zo3iPV9BEw0u&#43;e2E&#43;PNCgHdjOM5&#43;ta6&#43;P/ABTt51eT/vhf8KiR14bFU6UOWcW99mlurPdM9eOo/C17ia4mkaeaaQyOzrL1Jz2x61kanP4MGlXdloHiGayW6kDSxPHIY2Hp93IrzgeP/FP/AEF5P&#43;/a/wCFI3j7xWP&#43;YxL/AN8L/hSa0tp93/BOmOZQi7&#43;&#43;/WSe3/bp3/jXXtCv/D2jabpd490LNtsh8tlO3HXkVi3vjC7bUrC4sE8m205QlrA4yBxyT7nJrmR8QPFWedYl/wC&#43;F/wqZPH3ic9dWk/74X/CodNt3ub0s4w9OHI6Tla&#43;8l13&#43;ydJ/wALH8Vi5886oxO7JQxLt&#43;nSr48eWreF9Usv7MSLUr9yZZoV&#43;R89WIPQ/wCNcovjvxMf&#43;YrJ/wB8L/hU6&#43;N/EjD/AJCj/wDfC/4UKlLZy3CecYWTTVC1rbPtt0J3G74aXAx/zFk69/3ZrlsA1s6j4h1fVrMWt9fPNCG3hMADOMZ4HvWVtroprlionj42v9ZryrWtcryLVKYda0ZBVKZetbJnOkQ28nlTKc11dnGswWUEY781yGOav2t3LGu1WIFTOCk7inC44jnpTWp7daaRXJc5iI009KeRTcUwRHmkp5HNNxTGIelFLilxVJBYAKkUe1NUVMi1aQDkXNWESkVOmKmUVSAAPapB0pMgU1pAB1pgOLUnnYqtJN6GojMfWspM2hE0VuMd6X7VjuKyTcEd6Y9yfWuScLstxNKS63d6rtNmqBmOetIJc96Sp2M2XfMpN9VfM/2qQy&#43;9aKJm0Wd/NKHqp5vvR5h9aOVisXBJzUqSVneYfWpUm561MouwmjVR&#43;lWFasyObpk1bjkB71yziyGiwTTDSFuOtMLVCQWFNFNLUhNVYQppKM560CgAxSbadRTHYjxRtp/FJmgLjdlKF9qdS0XAbikIp5oFFxMj2U4LTsU4Ci4hAtG2nijFK4DQtLinbaXFK4EZWm7KnC&#43;tNcgDigCB&#43;BUDMBUkrcVUkk961grmiQ8vg0qyVTab3pFm5611QjYrlNRJKmDZFZqTe9WFl461o0KxZPPaonSlWTNBbNSGpFs5pGWpcimtzTaGmyArik2VKQKTgc5qR3I3TC1RmFXZG4qnL3qogkUJR1qsRzVuUVXYc10xZqhgFGKeAKXbTuO4zFGKl20m0UXC5ERRipCtJtouFxlKKdikxRcBcUu2gUtIBhFIwqSjFNCvYg20lTFaaUqrlqRHShsUEUlPQtEqvUgaq46U9alopE4NPFQg09TWbQEympt3Sq4NSKfes2SycHimmm5pc&#43;tIlhUqHAqE09TQSWkb3q3G&#43;KoITVpGp6iLgORS1CGNPDcUXKQyXoapS9DVuVqpSHrWkWVYhIqSHqODTKlh61sDLhFIwzUhFJiuDU4yArTStWNmRTdtMEVyvNNK4qwUo8vNFykrlbbShCKsCLmniP1q4sfKyFI6nVQBSfdo3YFbJiJ1IFBkAFVzLionmp3Eiw83vUDzZ71Vkm96gMtS2aJFp5feoWl96rtJmmls1m1c3RK0vvTC&#43;aYTSGjlJk7ku6gPios0hanymaLBkppkqHfTWenyC5ScyUnme9Vi9N8ymoDsW/MHrQsvvVPzKQSHNN09A5TXim96vRS&#43;9YcUnIq9DLxXLUpGcomwsmRQW5qtG/vUpNcjjZmY/NGaj3UuaGiUSbqcDUWaUHmlYdiWkzSZpaQxM0UtJigQopaSlFIYUU7FG2gTAdOlKKTFOpC0FApwFIKcKm4haBiikNNAIzVVkkFSueDVORsCtIxuUkhkslUZZOtPleqj8k11U4o2SGs5pokIoINMxXSkiizHL71aSXIHNZq8GrCNSkJmiktSh6z1epRJWaEXN9IXqt5lIZKpiJy/vTC/PWoDJUe&#43;kkFid2qtIc0pfNRsc1SQ0iB&#43;aiK1ORmmla1TLIMU6nleaTApgwoIpcUEcUhDDTTTiKaaaGhKKKUUyxQKUDNKPanjpSAaFpdtOxTsUyGR7aaUqbFIRTuJMrFKYUq0VpjJTuWpFfFOAp5XFNxii5SkKOKeDUY607OKlou5MKeDUaninqayaBkoNBpBTwOKkljM04NzRigLzQSTxmrUZqmnGKtxVYiyOlLSr0oNJoaIZDmqktWpM81VlPNXFWNCIVPCOagHNWYetaoRpFKTZVgpzRsrlscRWKUbParJSkK0nEpFbyx6Uvlj1qfApDgUnE1REI6Y/FPeQCqssoHeqSAHbFQPLimSzj1qnJNzWhDRaab3qCSeqplqNnz3osUokrzE0wuSKi3c0oNVYtIkU5NOzUQNOzik0O47NG6oy3NJmiwh&#43;aQmm5pCadgFLcUwtQTTTVJIEIWpuacRSYrRFDaKXbS7aAJI2q7DJiqC8GrMTdKxqRuiJK5rRP0q2pyBWXC9Xo34rgnE52ixRSAgijBrIQDrThTcU4CkwHqaf1pi1IKhgGKMU8ClxSuAwCn4oxSjrUtiYm2lAp1FIQ3FLtpaXNACAUvSikPShALmkbpTepxVvT9J1LV226bYXF23QmNCVH1PQVaQXuzOeqctejaV8LdUuJN2sXMGnx90DB5D9AMiulg&#43;FnhhXCyDUL6Q9N0mwfkBVqcY7miizwhwCeahYL6ivoZfAnhq0f8AdeHIW2jALuzH8cmpj4f0KNAyeH7LB9IySP1pvGQj0Zdz5x2g9DmmFK&#43;hb3wT4cv4c3Ghxxgcb7ZjGw/LIrltY&#43;Etq8DTaBqLGYD5bS7wCx9AwrWGLpy02C55IE4pwXFaWo6RfaReG01G0ltrgfwyL1&#43;h6EfSqezHat3IaZHTt2Kdim4ouAF&#43;KaX4oI4qM5B5qtxpCl6TdSUYqkgFDc07GaQLTwMVRIwrTCKnppWlcq5ARTdtTFKTbT5gI8UYqTFJtNO9wISKYRU5WmbaY0RYoxUuyjaKpFoatOpyqKdinyha4gpaUYpcYosS0NpaKKBWENMNPJphpDsRmmU8g03vQUkJ3ooooLSJFPFPFQqcU8NUtDJx2qYVXQ1Op4rNgPC5pQuDQtOpEtChasRjFQqanSrJLSEYpxANRpT6LiIZRwapyCr0o4qlKKtFohXg1Zh61W71LC2DVjZ0ZHPamEVCbgZpPPFZ2OImJphbFQtPxVeS4pFIsPNiq0k/viqslwfWqklyc9aaiapluS4681UkuCT1qs85OeagM240&#43;UdmyeSUnvVdnJPWmlyabmnyjSHZ96TdTSabmqSKSH55p6moQealWhoLD6M5pCaDUisJmkpO9LQA7FGM0UCgQmBTSOaeelJ2oAbikNOoxTuAylxTqKLjExT4zim0ooEy3E&#43;KuxPnFZsZ5Aq/CelctVGUkXozmph0qvHVgdK5JaGYYpwFKBzTgKhsQAYqQCmAU7OKhgPFKDTQcmikA7NGabmjdSJuPzRmmlqaWosBJuo3VGW4o3U7CH5pM03dW34P0I&#43;JvFFpprbhb58y4Zf7g7e2elVGN2NK7sa/gTwXL4kvku72F00WEkySbsGY/wB1fb1Ne1W2leVbG2s4VtYF4SOEBFx68VYsdPW1ghs7SFIrOBQscan5cf41rBSi4Bxx0rX2fOrNOx1U6fQyrbR0jT9&#43;RgcctVucw6fZmQRj5BxxXH6/o&#43;p3t1BFcfaJoUnE0bW8hUZByN2O36V2wUz22Jwu4r846iopJOLUFZmkUjldN1u&#43;v/E1zZX1jAmm7B9nuAfnkbjII7d66Z7CzRCxhXC8nisf7bolprdppiPFHfzozQLsPIX72K3GRyCoz06npVRV43krlWfVHMaj4jttN1mw0xdLM1rdhvMnjxiL0z65q5d6LDNF5lmgUEZAz3qS50S1nmJB2yIMlI37fTt3rUgjSK3UtmNAMBWPNZ8jqLlkiWr9DhNb0Oy1ay/s7WbdZYwCI5VxvhPqp/pXhXibwxd&#43;GtQEE/7y2lJ&#43;zTjpKvp7NzyK&#43;kbW&#43;0bxDf6na2bH7RZTeRNvHBb1HtWVr/h2y1fT5NL1OMmIHMUg&#43;9E/95aUHKi7S2MZQaPmfbSiOtfWNEu9D1a4028QCWE/eHRx2YfWqYj9q6nNGaetioYuOlRPGa0DHULpTjMtMoFMUoXmp3Q&#43;lMA5rdO47jQKXFOppPNaAIeKSg0makBaMUClBpDEwKMUp4pCaLiuNIFNK0/NJmncYzbTdtS001omUmMAoJ4paZWq1LQ4U/tTVp&#43;OKpItK42ijFLik0PkI2oA4pWGKbnArMXKNao2pzNUbGgdhpNLmkpM0wbHZzTgaYOtOpWJbJUNTo9Vlp6tis5IXMXFNPzVdHqQPWYrk4NToaqqc1YShMRaU1JUAPSnhqtAEnSqcoq1I3WqsxrSI0V80&#43;PrUfepIutWymP&#43;1H1pftR9RWP559acJj6ipaMuQ1WuSR1qB5ye9UvOPrTTJxU8o&#43;Umkmqs8vNNYk1GRmriikgLE96bzTsUu2ruVYB0paBRilcLCEUm2n0lFxoQCngUi9akxUtjsJSHpQTTScCgaiHelpnenA0EyiPpaSjNIyFpKKKAENJRmigAoooHWgBRxSgZNFSIuTQ3ZCZJGnIq/Cp44qGGPpWhFHwK46szOTHRrVgChUwKfiuSUrmYUtFKBmpbEAFLmlHFNNIAHWlzTCeaM0WAcTzTSaTNNLVSQh26jcKiJpC1OwWJS1G41Dupd1FgJd1er/CawWxhXWZGdXu5jAgPA2Dv&#43;deRj5vl9eP1r3e3VbPTtPtoFBito4/l/U1SjobUYXbfY9JSQhCTXD&#43;IrK&#43;vNasVna6MNrdrdWzQk4dh/C2O1dtZypcxrNG2Y5FDCq&#43;ranDpdqZHH3gQpxxuxxTmm4qfNZHQk7Fi6uILaDzZThcgHHY1y9z4lupfFdjo9np4k024Vxc3hY/uzg4A/T86d4LudV1bw9ND4ikgnvd7K6xqFDRnpwKTVLTRfCVpLrBguJWttpEEMhYnkDhe/XNTLmck1a2w79UWG8OIl0kxusvGTsaSIF0&#43;hrcmfzrbZHNscD73cH3FNN0ZdPS7t4vMeRBIivwSDzj61xFjJHpPiHUtWnN0bi9wJY58lVC9Aoxx196zk1QTtpfyJVloyYaNqFn4im1WO3ea5nURtKJPl2g8YHauxu08&#43;2MTElXXBK9QfUU5PKa1WaKP53Tciv1zjOMVyumarqtt4ju1vpJZluHURW3k7RCAOgP65p8qirSluP1L1n4djsbwXjXe2NCXb5Nmfdjnmte5jS4hSSMxyAjKP1GPUEVmeMLWbVNDnso4WnhnXZNChwzKfSovB9teafpMWnzW7QWVtGsVtHJ98Aepoapr3Ve4nZqxxXxS8NPqmkx6xAu&#43;709Ssm1fvxH/AA5/WvGwvGeo9a&#43;rbq0DSOMfupUKuG7gggivlq8gFnfXVsrBlilZAR0wDxQr6p9DnnGzK5UYqBwBUxaoXq4kFdxUTYFTOKgeuiDKQ3NMJ5pGJFRknNbpl2HmmUZozTLsKDinBqaBmkPFIhjiaaTSGmlqdhofmgVGGzTgaLDsSUjUA0hIq0i7DDRQWFMLcVabNEiUU6oQ9P3CrRokPyBSFqjZqjaShgPd6jLUwvmmF6VhDy1MLUwvmmlqOUQ8mkDUzNGaqxLZLmnA1EDT81NiSZTT6gU1IDUNCJlOKlVqgBp6tWckIsIRmrCNzVRWqVXrOwFwNTw1Vlenh6tMCV2qtKc1IzZqCQ1omUkRd6ki&#43;9UXepYutaDZhZNKCaMUYq2MeOacKRaeBWbEGKjPWpDTDQgEoooqhijrQaQUZpCCkzS0UDFWpM1GvWnikyrjWptONMbihFJhSimg0tUJseDSikWlPtUswYtJmko70hBRSmgUAAHFLgUUtAmGKsRLzUKjmrcK8is5vQllyBPu8VoxJx0qrCvSr8YwK8&#43;rIyYuKNtPpDWBIyilI4pKYBk0hpaSgBppuacaYasAzTSaDTTTQCGkzSmkqhMM0ZoFFAhc4GfT/GvoDSGElhDKQHLQrj8q&#43;fuoIPevXfAutC70SGKZv38PyE&#43;w6VSWh1YZ6tHX2OsTaHcBJT5tm5LFRyU&#43;ntXVL9l1e1O0JcW0g5Ru1cDdO0zuwOd3cDtU2i6hPp95JJbktAF/eR561zNXXkbyjY7zT9KtNO3fYrcRbupyT/Os3xPbWcGl3eo3d09pDChlmkA3fKBzx/hWvp&#43;owahZC4t&#43;QRyPSsPXdNm1eCaNHWWCVdpt5Oj&#43;2fSqqulGmr6oTtY0NCns7nw5aXVtcNcWkkIljlIILqe&#43;DyKxbrWLx/FFgLdYv7E8thcO4y&#43;84249uta3h6C6tdIS0mgEAiGyOMYIVR0HHaifRtNjCeaxt1LM21HwGPvVzcnZ04q3W4vQzfG9zdrpT2ds00CXCbTdQDLJ&#43;XI&#43;ta2gzrd6PAzFy8ShDI45fA6k9zVHwt4iXxVaXky6fPZJbXLQBZ&#43;TIqjhgPQ/0o8R6&#43;NI0&#43;5hsFifUVT9ykrbV3HoT7VclKMryfu/gCWt2O8U6xLpOkXLabbLc6hGgMUTNt3En1NXNFuP7V0u3upMLOY1M0anIR8cjP1qpp9tD4h0OzudSggmuvLUyBM4V8fNg9cZrVtLaO0hEFrGkMa/wgUr3kk0rAyG6mQB9rfMik4H0NfKE8rT3M0zZ3PIzHPua&#43;mvGOvWvhvQri8l2mcoywqOCzEY/rXzEASCWOSeSfU1NrSZz1eg09Kb1qQjNJtpmRXcc1Cy1cKVEyVcZDRSdaiK81caP2qMxc9K66epomVwlLsqwI6URVrylcxXCU0rVvy6Qw1PKS2UiKYRVtovaoWTFFrDRBnFG6lZKYQRVJGiH76aX96ZSGtEjaIu73pN1ISBTc07FMfuxRv4phNNpgPLn1qNmNFNPWgA3UhNGKMUxO/QbmilxRignXqJS0Yo2mgQoNLmm4NFIB4anq1Q04Gk0FiyGp4YVWVqkDVm0KxZVhUgIqqGqQPis3EC2rU8NVUP71Ir571NrCRPupjmk3e9NJzVxKQ3vU0fWoh1qWP71aAzHK80hp5pCBVXFcVelOApg4qQVLC4hFMYYp5pp5podyLNGaCOaMVYCiloFOApMVxtGKk2ijFK4XGr1p9CrT9tS2HMRnFRsM1MRTGWmmHMyMLS4p2KcBTuFxoWjGKfikIpNiY2lxRil7UiAxSgUClFAhAOaWilHWkIegyauQDkVVjq9CvSueoyZMvQiranFVou1WAa4ZmZIDS9qaDSg1AgI4pMUuaKQDelITTj1ppFMBrdKYaeelMNUAhppFOpKoBlJTyKaVp3ASgUuKMUwErovB&#43;oG11lbZidk4Kg&#43;jVz22pIpWtpop04aNw4P0pxepVNuMkz2e2d3AVhhRx71oJIn2bfGAGl&#43;U&#43;orG0m&#43;S4gjmVgTIgYH6irqny5c5ySeAKlQauj0nqi3HNdafKZLS5Cf7PYn3FaY8WPCFXUrIgd5YTj9Kzg0WPMdQQOo9DWXcXKs&#43;4kFR1Oa5nDWy0MXDqeiWPiTR7p1RLxUcjO2QgGpdcuLWPSJLiW3a/iTny4Rvb8MV5E8kDu0rIZXP3QeMVb019UtiXtriaBOmN3Fa80krW0&#43;78B2PUNLsLSzm&#43;0Wsc6iRR8rE4GeenrV&#43;5torgl3tYpCOhdAT&#43;teZHxv4kjk8mOS3lA4zsyaiufGXiR50RbqKM9TiIdKcZLk5LP8EI9Utg0IC&#43;UkUY6BRisLxV450nwzZPLNMksw6QowLE155car4g1BGjn1VzA3VYwFJ&#43;hrkdR/s9NU3zOf9H/AHjqXyS38I&#43;vetYOTjyrYLMi8W69qGvyRXmpxiOWbmCAdIIu2f8AaPc1zOKsXVxJd3DzynLsfy9qixWcmuhx1HeTGYpdtP25pdpqbkEe2kMYNShaXbTUtQuVWiFR&#43;VVsimYrvostPQriIU7yh6VMBTttdQ7lcxj0ppjqyRTStJoL3KbR1C0XtWgV56UxowaVhmY0VRNFWm0XHSoWhzQaRuZzR&#43;1RMmK0GgPoaiaH2q0y&#43;dmey1GQRV54vaoXjp3LUitmlzmnmP2pu2mXcSkxTsUu2lcBmKMU/bRtouNMZilwKXFJigGwxS4o5oBxSEG2gqKeDmii7EiPbRtp&#43;KUClcZGBThxTwtLtouIaDTw1JsoCmpJsSA1KjVAAakXik0FifNL1qMc08dKVhocKlTrmohUidasbMcmm7uaZmitLEWHhqlU5quDT1NKSETmkxSA04CoC5GVpMVMVBpuKLiYwCnBaeBSgUNiGgU7bxS4pcVDYCKtOoFLilcY0imMKkNIaaYEYFPC8UYzTgOKLjiM20FakxSbaLltaEJHNJg1MwpmDVJmTGgUoopaCAoFFOpMCWKtCEdKoxdRV6LtXPVIkXYx0qcVBH0qYdK4pEDqWminVAgFOptKKAFppp1MahAIelNNKTSE00A0ikp1JiqASg9aXFFArjMZoIxT8UhFO4xlGMj26UpGKbTEzsvCl4wtVQNkQHYwzyB2rroXZ9zFt205GD0rzTw9erY6sjOfkkG1vb0rt47xEkZY2Kg84J71srNHo0pc0S/dXv7sIjMCOSB3rNFw5JypY/3PWo3mYyF2Y805J1EqAIFAOSfWsbamhpWcKsBJKrBvQgcfl1FWrm5CxiNSFHQGsmXVAufk6dOeKpS3c9wN0uUQ9DSkmwN0X0NpbuAQZAP1qpAZHiZ5SrTSHLMT3PQCuf8AtULzKiuW28kmpr/V0tUwJMy4woA&#43;7VKNloFkty5qWqQafGUDEyqMAAd64iV2lnllcktI&#43;85p0873ErSSMSSc803AqZSsrI4K1XmdlsIBmgdKWisjG4UuKKcMUXE2CilbFAWms2KI7jsMYgZqLcKZLJ1qDzea9GgWloW1NSAZqqklTo2a6wsOIpKf1oI4phYjNMOKkYcVGeKloEIRkU3YDS5paRaZE0fFRNEPSrNBGaSE2Z8kXWqzx1rNHmq7wUxqRlMlRMlaTQVC0GKd7GikUNtLVhoqYYj6UmylIjwKQrUnl0bKXMPmIsUm0VJsPpQUqrhzEZX0ppFSFaaeKdx8w3pRmkJNJmmWmOzThUeadmhlXJR0pR0qLdTw1TYViQUqjNMBp4oAeFo20op460mO1xgBp2eKcQKaRSCw8GpEPNQCpFNMTRiUZoorcgUGlB5ptLQBMpqRTUANSKazkiScdKMUi808DNZCEAoxTttGKRLExS4oxRSYrjgKMUq0tIYwjFMNPamHrTQwpwplOBpsqO4&#43;lIpB1p1Sa9CMjNMIqY0wrVJmE9yPFJipMUEU&#43;YgYBxTh1oxSr15ouK5YjHSr0Q6VUiwSKvQjkVy1WRLcsoOKkWkVflp4XFcjZICnDpSAUozUiF20AYpaKQCGmmnGm0wG4pCtOpDTAbikxT6KaAaRimmnkU0jFAhM02lpwWmMZjNIVqYikxRzARAE8DrXWWNz/aOn7kwLiAfOAOWHrXJzb1T92BvPr2HrVm2jurOSK60&#43;dpZyP3iZG0L71rFpatnbg6E5S906eNnAUsx47NVq2QS7pHYZJ64rmz4ihuHzdL5T9D6Gr8GvWCx7luUDLwig8Z9TTcXfQ6XFrRo0Zm8schj9TWbMDdMftNwEhXrj&#43;QrM1DXjdXAt7SdJJP4mA4qvKZX2bzvI456AUn7m5jUqKC2L8&#43;oxonk2EARO8hPJ96oBTnczF2Pc0/GRS4rGU2zinVlLR7DccYxSgU7FGKzuZCYpKdtpcUXGNxTgtLilpXEHQVWlbrU7HAqjO1aU1djRWlfk1WMnNEz9ar7juzXqUo2Roi9HJ0q3G/vWYjc1ZjetgNFWp2TVRJOOtSCTjrTuInprCm7vejNJgNxRindaWlYBmKXFPC0oWlYLjMZppTNTbaTaaLDRUaMVXdBWgyVXdKdh3KDJUZUVakQioGGDUyiNSIigpuwVIaSpsVzEe0Um2pD1oqkFyFlqFlq2RUbLmqHcqMKYVq20dN8vNNM0TK2KMEVY8qkMdUPmIRTgaf5dNKkUApDgamWq6g1MhqWPnJ1FPC01DUwGahjUyMikIqUrSFaVx8xFinrSkYozii4NmJRT9tLsrouiLkdAFShKUJRzBzDFFSqtCrUqrWcmTccq1KBxTVHAqQdKzbJYmOKQinGmM1SgQ00UhakBp2GSLS0wGn0mA1qYetPaozmmgFoHWm5NKDTKiSA0oOaYKcKg16D&#43;1JigUYoMZiEUbadR2oMSMim55qRqj700NFmI9K0YOlZcTc1oQN0Fc9VEyNWMZWnbajgOQKsECuGWjII8UYp&#43;KQ9aVxDaKXFGKYBSYHpS4oxQAzbRtp9GKVyRm2k20/FLtp3Ai20hXNT7c0bKOYaK5SnqlTeVSrHzRzAQlKNlWdlNIqeYLortCGmCyHhgBx6UjXIhSW4spTHOXIaLAK47cdqsTA7QwBJCHA9ay&#43;MlnYpJ2YdD9RW9PXVn0OD/AHTkpO235DZLqKeF/tEYyRgAcHP1qAWCJIrop2MPTvV6/iW3MYKhndAWAGBVVZ2KKJMhs4QDtW8ZO14nbV5E7S3NIQCKCHZtAUkOQvIapcZ5I570qApCkQOWPzsx7mnY/KuScrs&#43;fxs05KKeq3GAUu2pAtLtqLnARhaUCn4oxSuAzFLS7felIpAMNFKRSY70wIpDgVnztVud8ZrMnc11UY6lRRXlbk1COtDvzTA1elFaGtidTUyNVUPT1eqJsXQ9PElUxJTw9ArFwSU8PVPfThLQBdD04NVQSGpFegC0DmnioFepFagCbFG2kDc1IOaoZCy1E6Va25pjR5pgUHjzVd4ea0jHUTRc8ihgZjR1GVxWi0IqCSLHaoaGUqKlaPBphFIpDDTSKkIphFFxiHmgCjFGcVSQxduaNlKrUuadgI2TioilTk00jJpNlxREE9qeqc07FSKOahyNOUFjIqZeO9IOlB4rO5hJNMdSHFNOabnFDYczFJphNKWqMtUj5rlYR80vl1PtpQtbcxPMQ&#43;VSiOpwtKFouHMQiOnBKlxiggUmw5hgFDEChjioXepSuWhWeo2eo3eoi9axiOxKXpVaq2&#43;pFaqcbDsWlOadmoFapQazaFYCaYTTzUR60IQuaUUynA07DRKKcKaKWs2jRPQcOtOFMBp2aRnJDjSdqKKRm0NPNMIqSmEc1SBCIcGr9u9UAOaswsARzU1I6CZtQP0q2pyKzIX6Yq9G&#43;RXnVImTJyaSmZozWVhDs0Uwmk3VVgJM0maZupQ1ADx1pcU0HmnA5pWFcXFLigU8CpYhAtSKntTgtSKKhsVxmz2pfLqXFOxU3ArlKaY6nYUmKExIhWIEHcdoPBYdqgezUMGjwQcECrV5uTT0CgFnkwF9aqWMkaXOyRW8zOw&#43;x9a2he1z6WlSdXDxvvZf19xHfFpNQdtg&#43;VcZqgXJ3SlclSMLjrWrPGqyXLxksGPU9zVK1iYToSmQW3NnqBXSnaJcZKVSdRdC5EhWMF&#43;XPJqQCpmC7iUBx2zTdtcjd2fNTk3K7GdKXFOxS4pMlsbto21JjigClcCPbRtqUJmgrimhkOyopSEBqWWUAHBxWdcz9ea0jFsaRXuJOtZU8nJ5qe4n61mTS8nmvRo0zaMQZ8mkD4qENmnZrssa8pMHpwkNV9wpwakJxLSvUqtxVNTzU6GgzaJw1PDVCDTs8UiSYPT1eq2acGoFYuLJUqy1RD08PRcLGikvvUySVmLJU6TU7gjQD07cDVFZvenib3ppjLJwaaQMVF54pDNxTuArgVVlxUry5qtJJ1pMoY4qBsUPJ71EZM1I0DHmoyaC2e9MJpl2FLU3NIeaMVS0BD1NLmkApwFJiYlKOtOC0u3mpY4sQDNSAUKBSnis2jbmQEgCombHehmqB3oSIlqSGX3ppkqAvTd1XykWJjIaA2ahzSq3NPlGkXQOaUUUCoMRwoxQKUUALg4prHApS2BUDuaCkhrmqzvT3eq7tWkImsUNZjmmUppK2LCnLTaXNAE6mplNVkNSq1ZSQrEpPFRmgtxTCxzUpEjutLmmA0oOapoCVGp26ohxS5qGikShqXNRA07NLlEyUGjIqIGnA1PKS0SU0nikB4ooRNgp8bYqM0A4pvUrlNCGTGK0Ipax4pOlXopOBXLVgYyiaSnIpc1DG3FPrkasZscTSAmiigBaUY9KSlFIBwqRRTFFSLUsVh6ipFFIoqVFqRAo9KkC0qrTsYNS4isAooPTNJnmpsAmKKWjvSJHrZ/2jE0CP&#43;&#43;iBkUY4465rKni&#43;VZUQrgYcg8n3q5H9qWS4NmZPOf5SE6svp9KbHujTLdPSt6fu&#43;h79XEeypQUelvyI2jVo9kTEq33Sw5qaC0KSGW5yExgepOOKdJjehAHzMBk9hVm7L&#43;cFeUShRgMvpU1JPYyp4lU6EpWvd/LUqgevWl20/FLis7njIj20bafilxRcYwCnAYpyigkLTWoJCH5earyy8Us02O9Z80/vWsIjSGzz8nms24lyDTpp81QlkLdK7KcDSKIJmJzVJ8k1cZdxNQvHXfBpG0WiuMijNOK4phPNa3ubRsxSaUHmm0o60mDJ1apkNV06VOvFQzGZMGp&#43;c1CDTwakzsSClFNBpwpgLShqQ00mgQ/fg09ZKrbuaN9A0i6slSCSs8SmnrLnvTCxe8yk8w&#43;tVRIaXzKVwJXkNQvIaRmJqFyaAQjvURY0rZphzQaoduoBzTRmnotDYxVXNSqlORKnVB6VLmSRCPIpwjqcIKdsFNSRDK3l0bT6VZKCmsuKOZCIcYqNzUzVAwqb3KRA5qBmqWSqz5zVxNEIWpu6jFLtrTQYm6npyaQLzU8cfNDsVFFvrS0zNKDXOc9h2aC2KSmGmCQjvULNTnzUDhqtI0ihrtUJpzBjSbCa1WhqkNpMVKIjTvKouMhxSYqcxe1MKYouAi08GgClxSYhaYadmkzzSQcoDNAzmlApcUNhyjhS0gpalhYUUCilApC5Qpw4pBTqQWFxRmkzSUgURc803PNBptMolR8GrcMuMVn1LG&#43;MVM43RnJG3FJwKtIwIrIhl6c1eik964akNTmkrMt0U1DuqQCsGSIBTgKVVzUipUtiEVeamVaFT1qQFVqdWIciVOi1AJl9aes4xVcotScCkNIsqnvSMRjik0Ahbmmk00mkzUMCQGnVEDT81mySQSzRRyfZ3KMwwWXrioFixEVEmOOrU5jtUseneops&#43;U&#43;SeUyK0hsdMakpRs3sCxkhQzcj8qsVRsCwtl3DPNX6KpnV1sJRS0mKyM0LinY4pOB1qOSbb36VajcoeWC1VmnAzyKimuf9oVmzXPX5q2hTHYmnuPes&#43;WfPeoprjn71VGkLHrXZCkVYldtx60zZTVPvUimtWrBew3y6jdKtdaay5oUrFKZnyR1WZMGtGRKrtHXRCZspFMinKpzUhjpyJzWtzRsFBFSA0oSnBKhsgTNLuoIptSJomVqlU1XU81IGoIaJjjFQs1KXqNmFCEkBaoy1IWpmc0zREgapFNQDNPBxQJllTUg5qBDU6VJDQEU0rUu3NG2ncSKzJTNnNWyhpuylzFqRBsp6rUuylCc1nKQ&#43;YVBUyCmKMdqlU4rO4Dx1paQEUE1SZIHpTDTjTCR3o5hDGHFQuKnNQuKFIexVcVXZatstRMlbRkaJlfbRtqQrSYqrl2BQM1YjAqFRUyMBQ2UlYWngUBalVKzbMJDNtIUqwEzTvLz2pJkJlJo6iaHPatEwZ7UnkVakWpGb5HtTlt/atHyBThCPSq5x85QEA9KX7Px0rREI9KcYhjpQ5C5zKMPtULRYrWeGqzx0ucakZ5jpu3FXGjqJkxT5rlplYim96mZKjIxVploBTqZmjdSZVh9LUe6l3UrMkkpRUe/NODUNCJKKYDTt1IVxaMUmaXOaBcwhptOxnvS7aBXGUBiKdtoxQJsmikxV6KXkVmA4NTxyYNYzh1M5K5sxSVbjYGseKX3q3HPiuOdNmdmai7afvUVnC444zSNc&#43;9Y&#43;yYnEvvPgcVXe5x1NUXufeqktz71vTpDUDUN2M9act4PWufe7x3pq3pz1ro9hoaez0Opju89DVpLjI61zEF2c9a0YLnPeuWpSsZyhY2d3ejvmq8U&#43;QBVkYIrkkrGdhRmnAnNJTgKzZLEbbsO7pVZg7SNk5UjAHpViX/UtUcIUKZGbqMH6VcHY2pbWK8G5SFB4U1pVTMabty/KMjFXN4U9KJ66imh2KazAConnwaqS3PJ5ojElInkn29DVGa5HJzUE1zk9aoTXHvXTCncfKTTXOc81nyz5NMklLGoCSTXbCmkWkOLljRTRThxWgDgcU8NUYNKDik1cTVyfdS7sioN1LuxU8pNhziomUU/dxTSRTV0awIintQEwakOKOK2TNQCiggUZFIT70mCQxqjJ5p7VGTTRVh4JpwaogcGng0hND91Rs1BNMJyaaRNg6mnqmRSouSKtxQgjpSbsS2VxFUqw57VdW3GOBUn2fFZ84rlNYcdqmWKrIi9qeI8dqOckreXS&#43;XVny6NlS5iKpSkKVZKUwqKhzAg2UgXBqYjmm4qeYYBeKUCnKKcBTuO4w0hNSFeKaVqkBEzHFN3GpfLzR5NMCEmmE5qyYKYbc07MTKpFRsKstCRUDqR2rRFxZCwqM1IxqFj71ZqmLuxRvNRck1NFbvIe9WkVc0xHUqpUm2nAYrnOeU7jVXFPAFFAOKm5mPAFG0dqQNS7sUXAUKPSl2ik3U0vTTAkwAKjY0hakLU7jsMbmomTNTUYouBVMWaheI&#43;laOwU1ogRTTKUmZLx4qvIhrWkh9qrPDjtWikaRkZpQikxVt4xUDDBquY3T0I6QinEUmMVRDYAUozQBRihkjh1p4po6U4CoZNxaUClxSikK4ClopQKLiEpKdRRcBlGcU402iwEqPjvUyz471SxilBPapcExWNAXBx1pjXHJ5qnlqQ5pKmgsTvOfWq0khPvSGmNWkUi4oYzE0wEg0rUytkkaJFqKUg9a0Le4x3rHB44qxFLjGTWNSmmiJROlguOBzWjDcZPWuZhnxir0F1g9a86pRMXA6NXDDrUgx3PFY0d3x1qT7YfWuR0nczcTUkdRG3fHaqfDngED0NRR3HmSBScg9qtLExJyxIxn6Cly8u5pCOg1kkiQZxtHNNkuOOtNdmET7ThfU1lPcZzzWsIcwpouSXHvVOW596qyT1XeQtXRCkhJEskxPeqrOT3pcUYrpikg2I8UYp5FJjNWmUhAOKWjFFIQh4pKdjNG2gY3NLmjbRtpisGaTNG2l20aFwEJxTS9KwqM8VUWa2HbuKaXqNmpparsFh5em7qjJpAarlGiUHmniogacKVgbHmk70UoosSTwjkVpQLnHfis&#43;HqK0YWrCoZs0YowRTmjFRRyYAqTzK5WzNsQxgUm0Cl30m6mpBcU4ppOKaWxTC1JsLisaiNOJpjGkAlFITSA0BckWnCowakU07jFxmjbmpB0pDW0IgIFAp4ApuDT1FbqKGOCA9akEKnFIoNSr1quVAMNqpHSoJbHOeP0q&#43;DUgbI5q1FMZgvp2e36VXfTeeh/Kun&#43;QjkVDIseDV8qSHc56LThuHBrRgskTrVokA8CmM3PWs7hzMqGmk0E0w1ymY/NNJpm40ZoYEgajdUeaM0gJN1IWqMnmkLZqkBJuozTBTlphceKdTAeafQNDhRSZozQAjAEVXkjGKn3VG/IoQ07FGRADVV1FXZcYqnIetUrm8ZaEBFNIpSeaXGa2Wg9xmKcAaeFp23ilzEtMaBT8U3GKeKlkhinc0lLSJbClBpKKQXCilxxSUBcQ0lOpCOaYXG0UuKMUXC4lIadikNO4XIzUZ5qRqbjiqRcSFqbUpXJpNtaXNbaDRSinbeKULRclsekm3qanjuMd6rbaacis3FMRppdEDrTxeHPWsnzCBSCQ561DoJ6k8h0FjceZeRrnqea6F5PlU5O7GDXH6Q27UYgxNddhAFwuPXJrz8XBRlYXw6FS6nK2zqR1FYPmMe9bWof6ogdvSsMetXQXumUtwOT1pMUvNFbjQAUuKUUuKVyGRlaTFSEUzHNNAhlKBSnrQFqrhcMUbacFpQtS2K4zZRtqXbShOaXMFyLbigrU22grRzFQepVYVC44qy461WetoM7Iogam4yKkYc03FbIbQ0im7TUuzJpdlO5NrDAKcOKMYpcUhWFFKKTinCmJomjOKuQvVJKsoSK5pmbRoLJxTxJ71TVyKdvOa5mjIuB6N&#43;e9Vg5pwakgJi1NLUzNG6m0ApamMaSmmkAuaM02iqsMePrUqdarrmrMQzQo3YicD5aSn4wKTFdMY2GGKcKbg0o4rUZIGxShqizQtMCwHpwkqDNKGpjJ/MNMdiR1qMvTDJihsBzNULOKa0npURYmpTENJpDSmkrmRKVxlLTqQihl8ug2ijvRzTRFhKMUoHNOC00AgHNPAoC81IFxTAbinUuKSgAoooqGA3FMk4FSE4FV5XHrQkMqyt1qlI2asytk1AUzW0UbRVyBRlqmVacsdSCL2qmbKLGbaXFSbcdqTGO1SNoixzRTm602g52LRmikxQSxaWgUUhBmiijBpAFFGDRQgA0lLQaYCU1qUmmFqaGkMagdKGIoFWaRFxSFaeKKVzboR7aUClA5pwHNFzJiEcVEasYqFhzTTAYelMp56U0Dmr6AaOjqzalAF65rsDGfLY4xg1x&#43;lf8hGEZxzXYr85OOAe1eXjn76JkUbhN0DHA4B61ggV019/wAesnAwBXMg8UsO9DGYUCigV0Ahwp1NFPFIiQ0imkVJRilcSIsUuKftFBHPFO4xoFPA9qSnUmSxQKUigGjIpAJTWNKTUTGmkaQI5G61WkNTSGq8ldEEdcWRM3NKOaYetSR9a2toW5EqrTtlPjXIqXy8ipM3IqMlQt8pq88fFVpEq4jjIh3U9WqJgQachNDRTtYtxmrK9KqxVbjrmmYSHinUAUYrAwDNPBpuDSikMkzR1pKWkxgTTTS0hoQDDRS4oxxTEOXrV2BM4NU4hlq1II/lrejG7KQ4qMdKaRipWGBURrZgNprcUp4NMJoAKUcCkoY00AuaM1GTRmquMeXqB3NPZuKhY5rNsTYUoNNFOwTREFqLilC06lArnEmM200rUuBRig0uQFeaULUm2lCVSIZGE5p4SpAtLtqiRoWlIFOqNjTuICcU0nikJphapYx/Wk3ACm7qjd6mw0Od6qStmnO9V2bJq4mkY3GYLGpFiLdqdGmcYFaVtaFiKHNI7KVIqLbE9BVmKyJ6itiDTif4avJpxHYVk6p0&#43;zOaezx0FV3tq6ubTzgnFUJbPHG0fWp9qZypnMSwlagIwa3Lm3xnisqSMgmtozucc4WIaKdtOaXZVXMrMbRSlSKSmTYXHegHNAoPBqQFpMUm6k3GmkIXOKaWppamFqtIpIUtUZNIWppNaJFpCls05TUVOWho0SsTA0tMBwKdU2KuOHWnAUgFOxzUszYYqN&#43;tTEcVC4pRAiNIBTmFJjmtb6AXdL41CE&#43;9drDsAJORxx9a4vSsf2jFuPFdfEx2v9eK8vH6yRMiK9/485VA5xXL54rp7xyttK3XC81ywPFPCr3WZNXHg96cDUeadmuloRIKeKYpp4rNkSFApcUgpwpEibfekI5p9MoASkzQTTC3NUOxJmk3UzdTd1FgHFqaTSE0YzVJFx3I2GagZatbTSGLNaRkjbmKYjyalSPnpVgQ4qRIq1Uric7CRR1ZEfFIqYqZTxRchyK7x8VWeLNaJGaiaPnpTUhqTMt4eelIsPPStB4qaIvam3cvnIEi46VajTFKsdTKuK5pq5D1E20bafijbWfIQyPFLgUpGKSjlsO4tFJThWbEJRtp2KUClcQzbRtqTbT1jzRcBIU&#43;YHFaUfypVeFABUzN2rupRtG5aFY5qM07NMJxQ3qAxqjzT2NQs2DSuCH7gKZuyaZuzSVaAkzRmmZpM1LAV2qLPNK5po5NIB4qRcUwClJwKtItOxL3pabmlBrlsZC0uKSlFUkNChaULSg0uaoTDGBTWNBNMZqAEJpjNQWqNjzSYhGamk80McVEz4oGkPZsVC7013qItmmolJDnbNIi7mpBzVqGNSRVtWR1U43J7aHJroLCBflrMtY1GK2LQ7WFcFVu56EI2Rv21sm0VZFsGbAFV7abIxir8Eihsk1mr2LI5LDMZ4rHu7Lbniuo80FccGs68QPk4qZuwcpxd3a/KeKxZrbLHNdjdW/B461jy2mW6UoVrGU6VznzbU0w4rbaz4ORVSWAg9K6I1rnPKlYy3j4quRg1oSpgGqEhwa6YO5zTiNzimlqaWphateUy5R26ml&#43;aYWpuatRLUR&#43;&#43;mk0wtmkzVpFKIpPNNNLS4p3KEpVpaBSYDweKelR1KgqHoFiQCnqKRRUoGKykwaGFaicVO/FQkURZPQgNA6U8ijFa3ET6f8ALfRH3rrl&#43;U9c5NclZMEvIiRnmusDDrjFefjNWhMZdkNaT/7tcmDxXWTxmSzlHfaa5HkHHpVYSzTIsSg08GogaeDXQ0KSJlNPzUINOzWbRk0Sg0oNR5pQTU2JJqbSUUgGmoz1qQimEVSKG0Uu2nKtVuUkNC5p4SnqlSBKfKxkYjpwQVJtpcVaiK5GEFOC4p3ApCRVpBcM4ppamk0xjTESh6Xfmq&#43;6jdQhljg0oUVAHp4emBMqinAVEHqQNSaC47FGKM0uaOVAMK01hUh5puKlxQWI8UtSrFuPNTpbZ6CspQBFUU9Rmra2pPani329qh0pBYrLHmplTFP2YozzitKdHqxpCg4FBNMzTWauh7DHFsGo3ems1MZjWTEDPUZbNBNNpdRhk0opKU1ogAmkJxTSaTrQwYhbJpyim45p44WhBcfnApNrN2ojTc2WYKo65qKS6AmbY2UUdRUTqdEaRg5Im3UoNQh808HNS0ZEoNSKahBp2&#43;hILEuaXIqHfSGSqsFiRmFRsRTDJUTSGlYLEhYU0moi9IXosFhXaq7vSu1QO9CRaiBemhs1GzUqnmtC7WJlPNWoZNpGaqrUq9aGdFN2Ni2k5HNbFtk4rnbMnd1rorM8CuSpTudkZ6HQ2Q4q4yelU7I9PpWltyOalQsXF3GIzDFOfDrzThHkUrQkjrWNWJqjOltt&#43;aotYHd0roYbYt1qVrQYJxXHKLuUcpNaBVIx2rHuoQua629iAzj0rmb9cAn3rSmncxmlY5u6O01lTN8xrRvjg1kO2TXrUY6Hm1dwLUwk0E02uhRM7CEmk5p22jbVbDEAzS7RSgUuKLgIAKXFLiikA3FGKcRxQBRcEKq1YRKiUVaiTOKxmzVIcseKdjFTiH5c1G6ECsOYUkV5DzUZp79ajNaxM7DTQBQaB0rWJDJIeJ48etdaBhVyefSuQQ4dSOua65OiZPUDJrixq2EPkyIHUjAYGuNbhyPeuylG6GTnIAOK4tjhj9anB9QQ4U8VGDTg1dlhNEwpc01TkU4VmzFrUeDSg0gHNOArNiHg04CmgcU9TUskQijbTzRwKVxke3mnqtKSKAa1pq5aHqAKdwKjzS7q6LAPyKQkUzNGaBATzTWp2KQigCM0w1KVppSgCKipClJsoGMFPFGynBKAFFPBpmMU/FMLDwxp4NRilDUhEmacg3Gos1YhQmmUTxxiraKo7VEkfy08DFJICcMo7VHJIo7UxmNQOxzzWlyhXfJ44qLPNBPNJmlcQM1RlqGbioy1K4x2aSm5ozWckICKYaUtSZzSSAAeKKKbmrAQ0Gg02gBwOaeq5BY8KKLeEzSBVpbyWNImjX&#43;Hgn1NKT5Sox5mZV5dGWTYhO0enelQYQA/jUIjIO6pFYFal7aHVpaxdDU8Niq4bFKHq7HG0Wd9G/ioN1Lu4pqIWJS9NLnFR7qaTVWGkKZDimmQmmEmmk1LHYk3c0FuKjFITQg5RHaoWOakaoj1oLSG96UUAZNSAcUh2BWxUqyYqMCnYxTGm0adk4LV01gQ2Oa5G1faa6CxudhXGKymjppy7na2MAJzWt9mAAzWBp98BjJrejuQ4HNc7Z2RJUhFTpbBscU2J8kcVfiPFZt3NLkSWo9MUPCAh4q4OlQykAGs3G4rnN6hDgE47Vx&#43;qLjdj1rttRcbWGR0ri9VdTux61cIakSehxt/1NZbDJNbF6u4ms1o8GvQpqyPPqblfbSham20pWtTG5BspdtS7aNtILke2k21MVpNtAyMLSFalximHrQA3GKARQabnFIqJMoyavQjpWaj81ft3FZzRtEvoMiiSMFaYHFP38VzOLG0Z067SarE81ducHJqketbw2MJDTRmg0ma1RAqsVYH0NdjCxMcb5B3KOK4wmursX/0aMjuoFcmLXupiZd3dcjseK4uf5Z3U9c12J5OK4&#43;7/wCPuUdOazwW7BEWRT1OKizTg1d7Q2WFbmplaqoNSq1ZyRk4lgNRuqHdQXrPlJUCYvR5hquZKbvo5A5C35hpfMqp5lHm80cg1At76cH5qmJKeH96uMbDaZaL0m6oQ2acK0IZNupymoxUi9aYDxShc0gp44oEN20uynjHerEcStUuSiNK5U8ontQYSOxrS&#43;zgd6eLfIpp3FYyfL9RSba1Gtc9qhe0PYUxlArSVZe3Ze1RtC3pQBFS5p3kue1SpasecUcoDIlJYcVpW8XApsNsQBxVoDYOlaKNhpDioAphpGbJphahoYEA/WoytKWphb3qGA1xiomNOd81ETmkxDSeabSkd6aTQPoLQabuozUsQpGaTApCaBU2AQ0maG60laIYdackZdwozzSxq0j7FGSa0kgS0haWRugyaWwFe5lTTbEsOZW45rnzM07Dd0Bz9afqF215cMw&#43;4DhaZDGAMmpfc2irEjZI9BUZODxUjnPA6URoC3NQW7ik0oNI1ArZGLRJmnUwHFLuqrisOHWlI4qPfTTJSbGkKaYetIZKZv8Aep1KSJKax4qMv701pKWpVhxNMJppemb8mqsOxMp5p4qBWqQNSehViUU6mBqXNNCaJY32mtG1udpHNZGealjlKkVMlc0g7HYWV8QRzXR2N9nvXn9tc4xzW7Y32MEnFcdSLR3Rkj0W0uFIFasUibc54rh7TVCqjk1oDV22/eOKx1KckdPLcxxjrWXdagoBwawptWJz8x/Osu41RiT8xrSKuS5I0L&#43;/BDc9q5e9m355706e&#43;L5yT0rKnn3d66IwMJ1UVrjBJqg681akbNVzzXQtEck5Ee2jbUm2jbQY3I9lJtqXFIRRcq5HijbT6KLhciYYqE9aneoGoGmNNMNKWptUkXFCZwaswSgd6r4oXIoaRoaqyD1p3mcdaoJIw61J5tYyiO5LK4IqqTTnfNMJpxVjOWoGkopaszsNNdRpxBtY8&#43;grmCOK6bT1xaRHOeOa5cX8CDoXyMsAD&#43;NcjqQA1CUCusAyM9BXL6qANRcAdhmscG7TaEmUaBTsUYr0ihQcU7dimUUuUlok300yU09KbRygkOLk03caKSnZDsLvpQxzTaeiUnYdhykmplHFCR&#43;1WVjAHSs&#43;ZDdN2GIDUq0hGKTdiqWpjKm0SgU9RUIkqVXGKqxHKyVadUYYGnBuKQrMVmxzUkVwBUDc8U0DFQ4pjRoi5B71Mk/TmsoMamjkI6mhLlEzXWUGnhkbrWak3vUonIquYC6YkbuKabYHpiq6z&#43;9Srce9MLDhbDvipVhVajEue9O31aaGOIA6VG/FO35qORqOYExjGoyaRn5qMvmlcY4moyaQvSE0mIGGaj5zTyfemmoAa3SoT1qRjUeMtTGFJzmnYpKBMTBpelFOPSpe4hhoAJOBQTitPTbDefOlxsHrWiVyiSxs1gQyycEc89hWNrOpee7W8B/dDqfWp9a1jfm3tjhcYZh3rnxyc0Np7bGkUPRckGrQXgCoUHSpwCBzWMmaiFMninKNpzSqeaZI/wDDUasYN1pKU0010EOApNNL00tTGagOQcXqNpMUwtTTk0yuVilyaaZDTTmmHNUkgsSeZTS1MpDVWQWH7jSbqbmigZIGp6vUNKDik0O5aVqfu4qqGp4ap5SXcmzTlOKiDcU4NRYm7LkUmO9aUE5GMGsVGOaspMV71lOBrGo0dJDdkAc1YF8QOv61ziXTAdak&#43;1GsfZFe2NqW9JH3qoy3ee/61Re5JHWoGkLd60jTM51WWJLknv8ArUDSk1HRxWySRi5NgSTSYp2KTihkthRRmkzmiwwpDzRRSYxppD0p2KMUiWRNVd6suKrutO5cSA0ooYGlWqNkxQKcFpyjJqULiochkWMUhNSmomNJB1Gk0m6mk03NaWESbqUNUW6k3UcorE&#43;7NdFpEm6029cGuYDVvaE26NwO1c2Kj&#43;7uTJWRst0rnNWGL9ie6iukPaue1hSL7I5G0Vy4R/vDOJnUUoFLXpobG9qSnGm0xpBSEZozQOaLlcrEowTTxGWqZITSckilFshSPJ6Vaihz2qaOCrKR7awlNG0KfciSIU5hipjgVDI6gGsle5vy6EDtjNV2lFJNKMmqbSEniumCOWaVy6JfepUlzWYrnNWI5Oa0aMlA0kaplPaqcT5q0g71mxShoP60YqQJxS7DSucwwClApwQ04LTugEGRT8mgCngDvScewWGgmnhyKXaKTbTVw2JFlNPE&#43;KrEEUm4jrRcRb872pDISKq76cHpajHsc0xmxTgc01hmmFyMtRmkIoHWmMdmkakJxSFs0gE6mkIxS0Gl1GMzRnNAUk4AJNWIrC5mI2xkD1p2fQTK1SxQSTsAiEj1FakGkIg3Ttk&#43;lWjNHbp5cQAHt1p8nVhYpR6dHBh5Tucfw1Q1jWGKm2g2qOhK&#43;lLqepiFTHG2ZG/SudJyTk9ec0XvotjSKsIx4p0a5poGTVhV2oDUydjWKHRjvTyc0wfdpyjJrJlMdjC5NRDDNk9BTpT/AAg1G7iNMVUUIvNAnPWmGBPU1O3emHpWiNGVjAnvTDAme9WDUZ60wIDbp7/nR9nTHepWpe1UhkJto/f86Y1sg9fzqwaY3WmiWVTAg9aYYl96nboKjPWrER&#43;UvvSiJc96fQOtAhvkr70vkr70&#43;loGRiFfepBCvvR3qQVI2IIV9TThCuOppR0p46UGYqQL6mphCo9aRKkqGNCrCvvTvJX3pydKd3qTNkZhXHemeUue9TnpTO9NGYnkr703yl9TU1NpobGeSvqaPIX3p4paYEXkJ70ogT3qT1pRSAh8hfek8hPepqSoZaI/JX3pRAnvT6cKRJXeBPeoGgTJ61beoG6mmiolVoEz3pogQHvU7dab/FVmiFjgT3p/lL706PpTqyluNEJhX3qF4Vz3q0agfqKqAysYVx1NMMS&#43;9T9qYetbgRmJR60CFfenmgdKYEflr71u&#43;H0AMoBPasXvW5oH3pfwrmxX8Nky2N8xKB35rC1yFPPQ8/droD0FYWuf65P92vPwv8UzRkCBc9TSiBc9TTx1pR1r1UMhaFc9TTfJX1NTN1ptDKRF5Ce9TJbR&#43;/50lTp0qWWh8VtH71aW2jz0NRxVZXrWUjpglYUQIB3oMSgd6k7UjdKyLK8kYHrVGZR6mtCSqE1XDcVR6FB4wSc5qHyV96st1NRV1pHK9xghXPep4oE46/nTB1qxF2pyHEsQ26cdfzrRht0IGc/nVOHtWjD0FYsc/hJBAmO9OECE9/zpw6U9etQecyPyEHrQbdPepD1pfSmIgMCDpmlWJT61I1C1aHcQQrnvS&#43;SuO9OH3qXtQUQmFfemGBPf86nph6UmSQmFPek8lfepTSUFCCJfeniFcd6UU8dKBMrtAme9MaFR0zU7daY/SjoCIDGvvR5S&#43;9OpaooaIV96s2tlFM3z7vzqIVdsPvVKEjWttMtY0DCPJx3NPmAQAKMD2qzF/qh9Kr3Hatto6AzPlHB5NZuoEw2rSIfm6ZNacnQ1l6r/AMeLVhVbsNHNNEJGLsWLHqc0n2dPU1IOlLVGiCK2jJGc/nVh7dAABmmw/eFTydqyluaQ2IPJUDvSiJR60/tS1LKK3kqWOc1WliUuck1dH3jVWX/WH6VrT3Jlsf/Z" 
+    data-srcset="/~linchao/test/hugonote/demo_boundle/images/pic1_hua70eca40b85d07a93091890349b1f291_28354_320x0_resize_q75_box.jpg 320w, /~linchao/test/hugonote/demo_boundle/images/pic1_hua70eca40b85d07a93091890349b1f291_28354_800x0_resize_q75_box.jpg 800w, /~linchao/test/hugonote/demo_boundle/images/pic1_hua70eca40b85d07a93091890349b1f291_28354_1300x0_resize_q75_box.jpg 1300w"
+     alt="Description of the image" 
+  >
+  
+  <figcaption>Description of the image</figcaption>
+  
+</figure>
+
+</p>
+
+<h2 id="headless-resource">headless resource</h2>
+
+<p>某個子目錄裡面的<code>index.md</code>(🔑不是<code>_index.md</code>)，則此時這個子目錄的任何文章,都不會出現在sidebar。</p>
+
+<pre><code class="language-yml">----
+title:
+headless: true
+---
+</code></pre>
+
+<div class="notices">
+    <div class= tip>
+        說如果headless這個資料夾不會顯示在sitebar,必須是檔案<code>index.md</code>。如果是<code>_index.md</code>,則仍然顯示其中的md檔案。
+以本文為例,就是在前版上加上<code>headless=true</code>
+也許我可以記成: headless 的 page boundle。口語化一點『無頭的頁面綁定』
+    </div>
+</div>
+
+<p>❓ 奇怪了咧,我發現如果把它變成一般的<code>_index.md</code>下面的短碼仍然可以用?</p>
+
+<pre><code class="language-html">{{ $pattern := default &quot;\\.(gif|jpg|jpeg|tiff|png|bmp)&quot; (.Get &quot;pattern&quot;) }}
+{{ with .Site.GetPage &quot;section&quot; &quot;report&quot; }} &lt;!-- 只拿content/report/子目錄下的資源黨--&gt;
+  {{ $resources := .Resources.ByType &quot;image&quot;}}
+  {{ range $resources }}
+    {{ with . }}
+      &lt;!--&lt;img style=&quot;max-width: 100%;&quot; src=&quot;{{ .RelPermalink }}&quot;&gt;--&gt;
+        {{- $isimg := lower .Name | findRE $pattern }}
+        {{- if $isimg  }}
+		  {{$ext := path.Ext .Name}}
+		  &lt;img id={{.Name}} src=&quot;data:image/{{$ext}};base64,{{ .Content | base64Encode }}&quot; &gt; &lt;br /&gt;
+        {{- end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+</code></pre>
+
+<p><code>{{&lt; reportimg pattern=&quot;xx_[1|2].png&quot; &gt;}}</code></p>
+
+
+
+<h2 id="綁定頁的資源測試-短碼-boundleimgs-html">綁定頁的資源測試,短碼<code>boundleimgs.html</code></h2>
+
+<p>{{&lt; boundleimgs &gt;}}
+結果是拿不到任何影像,反而不是在boundle page 中用的。
+
+
+
+
+
+
+
+
+ </p>
+
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="/~linchao/test/css/quicknote.css?1629552236" rel="stylesheet">
+<script src="/~linchao/test/js/quicknote.js?1629552236"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="/~linchao/test/hugonote/%E5%9C%A8markdown%E4%B8%AD%E9%A1%AF%E7%A4%BA%E7%9F%AD%E7%A2%BC.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=在markdown&#32;中顯示短碼>前</a>
+                   
+          
+            <a href="/~linchao/test/hugonote/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=影像資源測試2>後</a>            
+          
+          
+
+  
+<script src="/~linchao/test/js/packhtml.js?1629552236"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="/~linchao/test/js/featherlight.min.js?1629552236"></script>
+  <script src="/~linchao/test/js/featherlight.gallery.min.js?1629552236"></script>
+  <link href="/~linchao/test/css/featherlight.min.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/featherlight.gallery.min.css?1629552236" rel="stylesheet">
+
+  <script src="/~linchao/test/js/highlight.pack.js?1629552236"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="/~linchao/test/css/demoContainer.css?1629552236" rel="stylesheet"><link href="/~linchao/test/css/rmd.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/mystyle.css?1629552236" rel="stylesheet">    
+  <script src='/~linchao/test/js/variant.js?1629552236'></script>
+
+<script>
+  var idxfile = "\/~linchao\/test/index.json"
+</script>
+<script src='/~linchao/test/js/localsearch.js?1629552236'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+    
+<script>
+   
+
+</script> 
+
+<script>
+ 
+tocbot.init({
+
+tocSelector: '.toa',
+
+
+contentSelector: '#body-inner',
+
+headingSelector: '.toa-item', 
+
+ignoreSelector: '.js-toc-ignore',
+
+hasInnerContainers: true,
+
+linkClass: 'toa-item',
+
+extraLinkClasses: '',
+
+
+activeLinkClass: '',
+
+listClass: '',
+
+extraListClasses: '',
+
+isCollapsedClass: 'is-collapsed',
+
+
+collapsibleClass: 'is-collapsible',
+
+listItemClass: '',
+
+
+
+
+
+collapseDepth: 0,
+
+scrollSmooth: true,
+
+scrollSmoothDuration: 420,
+
+scrollEndCallback: function(e) {},
+
+headingsOffset: 1,
+
+
+throttleTimeout: 50,
+
+positionFixedSelector: null,
+
+
+positionFixedClass: 'is-position-fixed',
+
+
+
+fixedSidebarOffset: 'auto',
+
+
+includeHtml: false,
+
+
+orderedList: false,
+
+scrollContainer: null,
+
+skipRendering: false,
+
+
+
+
+headingLabelCallback: false,
+
+ignoreHiddenElements: false,
+
+
+
+
+
+headingObjectCallback: null,
+
+
+
+onClick: false
+});
+
+
+</script> 
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector(".active-category .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

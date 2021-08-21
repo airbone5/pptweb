@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/categories/hugo.html</link>
+    <description>Recent content in hugo on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo toml 的設定</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugo_toml.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugo_toml.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>partial 的用法(列出所有章節)</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/partial_walk.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/partial_walk.html</guid>
+      <description>官方
+ partial 函數 只有2個參數  在partial 中, $ 只是在partial範圍,因此 .Pages==$.Pages。  可以傳回值。  inline partial 在模板中可以定義 inline partials(📌此時變數都是全局的,因為是行內)。例如:
+Value: {{ partial &amp;quot;my-inline-partial&amp;quot; . }} {{ define &amp;quot;partials/my-inline-partial&amp;quot; }} {{ $value := 32 }} {{ return $value }} {{ end }}  ❓ 上面的定義,為甚麼有子目錄?💡官網上好像有提到partial的位置只有兩個地方,其中一個是partials。
+Example GetFeatured
+{{/* layouts/partials/GetFeatured.html */}} {{ return first . (where site.RegularPages &amp;quot;Params.featured&amp;quot; true) }} {{/* layouts/index.html */}} {{ range partial &amp;quot;GetFeatured.html&amp;quot; 5 }} [...] {{ end }}  應用 列出所有網頁  實驗這個  材料  Home Page(index.</description>
+    </item>
+    
+    <item>
+      <title>relativeurls in config.html</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/relativeurl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/relativeurl.html</guid>
+      <description>相關發現 好像relativeurls=true,只能在baseURL=&amp;quot;/&amp;quot;,例如磁碟結構的index.html瀏覽,(也)就這種(而且在這種情況下,relativeurls也不能是🚫`false&#39;)。
+以baseURL=http://site/myblog/為例: - 如果relativeurls=true，則 css/jquery.min.css 會變成./myblog/css/jquery.min.css&#39;，但是這不存在,因為index.html所在地沒有子目錄myblog/。 - 如果relativeurls=false，則css/jquery.min.css會變成/myblog/css/jquery.min.css&#39;，但是這不存在,因為根目錄(不是index.html所在子目錄)沒有子目錄/myblog/。
+但是如果是伺服器,那麼第二個(false✔)沒問題,但是true❌有問題,因為要在index.html所在子目錄上找目錄myblog。所以是不是上句話的結論?relativeurls=true,只能在baseURL=&amp;quot;/&amp;quot; 。
+relURL and relativeurls relURL returns a path relative to the protocol+host portion of the baseURL specified in config.toml.
+Example 1
+baseURL = &amp;quot;https://www.example.org/&amp;quot;
+The baseURL protocol+host is https://www.example.org
+The baseURL path is /
+{{&amp;lt; relurl &amp;quot;quez.html&amp;quot; &amp;gt;}} --&amp;gt; /quez.html {{&amp;lt; relurl &amp;quot;/quez.html&amp;quot; &amp;gt;}} --&amp;gt; /quez.html {{&amp;lt; relurl &amp;quot;../quez.html&amp;quot; &amp;gt;}} --&amp;gt; /quez.html {{&amp;lt; relurl &amp;quot;./quez.html&amp;quot; &amp;gt;}} --&amp;gt; /quez.html  Example 2</description>
+    </item>
+    
+    <item>
+      <title>分塊localedit.html的歷史紀錄</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6%E9%A0%81localedit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6%E9%A0%81localedit.html</guid>
+      <description>&lt;p&gt;分塊localedit.html的歷史紀錄和註解&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>列出資料夾中所有檔案2</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E5%88%97%E5%87%BA%E8%B3%87%E6%96%99%E5%A4%BE%E4%B8%AD%E6%89%80%E6%9C%89%E6%AA%94%E6%A1%882.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E5%88%97%E5%87%BA%E8%B3%87%E6%96%99%E5%A4%BE%E4%B8%AD%E6%89%80%E6%9C%89%E6%AA%94%E6%A1%882.html</guid>
+      <description> 測試和結果紀錄 tags 短碼:list2tags.html
+&amp;lt;ul class=&amp;quot;most-popular-tags&amp;quot;&amp;gt; {{ $t := .Site.GetPage &amp;quot;/tags&amp;quot; }} {{ range first 2 $t.Data.Terms.ByCount }} &amp;lt;li&amp;gt;{{ . }}&amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt;  執行指令範例:{{&amp;lt; list2tags &amp;gt;}}
+執行結果{page-boundle [WeightedPage(0,&amp;quot;影像資源測試1&amp;quot;)]} {resource [WeightedPage(0,&amp;quot;影像資源測試1&amp;quot;)]}   </description>
+    </item>
+    
+    <item>
+      <title>搜尋和註解相關檔案</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E6%90%9C%E5%B0%8B%E7%9A%84%E9%81%8B%E4%BD%9C.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E6%90%9C%E5%B0%8B%E7%9A%84%E9%81%8B%E4%BD%9C.html</guid>
+      <description>HUGO產生索引的大概流程  設定
+ config.tom中的內容是這樣:
+[outputs] 原來的 home = [ &amp;quot;HTML&amp;quot;, &amp;quot;RSS&amp;quot;, &amp;quot;JSON&amp;quot;]   上面的意思是說,.Page.Kind的類型如果是HOME就會產生3個輸出,分別對應HTML,RSS,JSON。
+ 流程 產生網站(例如在docs目錄中產生)的時候,會根據layout\index.json(這是一個短碼)用來在根目錄(docs)中產生索引index.json。這個產生的檔案內容大概是這樣
+{ &amp;quot;uri&amp;quot;: &amp;quot;/tags/gitea.html&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;gitea&amp;quot;, &amp;quot;tags&amp;quot;: [], &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;文本內容&amp;quot; },   應該是每一個檔案,就有一個{}。  然後使用者搜尋的時候,會利用lunr.js來搜尋。
+  參考 lunr.js的應用 也是lurn.js的搜尋
+config.toml中的設定
+outputFormats: SearchIndex: baseName: search mediaType: application/json outputs: home: - HTML - RSS - SearchIndex  比較yaml格式:
+outputFormats: SearchIndex: baseName: search mediaType: application/json outputs: home: - HTML - RSS - SearchIndex  紀錄 -lunr 的源碼</description>
+    </item>
+    
+    <item>
+      <title>詞條列表實驗</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E5%88%97%E8%A1%A8taxonomy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E5%88%97%E8%A1%A8taxonomy.html</guid>
+      <description>&lt;p&gt;taxonomy 的列表,要怎麼處理&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>讀取json</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E8%AE%80%E5%8F%96json.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/code/%E8%AE%80%E5%8F%96json.html</guid>
+      <description> 測試和結果紀錄 實驗1  資料放在Site/Data/三行.toml, 內容name = &amp;quot;張三root&amp;quot; github = &amp;quot;bep&amp;quot; roles = [&amp;quot;admin&amp;quot;,&amp;quot;user&amp;quot;]  
+ 測試程式碼
+{{ range $.Site.Data.三行 }} {{ . }}&amp;lt;br&amp;gt; {{ end }}  執行結果bep張三root[admin user]  </description>
+    </item>
+    
+  </channel>
+</rss>

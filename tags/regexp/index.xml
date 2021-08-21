@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regexp on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/tags/regexp.html</link>
+    <description>Recent content in regexp on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/regexp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>練習找中文</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%89%BE%E4%B8%AD%E6%96%87.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E6%89%BE%E4%B8%AD%E6%96%87.html</guid>
+      <description>各種中文匹配 中文,英文範圍: ^[\u4e00-\u9fa5_a-zA-Z0-9]+$ console.log( &amp;quot;貓的中文很爛,連喵都不標準&amp;quot; .split(&amp;quot;&amp;quot;) .filter(char =&amp;gt; /\p{Script=Han}/u.test(char)) .join(&amp;quot;&amp;quot;) );  value = &amp;quot;HUGO 變數 執行碼: {{&amp;amp;lt; HugoVarTest &amp;amp;gt;}}\n\r執行結果live\r.Page.CurrentSection: Page(/pages/_index.md) used, which then provides data to the partial {{ partial &amp;amp;quot;partial.html&amp;amp;quot; . }}.\rA few issues come up then.\r.Name is not the name of the resource file, but of the calling index.md file\r.Resources.GetMatch &amp;amp;quot;*&amp;amp;quot; doesn&#39;t return a result\r$.Site.Resources or $.Resources d {{ range sort .Resources }}\r{{ $.Scratch.Set &amp;amp;quot;data&amp;amp;quot; . }}\r{{ partial &amp;amp;quot;fragments/test.</description>
+    </item>
+    
+  </channel>
+</rss>

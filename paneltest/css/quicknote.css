@@ -1,0 +1,20 @@
+.box{
+	background: #fff6b6 ;
+	width: 25%;
+	height: 100px;
+	padding-top: 20px;
+	float:left;
+	margin: 1%;
+	-webkit-font-smoothing: antialiased;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.5);
+	-moz-box-shadow: 0px 5px 15px rgba(0,0,0,.5);
+}
+.qnote-item {
+	background: #fff6b6 ;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.5);
+    display:inline-block;
+}
+ul.qnote-list li{
+	list-style-type:none;
+}

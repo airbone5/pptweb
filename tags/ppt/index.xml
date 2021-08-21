@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ppt on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/tags/ppt.html</link>
+    <description>Recent content in ppt on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/ppt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何內嵌ppt</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/powerpoint.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/powerpoint.html</guid>
+      <description> 小徒刑 why not thing 
+內簽的powerpoint &amp;lt;iframe src=&#39;https://view.officeapps.live.com/op/embed.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39; width=&amp;quot;402&amp;quot; height=&amp;quot;327&amp;quot; frameborder=&#39;0&#39;&amp;gt; office &amp;lt;/iframe&amp;gt;   &amp;lt;iframe src=&#39;https://view.officeapps.live.com/op/view.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39; width=&amp;quot;402&amp;quot; height=&amp;quot;327&amp;quot; frameborder=&#39;0&#39;&amp;gt; office &amp;lt;/iframe&amp;gt;  
+&amp;lt;a href=&#39;https://view.officeapps.live.com/op/embed.aspx?src=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39;&amp;gt;what&amp;lt;/a&amp;gt;  
+google
+&amp;lt;iframe src=&#39;https://docs.google.com/viewer?url=http://www2.nkust.edu.tw/~linchao/test/drone-log.pptx&#39;&amp;gt;width=&#39;100%&#39; height=&#39;600px&#39; frameborder=&#39;0&#39;&amp;gt; google &amp;lt;/iframe&amp;gt;  </description>
+    </item>
+    
+  </channel>
+</rss>

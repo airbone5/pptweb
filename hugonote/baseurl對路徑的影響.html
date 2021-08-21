@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html><head>
+  <title>baseURL的路徑測試</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='/~linchao/test/images/favicon.ico'/>
+      
+    <script src="/~linchao/test/js/jquery-3.3.1.min.js?1629552236"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='/~linchao/test/js/tocbot.min.js'></script>
+    <link href='/~linchao/test/css/tocbot.css' rel="stylesheet">
+
+    <script src='/~linchao/test/js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="/~linchao/test/css/fontawesome-all.min.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/atom-one-dark-reasonable.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/syntax.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme-mine.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme.css?1629552236" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://www2.nkust.edu.tw/~linchao/test/scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='/~linchao/test/' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a>
+<ul>
+<li><a href="#目的">目的</a></li>
+<li><a href="#材料和程式碼">材料和程式碼</a></li>
+</ul></li>
+<li><a href="#實驗記錄">實驗記錄</a>
+<ul>
+<li><a href="#如果-baseurl-localhost-1313">如果 baseURL = &quot;localhost:1313/&quot;</a></li>
+<li><a href="#如果-baseurl">如果 baseURL = &quot;/&quot;</a></li>
+<li><a href="#如果-baseurl-localhost-1313-pages">如果 baseURL = &quot;localhost:1313//pages/&quot;</a></li>
+<li><a href="#問題和小結">問題和小結</a></li>
+</ul></li>
+<li><a href="#新測試">新測試</a></li>
+<li><a href="#執行區">執行區</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改July 6, 2021'>baseURL的路徑測試</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="/~linchao/test/tags/config.html">
+    <i class="fas fa-tag"></i>config
+</a><a class="btn btn-outline-dark p-0" style="font-size:12px" href="/~linchao/test/tags/hugo.html">
+    <i class="fas fa-tag"></i>hugo
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/token/reuri.html" data-bs-toggle="tooltip" title="重導用的URI">重導用的URI</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="/~linchao/test/r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/~linchao/test/r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="http://www2.nkust.edu.tw/~linchao/test/categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/token%E5%AF%A6%E9%A9%97.html"> <i class="far fa-clock" ></i>t2 token實驗[2021-08-21 PM 06:06]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 02:31]</a></li><li><a href="http://www2.nkust.edu.tw/~linchao/test/basic/token/%E6%8B%BFtoken.html"> <i class="far fa-clock" ></i>拿token[2021-08-21 PM 12:25]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    
+
+<h2 id="背景">背景</h2>
+
+<h3 id="目的">目的</h3>
+
+<p>看看config.toml 中的baseURL 怎樣影響文章的路徑。</p>
+
+<h3 id="材料和程式碼">材料和程式碼</h3>
+
+<pre><code>baseURL: {{ .Site.BaseURL}} 
+{{ $pages := (where (where .Site.Pages &quot;Type&quot; &quot;pages&quot;) &quot;IsPage&quot; true) }}
+{{ range first 5 $pages }}
+  &lt;ul&gt;
+  &lt;li&gt;{{ .Title }} &lt;/li&gt;
+    &lt;ul&gt; 
+      &lt;li&gt;{{ .Permalink }}&lt;/li&gt;
+      &lt;li&gt;absURL: {{ .Permalink | absURL }}&lt;/li&gt;
+      &lt;li&gt;relURL: {{ .Permalink | relURL }}&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/ul&gt;
+{{ end }}
+</code></pre>
+
+<h2 id="實驗記錄">實驗記錄</h2>
+
+<p>根據不同的 baseURL (config.toml 中的設定)來看結果:</p>
+
+<p>📝.Site.BaseURL =&gt; 在config.toml 中設定(不知道有沒有分大小寫,但是在.Site.Params.* 的時候,*不分大小寫。</p>
+
+<h3 id="如果-baseurl-localhost-1313">如果 baseURL = &quot;localhost:1313/&quot;</h3>
+
+<pre><code>baseURL: //localhost:1313/
+my ppt(copy to spida)
+//localhost:1313/pages/powerpoint.html
+absURL: //localhost:1313/pages/powerpoint.html
+relURL: //localhost:1313/pages/powerpoint.html
+
+</code></pre>
+
+<h3 id="如果-baseurl">如果 baseURL = &quot;/&quot;</h3>
+
+<p>看起來和上面一樣阿</p>
+
+<pre><code>baseURL: //localhost:1313/
+my ppt(copy to spida)
+//localhost:1313/pages/powerpoint.html
+absURL: //localhost:1313/pages/powerpoint.html
+relURL: //localhost:1313/pages/powerpoint.html
+
+</code></pre>
+
+<h3 id="如果-baseurl-localhost-1313-pages">如果 baseURL = &quot;localhost:1313//pages/&quot;</h3>
+
+<pre><code>baseURL: //localhost:1313/
+my ppt(copy to spida)
+//localhost:1313/pages/powerpoint.html
+absURL: //localhost:1313/pages/powerpoint.html
+relURL: //localhost:1313/pages/powerpoint.html
+
+</code></pre>
+
+<h3 id="問題和小結">問題和小結</h3>
+
+<ul>
+<li>❓ baseurl 都沒反應我在config.toml的更改</li>
+<li><a href="https://gohugo.io/functions/absurl/">官網</a>上說,有http://..開頭的,absURL,relURL都不會有反應</li>
+</ul>
+
+<h2 id="新測試">新測試</h2>
+
+<p>測試的紀錄和結果</p>
+
+<pre><code>baseURL: //localhost:1313/
+{{ &quot;hello/xx.ppt&quot; | absURL}}  =&gt;  //localhost:1313/hello/xx.ppt
+{{ &quot;hello/xx.ppt&quot; | relURL}}  =&gt;  /hello/xx.ppt
+</code></pre>
+
+<ul>
+<li>❓ 一樣，不管baseURL怎樣改,都是上面最後2行的結果。(我猜原因是我執行的是Hugo server 指令,對本地端測試階段而言,都是<code>/</code>)
+
+<ul>
+<li>💡 除非這樣下指令:<code>hugo server --baseURL=&quot;http://mydomain.com&quot;</code></li>
+</ul></li>
+</ul>
+
+<h2 id="執行區">執行區</h2>
+
+<p>{{<em>&lt; seeRange &gt;</em>}}</p>
+
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="/~linchao/test/css/quicknote.css?1629552236" rel="stylesheet">
+<script src="/~linchao/test/js/quicknote.js?1629552236"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="/~linchao/test/hugonote/s403_mlogit.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=4.03b&#32;mlogit>前</a>
+                   
+          
+            <a href="/~linchao/test/hugonote/blogdown%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=blogdown&#32;的工作流程>後</a>            
+          
+          
+
+  
+<script src="/~linchao/test/js/packhtml.js?1629552236"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="/~linchao/test/js/featherlight.min.js?1629552236"></script>
+  <script src="/~linchao/test/js/featherlight.gallery.min.js?1629552236"></script>
+  <link href="/~linchao/test/css/featherlight.min.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/featherlight.gallery.min.css?1629552236" rel="stylesheet">
+
+  <script src="/~linchao/test/js/highlight.pack.js?1629552236"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="/~linchao/test/css/demoContainer.css?1629552236" rel="stylesheet"><link href="/~linchao/test/css/rmd.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/mystyle.css?1629552236" rel="stylesheet">    
+  <script src='/~linchao/test/js/variant.js?1629552236'></script>
+
+<script>
+  var idxfile = "\/~linchao\/test/index.json"
+</script>
+<script src='/~linchao/test/js/localsearch.js?1629552236'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector(".active-category .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+  <title>googledrive</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='/~linchao/test/images/favicon.ico'/>
+      
+    <script src="/~linchao/test/js/jquery-3.3.1.min.js?1629552236"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='/~linchao/test/js/tocbot.min.js'></script>
+    <link href='/~linchao/test/css/tocbot.css' rel="stylesheet">
+
+    <script src='/~linchao/test/js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="/~linchao/test/css/fontawesome-all.min.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/atom-one-dark-reasonable.css?1629552236" rel="stylesheet">
+    <link href="/~linchao/test/css/syntax.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme-mine.css?1629552236" rel="stylesheet">
+    
+    <link href="/~linchao/test/css/theme.css?1629552236" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://www2.nkust.edu.tw/~linchao/test/scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head>
+</head>
+<body>
+    
+
+    
+    <article class="article mx-2 mt-3" id="body-inner">
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Save to Drive Demo: Explicit Render</title>
+        <link rel="canonical" href="http://www.example.com">
+        <script>
+          window.___gcfg = {
+            parsetags: 'explicit'
+          };
+        </script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+      </head>
+      <body>
+        <a href="javascript:void(0)" id="render-link">Render the Save to Drive button</a>
+        <div id="savetodrive-div"></div>
+        <script>
+          function renderSaveToDrive() {
+            gapi.savetodrive.render('savetodrive-div', {
+              src: '//example.com/path/to/myfile.pdf',
+              filename: 'My Statement.pdf',
+              sitename: 'My Company Name'
+            });
+          }
+          document.getElementById('render-link').addEventListener('click', renderSaveToDrive);
+          function upload(e){
+            gapi.savetodrive.render('savetodrive-div', {
+              src: e.files[0],
+              filename: 'My Statement.pdf',
+              sitename: 'My Company Name'
+            });  
+            e.value=null;          
+          }
+        </script>
+ <input type="file" onchange="upload(this)">
+   
+
+      </body>
+    </html>
+    </article>
+    
+
+     
+
+    
+  <script src="/~linchao/test/js/featherlight.min.js?1629552236"></script>
+  <script src="/~linchao/test/js/featherlight.gallery.min.js?1629552236"></script>
+  <link href="/~linchao/test/css/featherlight.min.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/featherlight.gallery.min.css?1629552236" rel="stylesheet">
+
+  <script src="/~linchao/test/js/highlight.pack.js?1629552236"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="/~linchao/test/css/demoContainer.css?1629552236" rel="stylesheet"><link href="/~linchao/test/css/rmd.css?1629552236" rel="stylesheet">
+  <link href="/~linchao/test/css/mystyle.css?1629552236" rel="stylesheet">    
+  <script src='/~linchao/test/js/variant.js?1629552236'></script>
+
+<script>
+  var idxfile = "\/~linchao\/test/index.json"
+</script>
+<script src='/~linchao/test/js/localsearch.js?1629552236'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector(".active-category .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+
+
+</body>    
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>table on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/tags/table.html</link>
+    <description>Recent content in table on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/table/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.03b mlogit</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/s403_mlogit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/s403_mlogit.html</guid>
+      <description>產生資料 使用 s403_logit_1to6.Rmarkdown 的資料transfer/targetds
+跑mlogit 1237  . use ../transfer/targetds,replace . // 產生../tmp/targetds. //只留小兒科. keep if hsect==&amp;#34;PED&amp;#34;(89,478 observations deleted). //排除18以上. drop if age&amp;gt;18(685 observations deleted). //排除死亡,自動出院,自殺. drop if inlist(estatus, 1,2,3)(38 observations deleted). // . save ../tmp/targetds,replace file ../tmp/targetds.dta saved  主程式 //mlogit, rrr //eststo mlogit
+. use ../tmp/targetds,clear . . foreach period in y2018 y2019{ 2. hugocmd expand,hbody(title=&amp;quot;mlogit`period&#39;，利用transfer/target.ds&amp;quot;) 3.</description>
+    </item>
+    
+  </channel>
+</rss>

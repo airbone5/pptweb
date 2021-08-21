@@ -1,0 +1,23 @@
++++
+title = 如何註解HUGO程式碼
+date = 2017-11-02T12:49:00-04:00
+draft = false
++++
+
+如何註解HUGO程式碼
+## With special shortcode comment chars {#with-special-shortcode-comment-chars}
+
+```md
+{{</* figure src="/images/org-mode-unicorn-logo.png" title="Org Mode + Hugo Rock!" */>}}
+```
+
+
+## Without special shortcode comment chars {#without-special-shortcode-comment-chars}
+
+If you use shortcodes, **even in code blocks!**, Hugo will try to expand
+those. So below will not work.. i.e. in the Hugo generated HTML you
+will **not** see a **shortcode code snippet**.
+
+```md
+{{< figure src="/images/org-mode-unicorn-logo.png" title="Org Mode + Hugo Rock!" >}}
+```

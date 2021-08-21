@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcoce on 我的測試區</title>
+    <link>http://www2.nkust.edu.tw/~linchao/test/tags/shortcoce.html</link>
+    <description>Recent content in shortcoce on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/shortcoce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>測試stata</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E8%A8%BB%E8%A7%A3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E8%A8%BB%E8%A7%A3.html</guid>
+      <description>r common # 🏷檔案名稱所在子目錄要配合outposix   套表 sysuse auto eststo clear qui estpost tab foreign // 🏷檔案名稱所在子目錄要配合outposix  genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;./tmp/&amp;quot;) post(&amp;quot;.html&amp;quot;) autoinc return list esttab using &amp;quot;`r(fn)&#39;&amp;quot;, /// cells(b(fmt(%9.0g) label(個數)) pct(fmt(%9.1f) label(百分比) par) ) /// unstack nolines mtitle nonumbers nonote noobs  &amp;gt; . sysuse auto (1978 Automobile Data) . eststo clear . . qui estpost tab foreign . // 🏷檔案名稱所在子目錄要配合outposix  . genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>測試stata hugocmd</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</guid>
+      <description>套表 sysuse auto eststo clear qui estpost tab foreign hugocmd quote, harg(tip) genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;./tmp/&amp;quot;) post(&amp;quot;.html&amp;quot;) autoinc return list hugocmd quote,end esttab , /// cells(b(fmt(%9.0g) label(個數)) pct(fmt(%9.1f) label(百分比) par) ) /// unstack nolines mtitle nonumbers nonote noobs  &amp;gt; . sysuse auto (1978 Automobile Data) . eststo clear . . qui estpost tab foreign . hugocmd quote, harg(tip) 🏷. . genfilename &amp;#34;$outposix&amp;#34;, pre(&amp;#34;./tmp/&amp;#34;) post(&amp;#34;.html&amp;#34;) autoinc檔案名稱:./tmp/hugocmd_1.html. return listmacros:r(base) : &amp;#34;hugocmd_1&amp;#34;r(fn3) : &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>將文字檔顯示在文件內容</title>
+      <link>http://www2.nkust.edu.tw/~linchao/test/stata/test_short_code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/test_short_code.html</guid>
+      <description>背景  把空白行殺掉
+ 問題是,linux 的換行是\n 底下可以把文字檔顯示在文件中
+&amp;lt;pre&amp;gt; {{*&amp;lt; trim (readFile $filepath) &amp;quot;\r\n&amp;quot; | safeHTML &amp;gt;*}} &amp;lt;/pre&amp;gt;   利用hugo 提供的函數chomp
+ 範例
+&amp;lt;pre&amp;gt; {{*&amp;lt; chomp (readFile $filepath) | safeHTML &amp;gt;*}} &amp;lt;/pre&amp;gt;    讀文字檔的內容,並顯示在文件上 將另一個文字檔,顯示在本文中,並且將裡面的空白行殺掉。這裡用到2個檔案
+ test1.html (short code) 💣 test1.html 的內容已經改了做其他測試。 index.md (測試內容)   測試用輸入_index.md ,最後有4個空白行。
+--- title: Sata description: stata 和HUGO之間的互動測試 weight: 2 ---   短碼內容 test1.html
+ &amp;lt;pre&amp;gt; {{ trim (readFile $filepath) &amp;quot;\r\n&amp;quot; | safeHTML}} &amp;lt;/pre&amp;gt; by chomp &amp;lt;br/&amp;gt; &amp;lt;pre&amp;gt; {{ chomp (readFile $filepath) | safeHTML}} &amp;lt;/pre&amp;gt; by replaceRE &amp;lt;br/&amp;gt; &amp;lt;pre&amp;gt; {{ replaceRE &amp;quot;\\s*$&amp;quot; &amp;quot;&amp;quot; (readFile $filepath) | safeHTML}} &amp;lt;/pre&amp;gt; {{- print &amp;quot;&amp;quot; -}}  執行 &#39;{{}}&#39; 以後 的結果為</description>
+    </item>
+    
+  </channel>
+</rss>
