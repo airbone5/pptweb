@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html><head>
+  <title>整合gitea api</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='../images/favicon.ico'/>
+      
+    <script src="../js/jquery-3.3.1.min.js?1629561305"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='../js/tocbot.min.js'></script>
+    <link href='../css/tocbot.css' rel="stylesheet">
+
+    <script src='../js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="../css/fontawesome-all.min.css?1629561305" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1629561305" rel="stylesheet">
+    <link href="../css/syntax.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme-mine.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme.css?1629561305" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='../' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a>
+<ul>
+<li><a href="#問題">問題</a></li>
+<li><a href="#材料">材料</a></li>
+<li><a href="#疑難雜症紀錄">疑難雜症紀錄</a></li>
+<li><a href="#todo">todo</a></li>
+</ul></li>
+<li><a href="#指令紀錄">指令紀錄</a>
+<ul>
+<li><a href="#我去u18docker-註冊了一個token">我去u18docker 註冊了一個token</a></li>
+<li><a href="#也可以網路要求token">也可以網路要求token</a></li>
+</ul></li>
+<li><a href="#本地實驗">本地實驗:</a>
+<ul>
+<li><a href="#列出所有api">列出所有api</a></li>
+</ul></li>
+<li><a href="#測試指令">測試指令</a>
+<ul>
+<li><a href="#測試1">測試1</a></li>
+<li><a href="#分析">分析</a></li>
+<li><a href="#測試2">測試2</a></li>
+<li><a href="#測試3">測試3</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改August 21, 2021'>整合gitea api</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/todo.html">
+    <i class="fas fa-tag"></i>todo
+</a><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/%E7%9F%AD%E7%A2%BC.html">
+    <i class="fas fa-tag"></i>短碼
+</a><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/gitea.html">
+    <i class="fas fa-tag"></i>gitea
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="../nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="../basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="../basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/t2_token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/upload.html" data-bs-toggle="tooltip" title="upload">upload</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="../r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="../categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="../basic/token/upload.html"> <i class="far fa-clock" ></i>upload[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/t1_google_api.html"> <i class="far fa-clock" ></i>t1 google_api[2021-08-21 PM 11:21]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    
+
+<h2 id="背景">背景</h2>
+
+<h3 id="問題">問題</h3>
+
+<p>github 的短碼,可以列出檔案內容,例如<code>{{*&lt; github repo=&quot;airbone5/elderReport&quot; file=&quot;CombinData.md&quot; &gt;*}}</code>
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>test</span>
+    </div><div class="expand-content incode">&lt;p&gt;檔案CombinData.md:內容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &#34;處理變數 v3.2&#34;
+author: &#34;lin&#34;
+date: &#34;01 九月, 2020, 17:15&#34;
+header-includes:
+- \usepackage{xeCJK}
+- \setCJKmainfont{標楷體}
+output:
+  html_document:  
+    toc: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: false    
+    df_print: paged
+    highlight: tango 
+    keep_md: true   
+  word_document:
+    toc: yes
+  pdf_document: 
+    latex_engine: xelatex 
+    toc: yes
+knit:   myknit    
+---
+
+
+
+
+  
+
+
+# 檢查
+
+## 副程式
+
+
+ subrouting 
+combinOldNew_v2.do
+ 
+
+```stata  
+// 合併新舊世代成為新資料表 elder104
+global outposix &#34;out_combin&#34;
+use ../transfer/work_old_v32,clear
+quietly append using ../transfer/work_new_v32,gen(qsrc)
+recode qsrc (1=0)(0=1)
+//recode QTYPE (1/3=1) (4=0),gen(qsrc)
+lab define qsrc 0 &#34;新世代&#34; 1 &#34;舊世代&#34;
+label value qsrc qsrc
+tab2  qtype qsrc
+
+merge 1:1 qtype ser_no4 using ../transfer/bkgr104
+drop _merge
+
+``` 
+
+- 內容備份
+```stata
+// 合併新舊世代成為新資料表 elder104
+global outposix &#34;out_combin&#34;
+use ../transfer/work_old_v32,clear
+quietly append using ../transfer/work_new_v32,gen(qsrc)
+recode qsrc (1=0)(0=1)
+//recode QTYPE (1/3=1) (4=0),gen(qsrc)
+lab define qsrc 0 &#34;新世代&#34; 1 &#34;舊世代&#34;
+label value qsrc qsrc
+tab2  qtype qsrc
+
+merge 1:1 qtype ser_no4 using ../transfer/bkgr104
+drop _merge
+
+```
+
+
+
+
+ subrouting 
+../utils/checklevel.ado
+ 
+
+```stata  
+capture program drop checklevel
+program  checklevel
+//問題:現在有兩個欄位,一個是主要欄位,一個是分類欄位,想要知道crosstab
+syntax varname ,by(varlist)
+qui levelsof `varlist&#39; if `by&#39;==0
+local ncnt=r(r)
+local nlevels = &#34;`r(levels)&#39;&#34;
+
+qui levelsof `varlist&#39; if `by&#39;==1
+local ocnt=r(r)
+local olevels = &#34;`r(levels)&#39;&#34;
+
+local rst 0
+if `ncnt&#39;!=`ocnt&#39; {
+  disp in red &#34;`varlist&#39; 個數不相等&#34; 
+  local rst 1
+} 
+else {
+   if &#34;`olevels&#39;&#34; !=&#34;`nlevels&#39;&#34; {
+      disp in red &#34;內含不相等&#34;
+	  local rst 1
+   }
+   
+}
+  
+if `rst&#39;==1 {
+	  disp in red &#34;new: `nlevels&#39;&#34;
+	  disp in red &#34;old: `olevels&#39;&#34;
+}  
+
+
+end
+
+``` 
+
+
+## 檢查測試
+
+
+
+```
+ .  do combinOldNew_v2.do   //合併副程式
+
+. // 合併新舊世代成為新資料表 elder104
+. global outposix &#34;out_combin&#34;
+
+. use ../transfer/work_old_v32,clear
+
+. quietly append using ../transfer/work_new_v32,gen(qsrc)
+
+. recode qsrc (1=0)(0=1)
+(qsrc: 8300 changes made)
+
+. //recode QTYPE (1/3=1) (4=0),gen(qsrc)
+. lab define qsrc 0 &#34;新世代&#34; 1 &#34;舊世代&#34;
+
+. label value qsrc qsrc
+
+. tab2  qtype qsrc
+
+-&gt; tabulation of qtype by qsrc  
+
+           |         qsrc
+     qtype |    新世代     舊世代 |     Total
+-----------&#43;----------------------&#43;----------
+         A |         0      1,346 |     1,346 
+         B |         0        449 |       449 
+         C |         0      1,201 |     1,201 
+         D |     5,304          0 |     5,304 
+-----------&#43;----------------------&#43;----------
+     Total |     5,304      2,996 |     8,300 
+
+. 
+. merge 1:1 qtype ser_no4 using ../transfer/bkgr104
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                             8,300  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+.  eststo clear
+
+.   estpost tabstat y?, by(qsrc) statistics(count min max mean)  columns(statistics) 
+
+Summary statistics: count min max mean
+     for variables: y1 y2 y3 y4 y5 y6
+  by categories of: qsrc
+
+        qsrc |  e(count)     e(min)     e(max)    e(mean) 
+-------------&#43;--------------------------------------------
+新世代       |                                            
+          y1 |      5304         35        100   90.41384 
+          y2 |      5304          0        100   95.83019 
+          y3 |      5304          0        100   88.68087 
+          y4 |      5304          0        100   91.99556 
+          y5 |      5008          0        100   78.21985 
+          y6 |      5304          0        100    7.79129 
+-------------&#43;--------------------------------------------
+舊世代       |                                            
+          y1 |      2996         20        100   86.91422 
+          y2 |      2996          0        100   91.05289 
+          y3 |      2996          0        100   79.32465 
+          y4 |      2996          0        100   83.80433 
+          y5 |      2685          0        100   77.81192 
+          y6 |      2996          0       87.5   8.548899 
+-------------&#43;--------------------------------------------
+Total        |                                            
+          y1 |      8300         20        100    89.1506 
+          y2 |      8300          0        100   94.10576 
+          y3 |      8300          0        100   85.30361 
+          y4 |      8300          0        100   89.03882 
+          y5 |      7693          0        100   78.07747 
+          y6 |      8300          0        100   8.064759 
+
+.   esttab ,  label 
+
+------------------------------------
+                              (1)   
+                                    
+------------------------------------
+------------------------------------
+Observations                 8300   
+------------------------------------
+t statistics in parentheses
+* p&lt;0.05, ** p&lt;0.01, *** p&lt;0.001
+
+. //genfilename &#34;$outposix&#34;,post(.html) pre(&#34;report/&#34;) autoinc 
+. //esttab using &#34;`r(fn)&#39;&#34;, cells(&#34;count(fmt(%9.1f)) mean(fmt(%9.1f)) &#34;) label mtitle   html wide
+. 
+. //check Y1: C3_1 to C3_20  =&gt;dise_*a
+. /*
+&gt; unab vv:C3_*  
+&gt; foreach item in `vv&#39; {
+&gt; disp &#34;`item&#39;&#34;
+&gt; checklevel `item&#39;,by(qsrc)
+&gt; } 
+&gt; */
+. unab vv:dise_*a
+
+. foreach item in `vv&#39; {
+  2. disp &#34;`item&#39;&#34;
+  3. checklevel `item&#39;,by(qsrc)
+  4. } 
+dise_1a
+dise_2a
+dise_3a
+dise_4a
+dise_5a
+dise_6a
+dise_7a
+dise_8a
+dise_9a
+dise_10a
+dise_11a
+dise_12a
+dise_13a
+dise_14a
+dise_15a
+dise_16a
+dise_17a
+dise_18a
+dise_19a
+dise_20a
+
+. 
+. //check Y2: C16_* =&gt;ADL
+. unab vv:C16_*  
+variable C16_* not found
+r(111);
+
+end of do-file
+r(111);
+```
+
+# 合併產生Y,存檔
+
+  
+- 副程式說明:  
+  * combinOldNew.do 合併新舊世代,但是部存檔  
+  * genModelY.do 產生模型需要的Y變數  
+
+
+ subrouting 
+combinOldNew_v1.do
+ 
+
+```stata  
+// 合併新舊世代成為新資料表 elder104
+global outposix &#34;out_combin&#34;
+use ../transfer/work_old_v3,clear
+quietly append using ../transfer/work_new_v3
+
+recode QTYPE (1/3=1) (4=0),gen(qsrc)
+lab define qsrc 0 &#34;新世代&#34; 1 &#34;舊世代&#34;
+label value qsrc qsrc
+
+replace age104=age104&#43;2 if qsrc==1
+capture label drop age104
+label define age104 1 &#34;50-54&#34; 2 &#34;55-59&#34; 3 &#34;60-64&#34; 4 &#34;65-69&#34; 5 &#34;70-74&#34; 6 &#34;75-79&#34; 7 &#34;80-84&#34; 8 &#34;85&#43;&#34;
+label  value age104 age104
+
+``` 
+
+ subrouting 
+genModelY.do
+ 
+
+```stata  
+
+//暫時的Y變數,要給模型Y用的
+forvalues idx=1/6 {
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_me&#34;) mean  eqg
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_me&#34;) mean  g  
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_md&#34;) p50  eqg
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_md&#34;) p50  g  
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_umd&#34;) up50  eqg  
+  tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_umd&#34;) up50  g  
+}
+
+
+//產生logistic 模型用的y :my_1- my_6
+local idx 1
+foreach sep in me md umd{
+  foreach opr in eqg g{
+    capture safedrop my_`idx&#39;
+    local ylabel &#34;`=cond(&#34;`opr&#39;&#34;==&#34;eqg&#34;,&#34;大等&#34;,&#34;大於&#34;)&#39;`=cond(&#34;`sep&#39;&#34;==&#34;me&#34;,&#34;平均&#34;,cond(&#34;`sep&#39;&#34;==&#34;md&#34;,&#34;中間&#34;,&#34;獨中間&#34;))&#39;&#34;
+    modelbin y1_`opr&#39;_`sep&#39; y2_`opr&#39;_`sep&#39; y3_`opr&#39;_`sep&#39; y4_`opr&#39;_`sep&#39; y5_`opr&#39;_`sep&#39; y6_`opr&#39;_`sep&#39;,gen(my_`idx&#39;) label(&#34;`ylabel&#39;&#34;) 
+   disp &#34;`ylabel&#39;&#34;
+    local &#43;&#43;idx
+  }
+}
+  
+//總和y,和其產生的二元my_0
+gen y=y1&#43;y2&#43;y3&#43;y4&#43;y5&#43;y6
+label variable y &#34;六項總和&#34;
+
+ 
+  tobin y,gen(&#34;myt_1&#34;) mean  eqg label(&#34;總和eqg_me&#34;)
+  tobin y,gen(&#34;myt_2&#34;) mean  g  label(&#34;總和g_me&#34;)
+  tobin y,gen(&#34;myt_3&#34;) p50  eqg label(&#34;總和eqg_md&#34;)
+  tobin y,gen(&#34;myt_4&#34;) p50  g label(&#34;總和g_md&#34;)  
+  tobin y,gen(&#34;myt_5&#34;) up50  eqg  label(&#34;總和eqg_umd&#34;)
+  tobin y,gen(&#34;myt_6&#34;) up50  g  label(&#34;總和g_umd&#34;)
+
+``` 
+
+
+```stata
+do combinOldNew_v2.do
+do genModelY.do
+save ../transfer/elder104,replace
+```
+
+```
+ . do combinOldNew_v2.do
+
+. // 合併新舊世代成為新資料表 elder104
+. global outposix &#34;out_combin&#34;
+
+. use ../transfer/work_old_v32,clear
+
+. quietly append using ../transfer/work_new_v32,gen(qsrc)
+
+. recode qsrc (1=0)(0=1)
+(qsrc: 8300 changes made)
+
+. //recode QTYPE (1/3=1) (4=0),gen(qsrc)
+. lab define qsrc 0 &#34;新世代&#34; 1 &#34;舊世代&#34;
+
+. label value qsrc qsrc
+
+. tab2  qtype qsrc
+
+-&gt; tabulation of qtype by qsrc  
+
+           |         qsrc
+     qtype |    新世代     舊世代 |     Total
+-----------&#43;----------------------&#43;----------
+         A |         0      1,346 |     1,346 
+         B |         0        449 |       449 
+         C |         0      1,201 |     1,201 
+         D |     5,304          0 |     5,304 
+-----------&#43;----------------------&#43;----------
+     Total |     5,304      2,996 |     8,300 
+
+. 
+. merge 1:1 qtype ser_no4 using ../transfer/bkgr104
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                             8,300  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. do genModelY.do
+
+. 
+. //暫時的Y變數,要給模型Y用的
+. forvalues idx=1/6 {
+  2.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_me&#34;) mean  eqg
+  3.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_me&#34;) mean  g  
+  4.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_md&#34;) p50  eqg
+  5.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_md&#34;) p50  g  
+  6.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_eqg_umd&#34;) up50  eqg  
+  7.   tobin y`idx&#39;,gen(&#34;y`idx&#39;_g_umd&#34;) up50  g  
+  8. }
+
+. 
+. 
+. //產生logistic 模型用的y :my_1- my_6
+. local idx 1
+
+. foreach sep in me md umd{
+  2.   foreach opr in eqg g{
+  3.     capture safedrop my_`idx&#39;
+  4.     local ylabel &#34;`=cond(&#34;`opr&#39;&#34;==&#34;eqg&#34;,&#34;大等&#34;,&#34;大於&#34;)&#39;`=cond(&#34;`sep&#39;&#34;==&#34;me&#34;,&#34;平均&#34;,cond(&#34;`sep&#39;&#34;==&#34;md&#34;,&#34;中間&#34;,&#34;獨中間&#34;))&#39;&#34;
+  5.     modelbin y1_`opr&#39;_`sep&#39; y2_`opr&#39;_`sep&#39; y3_`opr&#39;_`sep&#39; y4_`opr&#39;_`sep&#39; y5_`opr&#39;_`sep&#39; y6_`opr&#39;_`sep&#39;,gen(my_`idx&#39;) label(&#34;`ylabel&#39;&#34;) 
+  6.    disp &#34;`ylabel&#39;&#34;
+  7.     local &#43;&#43;idx
+  8.   }
+  9. }
+(my_1: 8300 changes made)
+(616 real changes made)
+大等平均
+(my_2: 8300 changes made)
+(616 real changes made)
+大於平均
+(my_3: 8300 changes made)
+(3,050 real changes made)
+大等中間
+(my_4: 8300 changes made)
+(0 real changes made)
+大於中間
+(my_5: 8300 changes made)
+(194 real changes made)
+大等獨中間
+(my_6: 8300 changes made)
+(58 real changes made)
+大於獨中間
+
+.   
+. //總和y,和其產生的二元my_0
+. gen y=y1&#43;y2&#43;y3&#43;y4&#43;y5&#43;y6
+(607 missing values generated)
+
+. label variable y &#34;六項總和&#34;
+
+. 
+.  
+.   tobin y,gen(&#34;myt_1&#34;) mean  eqg label(&#34;總和eqg_me&#34;)
+
+.   tobin y,gen(&#34;myt_2&#34;) mean  g  label(&#34;總和g_me&#34;)
+
+.   tobin y,gen(&#34;myt_3&#34;) p50  eqg label(&#34;總和eqg_md&#34;)
+
+.   tobin y,gen(&#34;myt_4&#34;) p50  g label(&#34;總和g_md&#34;)  
+
+.   tobin y,gen(&#34;myt_5&#34;) up50  eqg  label(&#34;總和eqg_umd&#34;)
+
+.   tobin y,gen(&#34;myt_6&#34;) up50  g  label(&#34;總和g_umd&#34;)
+
+. 
+end of do-file
+
+. save ../transfer/elder104,replace
+file ../transfer/elder104.dta saved
+
+. 
+end of do-file
+```
+
+
+# 所有程式碼
+
+```stata  
+global outposix &#34;out_combin_v2&#34;
+// 清除報表: 殺掉暫存檔 
+local xfiles : dir report files &#34;${outposix}_*.*&#34;
+
+foreach fn of local xfiles {
+ erase report/`fn&#39;
+}
+
+adopath &#43; &#34;D:\Activity\elderman\utils&#34;
+set linesize 255
+ do combinOldNew_v2.do   //合併副程式
+ eststo clear
+  estpost tabstat y?, by(qsrc) statistics(count min max mean)  columns(statistics) 
+  esttab ,  label 
+//genfilename &#34;$outposix&#34;,post(.html) pre(&#34;report/&#34;) autoinc 
+//esttab using &#34;`r(fn)&#39;&#34;, cells(&#34;count(fmt(%9.1f)) mean(fmt(%9.1f)) &#34;) label mtitle   html wide
+
+//check Y1: C3_1 to C3_20  =&gt;dise_*a
+/*
+unab vv:C3_*  
+foreach item in `vv&#39; {
+disp &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+*/
+unab vv:dise_*a
+foreach item in `vv&#39; {
+disp &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+
+//check Y2: C16_* =&gt;ADL
+unab vv:C16_*  
+foreach item in `vv&#39; {
+disp &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+
+unab vv:ADL_*a
+foreach item in `vv&#39; {
+disp &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+//check Y3: C13_*  ==&gt;BODY_*a
+/*
+unab vv:C13_*
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+*/
+unab vv:BODY_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+
+//check Y4: C14_*  ==&gt;IADL_*a
+/*
+C14_2,C14_8 不一樣,因為有的是選項4:不識字,但是很奇怪,其他選項又識字
+*/
+unab vv:IADL_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+} 
+//Y5: B15 =&gt;living_a
+//checklevel B15,by(qsrc)
+checklevel living_a,by(qsrc)
+//Y6
+unab vv:commu_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+}
+
+//x1:生活滿意度
+
+unab vv:life_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+}
+
+
+//x2=&gt;heal
+checklevel heal,by(qsrc)
+//x3=money, G3
+checklevel G3,by(qsrc)
+checklevel money,by(qsrc)
+
+//年齡跳過
+
+//現存子女數
+//宗教信仰F7==&gt;relign,relign1
+//年收入G5_1==&gt;incom
+checklevel incom,by(qsrc)
+//主要經濟來源  incsrc
+checklevel incsrc,by(qsrc)
+//婚姻
+checklevel mar,by(qsrc)
+//抽菸喝酒檳榔跳過
+//健康檢查
+checklevel exam_year,by(qsrc)
+//門診次數C20C-&gt;wesmed 如數照路
+checklevel wesmed,by(qsrc)
+
+//fami_`idx&#39;a
+
+unab vv:fami_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+}
+
+
+//depre_`idx&#39;a
+unab vv:depre_*a
+foreach item in `vv&#39; {
+disp as text &#34;`item&#39;&#34;
+checklevel `item&#39;,by(qsrc)
+}
+
+do combinOldNew_v2.do
+do genModelY.do
+save ../transfer/elder104,replace
+
+``` 
+&lt;/code&gt;&lt;/pre&gt;</div></div></p>
+
+<h3 id="材料">材料</h3>
+
+<p>🔑<a href="https://try.gitea.io/api/swagger">線上gitea api</a></p>
+
+<blockquote>
+<p>我在這裡測試
+利用CURL</p>
+
+<pre><code>curl -X 'GET' \
+  'https://try.gitea.io/api/v1/repos/xx2/bbb/contents/README.md' \
+  -H 'accept: application/json'
+</code></pre>
+
+<p>Request URL</p>
+
+<pre><code>https://try.gitea.io/api/v1/repos/xx2/bbb/contents/README.md
+</code></pre>
+
+<p>📝 xx2是owner, bbb是REPO名稱。</p>
+</blockquote>
+
+<h3 id="疑難雜症紀錄">疑難雜症紀錄</h3>
+
+<p>碼expand展開的時候,背景色和自型色彩都一樣,以至於不顯示。</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/35523211/change-text-color-based-on-the-background-color">背景和字形的動態設定</a></li>
+</ul>
+
+<h3 id="todo">todo</h3>
+
+<p>切檔案</p>
+
+<pre><code>{{ $file := readFile &quot;README.txt&quot; }}
+
+{{/* Splitting content by newline */}}
+{{ $file := split $file &quot;\n&quot; }}
+
+{{/* Limit the array/slice,  start from 2nd item then grab all first 3 item */}}
+{{ $file := first 3 (after 1 $file) }}
+
+{{/* Delimit by newline */}}
+{{ $file := delimit $file &quot;\n&quot; }}
+
+{{ $file }}
+</code></pre>
+
+<h2 id="指令紀錄">指令紀錄</h2>
+
+<h3 id="我去u18docker-註冊了一個token">我去u18docker 註冊了一個token</h3>
+
+<pre><code>token: hugo
+key: e9da7a8835a14907f4ca6dada92e90c65c71353a
+</code></pre>
+
+<p>📝 後面的實驗沒用到阿</p>
+
+<h3 id="也可以網路要求token">也可以網路要求token</h3>
+
+<pre><code>$ curl -XPOST -H &quot;Content-Type: application/json&quot;  -k -d '{&quot;name&quot;:&quot;test&quot;}' -u username:password https://gitea.your.host/api/v1/users/&lt;username&gt;/tokens
+</code></pre>
+
+<blockquote>
+<p>範例結果:
+ {&quot;id&quot;:1,&quot;name&quot;:&quot;test&quot;,&quot;sha1&quot;:&quot;9fcb1158165773dd010fca5f0cf7174316c3e37d&quot;,&quot;token_last_eight&quot;:&quot;16c3e37d&quot;}</p>
+</blockquote>
+
+<h2 id="本地實驗">本地實驗:</h2>
+
+<pre><code>curl -XPOST -H &quot;Content-Type: application/json&quot;  -k -d '{&quot;name&quot;:&quot;test&quot;}' -u linchao:a2236527 http://u18docker:3000/api/v1/users/linchao/tokens
+</code></pre>
+
+<blockquote>
+<p>結果:{&quot;id&quot;:4,&quot;name&quot;:&quot;test&quot;,&quot;sha1&quot;:&quot;14e943e0fadc1169776c7670136fa594ae6b4a32&quot;,&quot;token_last_eight&quot;:&quot;ae6b4a32&quot;}</p>
+</blockquote>
+
+<p>📝 上面會在自己的帳號中的setting-&gt;application-&gt;產生一個token 名稱為test。</p>
+
+<h3 id="列出所有api">列出所有api</h3>
+
+<pre><code>http://u18docker:3000/swagger.v1.json
+</code></pre>
+
+<h2 id="測試指令">測試指令</h2>
+
+<h3 id="測試1">測試1</h3>
+
+
+<p>檔案README.md:內容</p>
+<pre><code>建站的紀錄</code></pre>
+
+<h3 id="分析">分析</h3>
+
+<p>利用http: <code>http://u18docker:3000/api/v1/repos/linchao/spida/contents/README.md</code></p>
+
+<blockquote>
+<pre><code class="language-json">&quot;name&quot;:&quot;README.md&quot;,
+&quot;path&quot;:&quot;README.md&quot;,
+&quot;sha&quot;:&quot;9ab62e38ab21550371be925f8847674754d1a75a&quot;,
+&quot;type&quot;:&quot;file&quot;,
+&quot;size&quot;:15,
+&quot;encoding&quot;:&quot;base64&quot;,
+&quot;content&quot;:&quot;5bu656uZ55qE57SA6YyE&quot;,
+&quot;target&quot;:null,
+&quot;url&quot;:&quot;http://u18docker:3000/api/v1/repos/linchao/spida/contents/README.md?ref=master&quot;,
+&quot;html_url&quot;:&quot;http://u18docker:3000/linchao/spida/src/branch/master/README.md&quot;,
+&quot;git_url&quot;:&quot;http://u18docker:3000/api/v1/repos/linchao/spida/git/blobs/9ab62e38ab21550371be925f8847674754d1a75a&quot;,
+&quot;download_url&quot;:&quot;http://u18docker:3000/linchao/spida/raw/branch/master/README.md&quot;,
+&quot;submodule_git_url&quot;:null,
+&quot;_links&quot;:{
+   &quot;self&quot;:&quot;http://u18docker:3000/api/v1/repos/linchao/spida/contents/README.md?ref=master&quot;,
+   &quot;git&quot;:&quot;http://u18docker:3000/api/v1/repos/linchao/spida/git/blobs/9ab62e38ab21550371be925f8847674754d1a75a&quot;,
+   &quot;html&quot;:&quot;http://u18docker:3000/linchao/spida/src/branch/master/README.md&quot;
+</code></pre>
+</blockquote>
+
+<h3 id="測試2">測試2</h3>
+
+<p>測試碼:</p>
+
+<pre><code>{{&lt;  gitea repo=&quot;spida&quot; file=&quot;content/docker/gitstack的操作和問題.md&quot; lang=&quot;md&quot; options=&quot;linenos=table,hl_lines=8 10-13,linenostart=1&quot; &gt;}}
+</code></pre>
+
+<blockquote>
+<p>測試結果: 後面是從gitea server 拿回來的檔案內容
+
+<p>檔案content/docker/gitstack的操作和問題.md:內容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="hl"><span class="lnt"> 8
+</span></span><span class="lnt"> 9
+</span><span class="hl"><span class="lnt">10
+</span></span><span class="hl"><span class="lnt">11
+</span></span><span class="hl"><span class="lnt">12
+</span></span><span class="hl"><span class="lnt">13
+</span></span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-md" data-lang="md">---
+title: gitstack
+description: 建立三個container
+tags: [&#34;docker&#34;,&#34;log&#34;]
+---
+
+<span class="gu">## 2021/6/20
+</span><span class="hl"><span class="gu"></span>
+</span>本來這樣`docker build -t airways1/hugo-editor .`就可以,但是發生github無法解析的dns問題，所以最後
+<span class="hl">
+</span><span class="hl"><span class="k">-</span> 建立影像: <span class="sb">`docker build --add-host github.com:52.192.72.89 -t airways1/hugo-builder .`</span>
+</span><span class="hl"><span class="k">-</span> 上傳: <span class="sb">`docker push airways1/hugo-builder`</span>
+</span><span class="hl">
+</span>:memo: 最後是更改了`/etc/docker/daemon.json`加入dns,而且好像是在改`/etc/resolv.conf`之後。
+
+<span class="gu">## drone 的設定
+</span><span class="gu"></span>
+{{<span class="p">&lt;</span> <span class="nt">foldergallery</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;./drone.files/drone_setup/&#34;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&#34;4&#34;</span><span class="p">&gt;</span>}}
+
+<span class="gu">## 我的DEBUG
+</span><span class="gu"></span>有一個HUGO 網站,無法自動建立,以為是git 的問題,但是好像不是.
+drone.u18docker 是drone 的container name。過程中用到下面幾個指令:
+
+<span class="k">-</span> 開啟drone
+  <span class="k">-</span> <span class="sb">`docker exec -it drone.u18docker ash`</span>
+
+因為我的版本不是跑extension在網路上找了一個能用的,內容放在`Dock.other`,過程如下
+
+<span class="k">-</span> 重新建立`airways1/hugo-builder`
+  <span class="k">-</span> <span class="sb">`docker build . -f Dock.other -t airways1/hugo-builder`</span>
+<span class="k">-</span> 打開hugo-builder 
+  <span class="k">-</span> <span class="sb">`docker run -name xx --rm -it airways1/hugo-builder ash`</span>
+  <span class="k">-</span> 然後看hugo指令能不能執行,這個hugo 指令放在 /usr/local/bin
+
+</code></pre></td></tr></table>
+</div>
+</div></p>
+</blockquote>
+
+<h3 id="測試3">測試3</h3>
+
+<p>測試expand 失敗。</p>
+
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="../css/quicknote.css?1629561305" rel="stylesheet">
+<script src="../js/quicknote.js?1629561305"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="../hugonote/%E6%90%9C%E5%B0%8B%E7%9A%84%E9%81%8B%E4%BD%9C.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=搜尋和註解相關檔案>前</a>
+                   
+          
+            <a href="../hugonote/%E6%95%B8%E5%AD%B8%E7%AC%A6%E8%99%9F.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=數學符號>後</a>            
+          
+          
+
+  
+<script src="../js/packhtml.js?1629561305"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="../js/featherlight.min.js?1629561305"></script>
+  <script src="../js/featherlight.gallery.min.js?1629561305"></script>
+  <link href="../css/featherlight.min.css?1629561305" rel="stylesheet">
+  <link href="../css/featherlight.gallery.min.css?1629561305" rel="stylesheet">
+
+  <script src="../js/highlight.pack.js?1629561305"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="../css/demoContainer.css?1629561305" rel="stylesheet"><link href="../css/rmd.css?1629561305" rel="stylesheet">
+  <link href="../css/mystyle.css?1629561305" rel="stylesheet">    
+  <script src='../js/variant.js?1629561305'></script>
+
+<script>
+  var idxfile = "\//index.json"
+</script>
+<script src='../js/localsearch.js?1629561305'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector("#sidebar .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

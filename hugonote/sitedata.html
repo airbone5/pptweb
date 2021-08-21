@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html><head>
+  <title>怎樣存取.Site.Data</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='../images/favicon.ico'/>
+      
+    <script src="../js/jquery-3.3.1.min.js?1629561305"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='../js/tocbot.min.js'></script>
+    <link href='../css/tocbot.css' rel="stylesheet">
+
+    <script src='../js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="../css/fontawesome-all.min.css?1629561305" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1629561305" rel="stylesheet">
+    <link href="../css/syntax.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme-mine.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme.css?1629561305" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='../' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a>
+<ul>
+<li><a href="#目的">目的</a></li>
+</ul></li>
+<li><a href="#實驗和材料">實驗和材料</a>
+<ul>
+<li><a href="#sitedata-md">sitedata.md</a></li>
+</ul></li>
+<li><a href="#執行區域">執行區域</a>
+<ul>
+<li><a href="#shortcode-whatdata">shortcode whatdata</a></li>
+<li><a href="#執行結果">執行結果:</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改July 31, 2021'>怎樣存取.Site.Data</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/.site.data.html">
+    <i class="fas fa-tag"></i>.Site.Data
+</a><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/hugo.html">
+    <i class="fas fa-tag"></i>hugo
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="../nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="../basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="../basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/t2_token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/upload.html" data-bs-toggle="tooltip" title="upload">upload</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="../r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="../categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="../basic/token/upload.html"> <i class="far fa-clock" ></i>upload[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/t1_google_api.html"> <i class="far fa-clock" ></i>t1 google_api[2021-08-21 PM 11:21]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    
+
+<h2 id="背景">背景</h2>
+
+<ul>
+<li><a href="https://github.com/rwxrob/hugo-tutorial-link-data-to-type">怪怪,好像不是很正確的參考</a></li>
+</ul>
+
+<h3 id="目的">目的</h3>
+
+<p>怎樣存取.Site.Data  裡面的json</p>
+
+<h2 id="實驗和材料">實驗和材料</h2>
+
+<pre><code>├─content
+│  └─blogs
+|        └─sitedata.md 🔑 執行短碼whatdata(.html)的文件,實驗時候是本文。
+├─data
+│  │
+│  ├─xxx
+|  │  └─xx.toml  🔑實驗要存取的對象
+|  └──x2.toml 🔑實驗要存取的對象
+├─resources
+├─static
+└─themes
+     
+     
+</code></pre>
+
+<ul>
+<li>簡單記憶的話,就是.Site.Pages 是content 子目錄下的檔案,而.Site.Data就是Data子目錄下的檔案。
+
+<ul>
+<li>所以,這個data子目錄,和content是平行的,如上圖。</li>
+<li>在這個子目錄下可以有多個yml 或toml 每個yml 如下
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>yml</span>
+    </div><div class="expand-content incode">```yml
+name: Leo Tolstoy
+bio: &#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&#34;
+
+sources:
+- title: &#34;Anna Karenina&#34;
+  quotes:
+  - entry: &#34;quote no. 1&#34;
+    comment: &#34;comment no. 1&#34;
+    credits: &#34;credit no. 1&#34;
+  - entry: &#34;quote no. 2&#34;
+    comment: &#34;comment no. 2&#34;
+    credits: &#34;credit no. 2&#34;
+
+- title: &#34;War and Peace&#34;
+  quotes:
+  - entry: &#34;quote no. 3&#34;
+    comment: &#34;comment no. 3&#34;
+    credits: &#34;credit no. 3&#34;
+```</div></div>
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>json</span>
+    </div><div class="expand-content incode">如果是json
+```
+{
+  &#34;name&#34;: &#34;Leo Tolstoy&#34;,
+  &#34;bio&#34;: &#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&#34;,
+  &#34;sources&#34;: [
+    {
+      &#34;title&#34;: &#34;Anna Karenina&#34;,
+      &#34;quotes&#34;: [
+        {
+          &#34;entry&#34;: &#34;quote no. 1&#34;,
+          &#34;comment&#34;: &#34;comment no. 1&#34;,
+          &#34;credits&#34;: &#34;credit no. 1&#34;
+        },
+        {
+          &#34;entry&#34;: &#34;quote no. 2&#34;,
+          &#34;comment&#34;: &#34;comment no. 2&#34;,
+          &#34;credits&#34;: &#34;credit no. 2&#34;
+        }
+      ]
+    },
+    {
+      &#34;title&#34;: &#34;War and Peace&#34;,
+      &#34;quotes&#34;: [
+        {
+          &#34;entry&#34;: &#34;quote no. 3&#34;,
+          &#34;comment&#34;: &#34;comment no. 3&#34;,
+          &#34;credits&#34;: &#34;credit no. 3&#34;
+        }
+      ]
+    }
+  ]
+}
+```</div></div>
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>toml</span>
+    </div><div class="expand-content incode">如果是toml
+```toml
+name = &#34;Leo Tolstoy&#34;
+bio = &#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&#34;
+
+[[sources]]
+title = &#34;Anna Karenina&#34;
+
+  [[sources.quotes]]
+  entry = &#34;quote no. 1&#34;
+  comment = &#34;comment no. 1&#34;
+  credits = &#34;credit no. 1&#34;
+
+  [[sources.quotes]]
+  entry = &#34;quote no. 2&#34;
+  comment = &#34;comment no. 2&#34;
+  credits = &#34;credit no. 2&#34;
+
+[[sources]]
+title = &#34;War and Peace&#34;
+
+  [[sources.quotes]]
+  entry = &#34;quote no. 3&#34;
+  comment = &#34;comment no. 3&#34;
+  credits = &#34;credit no. 3&#34;
+```</div></div></li>
+</ul></li>
+
+<li><p>存取資料檔的辦法,例如: <code>./data/novelists/authors/*.yml</code> 可以由 <code>.Site.Data.novelists.authors</code>存取。</p>
+
+<ul>
+<li><pre><code>{{ range .Site.Data.novelists.authors }}
+&lt;h3&gt;{{ .name }}&lt;/h3&gt;
+&lt;p&gt;{{ .bio }}&lt;/p&gt;
+{{ range .sources }}
+&lt;h4&gt;{{ .title }}&lt;/h4&gt;
+{{ range .quotes }}
+  &lt;blockquote&gt;
+    &lt;p&gt;{{ .entry }}&lt;/p&gt;
+    {{ if .credits }}&lt;p&gt;&lt;small&gt;&lt;em&gt;{{ .credits }}&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;{{ end }}
+  &lt;/blockquote&gt;
+  {{ if .comment }}&lt;p&gt;{{ .comment }}&lt;/p&gt;{{ end }}
+{{ end }}
+{{ end }}  
+{{ end }}
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h3 id="sitedata-md">sitedata.md</h3>
+
+<p>實驗主文件,內容如下</p>
+
+<pre><code class="language-md">---
+title: .site.data
+description: 
+---
+{{*&lt;whatdata&gt;*}}
+</code></pre>
+
+<h2 id="執行區域">執行區域</h2>
+
+<h3 id="shortcode-whatdata">shortcode whatdata</h3>
+
+<p>短碼內容: whatdata.html</p>
+
+<pre><code>{{ with (index .Site.Data.xxx  &quot;xx&quot;) }}
+{{.name}}
+這是在shortcode whatdata.html
+{{end}}
+
+
+{{ with (index .Site.Data  &quot;x1&quot;) }}
+{{.name}}
+這是在shortcode whatdata.html
+{{end}}
+</code></pre>
+
+<p>📝 存取資料夾<code>./data/xxx/xx.json</code> 和 <code>./data/x1.json</code></p>
+
+<h3 id="執行結果">執行結果:</h3>
+
+<p>指令:  {{<em>&lt; whatdata &gt;</em>}}</p>
+
+<blockquote>
+<p>結果:</p>
+
+<pre><code>張三inxxx 這是在shortcode whatdata.html 張三root 這是在shortcode whatdata.html
+</code></pre>
+</blockquote>
+
+<p><code>./data/xxx/xx.json</code>內容如下(x1.json類似,不再列出):</p>
+
+<pre><code>name = &quot;張三&quot;
+github = &quot;bep&quot;
+roles = [&quot;admin&quot;,&quot;user&quot;]
+</code></pre>
+
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="../css/quicknote.css?1629561305" rel="stylesheet">
+<script src="../js/quicknote.js?1629561305"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="../hugonote/%E5%BD%B1%E5%83%8F%E8%B3%87%E6%BA%90%E6%B8%AC%E8%A9%A62.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=影像資源測試2>前</a>
+                   
+          
+            <a href="../hugonote/highlight.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=打光>後</a>            
+          
+          
+
+  
+<script src="../js/packhtml.js?1629561305"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="../js/featherlight.min.js?1629561305"></script>
+  <script src="../js/featherlight.gallery.min.js?1629561305"></script>
+  <link href="../css/featherlight.min.css?1629561305" rel="stylesheet">
+  <link href="../css/featherlight.gallery.min.css?1629561305" rel="stylesheet">
+
+  <script src="../js/highlight.pack.js?1629561305"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="../css/demoContainer.css?1629561305" rel="stylesheet"><link href="../css/rmd.css?1629561305" rel="stylesheet">
+  <link href="../css/mystyle.css?1629561305" rel="stylesheet">    
+  <script src='../js/variant.js?1629561305'></script>
+
+<script>
+  var idxfile = "\//index.json"
+</script>
+<script src='../js/localsearch.js?1629561305'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector("#sidebar .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

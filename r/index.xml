@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>有關R的測試 on 我的測試區</title>
+    <link>/r.html</link>
+    <description>Recent content in 有關R的測試 on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chunk output in Rmarkdown</title>
+      <link>/r/chunk_output.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/chunk_output.html</guid>
+      <description>結論 不能 {{&amp;lt; notice tip &amp;gt;}} 只能 {{% notice tip %}}，就是說只能使用%❓。
+tip 1
+tip 2
+ 和RMD檔案比較,沒差異 只是要注意資料夾必須小寫 相關的設定在theme.css    note 1
+note 2
+  note 1
+note 2
+  note 1
+note 2
+  摺疊輸出 hist(1:10)   Click for Answer  figure library(ggplot2)  #&amp;gt; Warning: package &#39;ggplot2&#39; was built under R version 4.0.5  oplot &amp;lt;- ggplot(Orange, aes(x = age, y = circumference, colour = Tree)) + geom_point() + geom_line() + guides(colour = FALSE) + theme_bw()  #&amp;gt; Warning: `guides(&amp;lt;scale&amp;gt; = FALSE)` is deprecated.</description>
+    </item>
+    
+    <item>
+      <title>global option in R</title>
+      <link>/r/global_options.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/global_options.html</guid>
+      <description>options 沒看到所謂的global option: blogdown.method
+options(); #&amp;gt; $add.smooth #&amp;gt; [1] TRUE #&amp;gt; #&amp;gt; $blogdown.hugo.version #&amp;gt; [1] &amp;quot;0.84.4&amp;quot; #&amp;gt; #&amp;gt; $blogdown.knit.on_save #&amp;gt; [1] TRUE #&amp;gt; #&amp;gt; $blogdown.method #&amp;gt; [1] &amp;quot;custom&amp;quot; #&amp;gt; #&amp;gt; $blogdown.serve_site.startup #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $browserNLdisabled #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $CBoundsCheck #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $check.bounds #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $citation.bibtex.max #&amp;gt; [1] 1 #&amp;gt; #&amp;gt; $continue #&amp;gt; [1] &amp;quot;+ &amp;quot; #&amp;gt; #&amp;gt; $contrasts #&amp;gt; unordered ordered #&amp;gt; &amp;quot;contr.</description>
+    </item>
+    
+    <item>
+      <title>0. 引擎測試準備工作</title>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</guid>
+      <description>有用的訊息  class.output的寫法
+knitr::opts_chunk$set( class.output = &amp;quot;bg-success&amp;quot;, class.message = &amp;quot;bg-info text-info&amp;quot;, class.warning = &amp;quot;bg-warning text-warning&amp;quot;, class.error = &amp;quot;bg-danger text-danger&amp;quot; )  hook
+ 輸出設定?
+ github R/build.R engine   knitr 片段  工作流程
+ 讀取前版的yaml
+content &amp;lt;- c( &amp;quot;---&amp;quot;, &amp;quot;title: Leaflet Demo&amp;quot;, &amp;quot;output: html_document&amp;quot;, &amp;quot;params:&amp;quot;, &amp;quot; tiles:&amp;quot;, &amp;quot; label: Tiles&amp;quot;, &amp;quot; value: normal&amp;quot;, &amp;quot; input: select&amp;quot;, &amp;quot; choices:&amp;quot;, &amp;quot; - normal&amp;quot;, &amp;quot; - monochrome&amp;quot;, &amp;quot;---&amp;quot;, &amp;quot;\n&amp;quot;, &amp;quot;This is a test document&amp;quot;) rmd_file &amp;lt;- tempfile(fileext = &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>1. 引擎測試1</title>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2. 引擎測試2</title>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3. 引擎測試3</title>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. 引擎測試4</title>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blackfriday</title>
+      <link>/r/blackfriday.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/blackfriday.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>亂數</title>
+      <link>/r/%E4%BA%82%E6%95%B8.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E4%BA%82%E6%95%B8.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>測試類別</title>
+      <link>/r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

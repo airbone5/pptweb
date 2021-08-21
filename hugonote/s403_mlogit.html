@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html><head>
+  <title>4.03b mlogit</title>  
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href='../images/favicon.ico'/>
+      
+    <script src="../js/jquery-3.3.1.min.js?1629561305"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script src='../js/tocbot.min.js'></script>
+    <link href='../css/tocbot.css' rel="stylesheet">
+
+    <script src='../js/datatables.min.js'></script>    
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">    
+    
+    <link href="../css/fontawesome-all.min.css?1629561305" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1629561305" rel="stylesheet">
+    <link href="../css/syntax.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme-mine.css?1629561305" rel="stylesheet">
+    
+    <link href="../css/theme.css?1629561305" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../scss/notice.e59a0cc88b64e695994f518354819cfbf48558cdcfd9a16dc129f9952128ba36.css" integrity="sha256-5ZoMyItk5pWZT1GDVIGc&#43;/SFWM3P2aFtwSn5lSEoujY=">
+
+    
+  </head><body><div id="top-pane" class="navbar  fixed-top ">
+  <div class="container-fluid">
+  <span >
+    <a  href='../' class="fs-5 accessory"><i class="fas fa-home"></i>我的測試區</a>
+    <span id="sidebar-toggle-span" class="fs-5"><i class="fas fa-align-justify"></i></span>
+  </span><span >
+      <span id="toc-menu">
+    <label><i class="fas fa-list-alt" ></i> </label>    
+<div id="variant-toc-content" >
+    <div class="wrapper">
+        <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#產生資料">產生資料</a></li>
+<li><a href="#跑mlogit-1237">跑mlogit 1237</a></li>
+<li><a href="#主程式">主程式</a>
+<ul>
+<li><a href="#span-class-outposix-mlogit-span"><span class='outposix'> <strong>mlogit</strong> </span></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+    <hr class="p-0 m-0" />
+    <div class="toa"></div>
+</div>
+</span>
+<span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+      title='最後修改July 31, 2021'>4.03b mlogit</span>
+        
+    
+
+    </span>
+  
+  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../tags/table.html">
+    <i class="fas fa-tag"></i>table
+</a></span><span >
+    <span >
+    <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
+    <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
+</span>    
+ 
+<div id="search-pane">
+ <ol id="search-results"></ul>
+</div>
+
+    </span>
+</div> 
+</div>
+
+
+<div id="content-wrapper"><nav id="sidebar">
+
+  
+
+    
+    
+    <ul class="nav flex-column topics" id="home-topics">
+      
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="nodejs 測試">
+     
+
+  <a class="nav-link" 
+    href="../nodejs.html"><i class="far fa-folder"></i>nodejs 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_af4b61d775dd1b084c1edc9440ed8bb8"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_af4b61d775dd1b084c1edc9440ed8bb8"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t1_basic.html" data-bs-toggle="tooltip" title="t1 basic">t1 basic</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t2_cors.html" data-bs-toggle="tooltip" title="t2 cors 的實驗">t2 cors 的實驗</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t3_cookies.html" data-bs-toggle="tooltip" title="t3_cookies">t3_cookies</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../nodejs/tutorial/t4_session.html" data-bs-toggle="tooltip" title="t4_session">t4_session</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="基本">
+     
+
+  <a class="nav-link" 
+    href="../basic.html"><i class="far fa-folder"></i>基本  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_e1c118151bd2cc204dc463b4dbcd4102"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode.html" data-bs-toggle="tooltip" title="vscode 的設定">vscode 的設定</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/vscode%E5%BF%AB%E9%80%9F.html" data-bs-toggle="tooltip" title="vscode快速">vscode快速</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8slice.html" data-bs-toggle="tooltip" title="使用slice">使用slice</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html" data-bs-toggle="tooltip" title="內建指令relref測試.md">內建指令relref測試.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%85%89.html" data-bs-toggle="tooltip" title="打光議題">打光議題</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html" data-bs-toggle="tooltip" title="打包文件">打包文件</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html" data-bs-toggle="tooltip" title="有關variant 的config.toml">有關variant 的config.toml</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/tagtest.html" data-bs-toggle="tooltip" title="標籤">標籤</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html" data-bs-toggle="tooltip" title="正規表達式">正規表達式</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/gallery.html" data-bs-toggle="tooltip" title="短碼 - foldergallery">短碼 - foldergallery</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCexpand.html" data-bs-toggle="tooltip" title="短碼 expand">短碼 expand</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCattachfiles.html" data-bs-toggle="tooltip" title="短碼attachfiles">短碼attachfiles</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_demo_container_md.html" data-bs-toggle="tooltip" title="短碼demo_container_md">短碼demo_container_md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html" data-bs-toggle="tooltip" title="短碼docfile註解.md">短碼docfile註解.md</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%9F%AD%E7%A2%BCgithub.html" data-bs-toggle="tooltip" title="短碼github.html">短碼github.html</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E7%B7%A8%E8%99%9F.html" data-bs-toggle="tooltip" title="編號">編號</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/short_editurl.html" data-bs-toggle="tooltip" title="編輯副檔名">編輯副檔名</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html" data-bs-toggle="tooltip" title="討論區">討論區</a></li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="token 測試">
+     
+
+  <a class="nav-link" 
+    href="../basic/token.html"><i class="far fa-folder"></i>token 測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/t2_token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
+    
+  
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/test.html" data-bs-toggle="tooltip" title="test">test</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/upload.html" data-bs-toggle="tooltip" title="upload">upload</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/token/%E6%8B%BFtoken.html" data-bs-toggle="tooltip" title="拿token">拿token</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    
+  <li>
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="記錄不同config發生的問題">
+     
+
+  <a class="nav-link" 
+    href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C.html"><i class="far fa-folder"></i>記錄不同config發生的問題  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
+  class="submenu collapse" 
+  data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+</li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+        
+          
+        
+          
+          
+
+ 
+
+
+<li class="nav-item" data-bs-toggle="tooltip" title="有關R的測試">
+     
+
+  <a class="nav-link" 
+    href="../r.html"><i class="far fa-folder"></i>有關R的測試  </a>
+    <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_f2fbe31bf91947f86781e8f880800fb7"><i class="fas fa-caret-right"></i></span>
+      
+  <ul id="menu_item_f2fbe31bf91947f86781e8f880800fb7"  
+  class="submenu collapse" 
+  data-bs-parent="#home-topics"> 
+    
+
+  
+  
+  
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html" data-bs-toggle="tooltip" title="0. 引擎測試準備工作">0. 引擎測試準備工作</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html" data-bs-toggle="tooltip" title="1. 引擎測試1">1. 引擎測試1</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html" data-bs-toggle="tooltip" title="2. 引擎測試2">2. 引擎測試2</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html" data-bs-toggle="tooltip" title="3. 引擎測試3">3. 引擎測試3</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html" data-bs-toggle="tooltip" title="4. 引擎測試4">4. 引擎測試4</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/blackfriday.html" data-bs-toggle="tooltip" title="blackfriday">blackfriday</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/chunk_output.html" data-bs-toggle="tooltip" title="chunk output in Rmarkdown">chunk output in Rmarkdown</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/global_options.html" data-bs-toggle="tooltip" title="global option in R">global option in R</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E4%BA%82%E6%95%B8.html" data-bs-toggle="tooltip" title="亂數">亂數</a></li>
+    
+  
+        <li class="nav-item">
+          
+          <a class="nav-link" href="../r/%E6%B8%AC%E8%A9%A6%E9%A1%9E%E5%88%A5.html" data-bs-toggle="tooltip" title="測試類別">測試類別</a></li>
+    </ul>
+  
+
+</li>   
+     
+  
+
+          
+        
+  </ul> 
+
+    
+    
+    <hr/>
+    <section id="shortcuts">
+      <ul>Shortcuts</ul>
+      <ul>
+        
+        <li>
+          ⛳<a href="../categories.html"><i class='fas fa-fw fa-paperclip'></i> 分類</a>
+        </li>
+        
+      </ul>
+    </section>
+    
+
+    <hr/>
+    <section id="footer">
+      最近3篇<br/><ul><li><a href="../basic/token/upload.html"> <i class="far fa-clock" ></i>upload[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/test.html"> <i class="far fa-clock" ></i>test[2021-08-21 PM 11:21]</a></li><li><a href="../basic/token/t1_google_api.html"> <i class="far fa-clock" ></i>t1 google_api[2021-08-21 PM 11:21]</a></li></ul>
+    </section>
+  
+</nav><article class="article mx-2 mt-3" id="body-inner">
+    
+
+<h2 id="產生資料">產生資料</h2>
+
+<p>使用 s403_logit_1to6.Rmarkdown 的資料transfer/targetds</p>
+
+<h2 id="跑mlogit-1237">跑mlogit 1237</h2>
+
+<pre><code> . use ../transfer/targetds,replace
+
+. // <div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>產生../tmp/targetds</span>
+    </div><div class="expand-content incode">. //只留小兒科
+. keep if hsect==&#34;PED&#34;
+(89,478 observations deleted)
+
+. //排除18以上
+. drop if age&gt;18
+(685 observations deleted)
+
+. //排除死亡,自動出院,自殺
+. drop if inlist(estatus, 1,2,3)
+(38 observations deleted)
+
+. //</div></div>
+. save ../tmp/targetds,replace
+file ../tmp/targetds.dta saved
+</code></pre>
+
+<h2 id="主程式">主程式</h2>
+
+<p>//mlogit, rrr
+//eststo mlogit</p>
+
+<pre><code>. use ../tmp/targetds,clear
+
+. 
+. foreach period in y2018 y2019{
+  2. hugocmd expand,hbody(title=&quot;mlogit`period'，利用transfer/target.ds&quot;)
+  3. 
+. eststo clear
+  4. eststo model1 : mlogit unplan lace if `period'==1,base(3)
+  5. eststo model2: mlogit unplan hindays i.hintype1 wgtcc ce if `period'==1,base(3)
+  6. eststo model3: mlogit unplan hindays i.hintype1 wgtcc ce i.sex age  age10 i.job1 hdiag_num if `period'==1,base(3)
+  7. 
+. eststo model5: mlogit unplan hindays i.hintype1 wgtcc ce360 if `period'==1,base(3)
+  8. eststo model6: mlogit unplan hindays i.hintype1 wgtcc ce360 i.sex age  age10 i.job1 hdiag_num if `period'==1,base(3)
+  9. 
+. 
+. eststo model8: mlogit unplan hindays i.hintype1 wgtcc ce360 i.sex age  age10 i.job1 hdiag_num if `period'==1,base(3)
+ 10. eststo model14: mlogit unplan hindays ce360  if `period'==1,base(3)
+ 11. 
+. 
+. genfilename &quot;${outposix}_mlogit&quot;, pre(&quot;../report/&quot;) post(&quot;.html&quot;)  autoinc 
+ 12. 
+. esttab using &quot;`r(fn)'&quot;, cells(b(fmt(3) star) &amp;se(fmt(3) par)  &amp; ci(fmt(3) par)) mtitles stats(N aic bic r2_p chi2 p)  r(level) pr2 replace compress nogap star( * 0.10 ** 0.05 *** 0.01 ) title(&quot;mlogit&quot;) unstack  label  nolines  nonumbers onecell
+ 13. 
+. 
+. //RR FORM
+. genfilename &quot;${outposix}_mlogit&quot;, pre(&quot;../report/&quot;) post(&quot;.html&quot;)  autoinc 
+ 14. esttab using &quot;`r(fn)'&quot;, cells(b(fmt(3) star) &amp; se(fmt(3) par)  &amp; ci(fmt(3) par)) mtitles stats(N aic bic r2_p chi2 p)  r(level) pr2 replace compress nogap star( * 0.10 ** 0.05 *** 0.01 ) title(&quot;mlogit&quot;) eform unstack  label  nolines nogaps onecell  n
+&gt; onumbers
+ 15. 
+. 
+. // estout 因為上面沒有常數項
+. genfilename &quot;${outposix}_mlogit&quot;, pre(&quot;../report/&quot;) post(&quot;.html&quot;)  autoinc 
+ 16. estout using &quot;`r(fn)'&quot;, cells(b(fmt(3) star) &amp; se(fmt(3) par(`&quot;&lt;br/&gt;(&quot;' `&quot;)&lt;br/&gt;&quot;'))  &amp; ci(fmt(3) par))  stats(N aic bic r2_p chi2 p)   replace   title(&quot;mlogit&quot;) eform unstack  label ///
+&gt;   nonumbers ///
+&gt;   begin(&quot;&lt;tr&gt;&lt;td&gt;&quot;) ///
+&gt;   delimiter(&quot;&lt;/td&gt;&lt;td&gt;&quot;) ///
+&gt;   end(&quot;&lt;/td&gt;&lt;/tr&gt;&quot;)  ///
+&gt;   prehead(`&quot;&lt;table border=&quot;0&quot; width=&quot;*&quot;&gt;&quot;' `&quot;&lt;thead&gt;&quot;') ///
+&gt;   posthead(`&quot;&lt;/thead&gt;&lt;tbody&gt; &quot;') ///
+&gt;   postfoot(`&quot;&lt;/tbody&gt;&lt;/table&gt;&quot;') ///
+&gt;   interaction(&quot; # &quot;) ///
+&gt;   starlevels( * 0.10 ** 0.05 *** 0.01 )
+ 17. hugocmd expand,end
+ 18. 
+. }
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>mlogity2018，利用transfer/target.ds</span>
+    </div><div class="expand-content incode">Iteration 0:   log likelihood = -998.88195  
+Iteration 1:   log likelihood = -966.06462  
+Iteration 2:   log likelihood = -963.82913  
+Iteration 3:   log likelihood = -963.82335  
+Iteration 4:   log likelihood = -963.82335  
+
+Multinomial logistic regression                 Number of obs     =      4,346
+                                                LR chi2(2)        =      70.12
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -963.82335                     Pseudo R2         =     0.0351
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+        lace |   .2382719   .0371664     6.41   0.000     .1654271    .3111167
+       _cons |  -5.144565    .303257   -16.96   0.000    -5.738938   -4.550192
+-------------&#43;----------------------------------------------------------------
+2            |
+        lace |   .2530994   .0467255     5.42   0.000     .1615192    .3446796
+       _cons |  -5.745449   .3860783   -14.88   0.000    -6.502149   -4.988749
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.88195  
+Iteration 1:   log likelihood = -960.06677  
+Iteration 2:   log likelihood = -957.08492  
+Iteration 3:   log likelihood = -956.64337  
+Iteration 4:   log likelihood = -956.64224  
+Iteration 5:   log likelihood = -956.64224  
+
+Multinomial logistic regression                 Number of obs     =      4,346
+                                                LR chi2(8)        =      84.48
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -956.64224                     Pseudo R2         =     0.0423
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0202058   .0062683     3.22   0.001     .0079202    .0324913
+             |
+    hintype1 |
+   急診住院  |   .1718971   .2016903     0.85   0.394    -.2234086    .5672028
+       wgtcc |   .2092572   .1001315     2.09   0.037     .0130031    .4055113
+          ce |   .2461712   .0400219     6.15   0.000     .1677298    .3246127
+       _cons |  -3.987892   .1861482   -21.42   0.000    -4.352736   -3.623048
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0255249   .0066485     3.84   0.000      .012494    .0385557
+             |
+    hintype1 |
+   急診住院  |   .4063439   .2707162     1.50   0.133    -.1242501    .9369378
+       wgtcc |   .2554744   .1167128     2.19   0.029     .0267215    .4842274
+          ce |    .280456   .0452388     6.20   0.000     .1917895    .3691225
+       _cons |  -4.760015    .253209   -18.80   0.000    -5.256295   -4.263735
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.78045  
+Iteration 1:   log likelihood = -946.87865  
+Iteration 2:   log likelihood = -939.13703  
+Iteration 3:   log likelihood = -938.68802  
+Iteration 4:   log likelihood = -938.68674  
+Iteration 5:   log likelihood = -938.68674  
+
+Multinomial logistic regression                 Number of obs     =      4,344
+                                                LR chi2(18)       =     120.19
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -938.68674                     Pseudo R2         =     0.0602
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0150517   .0063907     2.36   0.019     .0025262    .0275772
+             |
+    hintype1 |
+   急診住院  |   .4762004   .2141024     2.22   0.026     .0565675    .8958334
+       wgtcc |   .1399168   .1085205     1.29   0.197    -.0727795    .3526131
+          ce |   .2262994   .0412317     5.49   0.000     .1454868     .307112
+             |
+         sex |
+         男  |   .0658368   .1804428     0.36   0.715    -.2878247    .4194982
+         age |  -.2276516   .0673867    -3.38   0.001    -.3597272   -.0955761
+       age10 |   .1257589   .0390851     3.22   0.001     .0491536    .2023642
+             |
+        job1 |
+   重大傷病  |   1.000978   .3092429     3.24   0.001     .3948728    1.607083
+   hdiag_num |  -.1634233   .0902453    -1.81   0.070     -.340301    .0134543
+       _cons |  -3.625858   .2469598   -14.68   0.000     -4.10989   -3.141826
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |    .021174   .0064524     3.28   0.001     .0085274    .0338205
+             |
+    hintype1 |
+   急診住院  |   .5949774   .2822816     2.11   0.035     .0417157    1.148239
+       wgtcc |    .196306   .1242033     1.58   0.114    -.0471281      .43974
+          ce |   .2665748   .0462646     5.76   0.000     .1758978    .3572517
+             |
+         sex |
+         男  |   .0435151   .2285698     0.19   0.849    -.4044734    .4915036
+         age |  -.1369016   .0847829    -1.61   0.106     -.303073    .0292698
+       age10 |   .0658599   .0501945     1.31   0.189    -.0325196    .1642393
+             |
+        job1 |
+   重大傷病  |   .8883759   .3937585     2.26   0.024     .1166235    1.660128
+   hdiag_num |  -.0564419   .0967432    -0.58   0.560    -.2460551    .1331712
+       _cons |   -4.54708   .3312553   -13.73   0.000    -5.196328   -3.897831
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.88195  
+Iteration 1:   log likelihood = -979.65199  
+Iteration 2:   log likelihood = -974.90553  
+Iteration 3:   log likelihood = -974.20936  
+Iteration 4:   log likelihood =  -974.2081  
+Iteration 5:   log likelihood =  -974.2081  
+
+Multinomial logistic regression                 Number of obs     =      4,346
+                                                LR chi2(8)        =      49.35
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood =  -974.2081                     Pseudo R2         =     0.0247
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0206195   .0062237     3.31   0.001     .0084213    .0328177
+             |
+    hintype1 |
+   急診住院  |   .3988927    .202092     1.97   0.048     .0027997    .7949858
+       wgtcc |   .1870192   .0959222     1.95   0.051    -.0009849    .3750232
+       ce360 |   .0730602   .0197025     3.71   0.000      .034444    .1116763
+       _cons |  -3.949825   .1906628   -20.72   0.000    -4.323517   -3.576133
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0261695   .0066468     3.94   0.000     .0131421    .0391969
+             |
+    hintype1 |
+   急診住院  |   .7237795   .2755127     2.63   0.009     .1837845    1.263774
+       wgtcc |   .2298257   .1090992     2.11   0.035     .0159952    .4436562
+       ce360 |   .0875503   .0207076     4.23   0.000     .0469642    .1281364
+       _cons |  -4.754258   .2651935   -17.93   0.000    -5.274028   -4.234488
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.78045  
+Iteration 1:   log likelihood = -967.48228  
+Iteration 2:   log likelihood = -957.28559  
+Iteration 3:   log likelihood =  -956.6554  
+Iteration 4:   log likelihood = -956.65124  
+Iteration 5:   log likelihood = -956.65123  
+
+Multinomial logistic regression                 Number of obs     =      4,344
+                                                LR chi2(18)       =      84.26
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -956.65123                     Pseudo R2         =     0.0422
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0159236   .0063647     2.50   0.012      .003449    .0283983
+             |
+    hintype1 |
+   急診住院  |   .7018067   .2117983     3.31   0.001     .2866896    1.116924
+       wgtcc |   .1301026   .1045741     1.24   0.213     -.074859    .3350641
+       ce360 |   .0519776    .021611     2.41   0.016     .0096208    .0943344
+             |
+         sex |
+         男  |   .0630142   .1794144     0.35   0.725    -.2886315    .4146599
+         age |  -.2240558    .066284    -3.38   0.001    -.3539702   -.0941415
+       age10 |    .129422    .038499     3.36   0.001     .0539654    .2048787
+             |
+        job1 |
+   重大傷病  |   1.003996   .3148682     3.19   0.001     .3868661    1.621127
+   hdiag_num |  -.1666075   .0896528    -1.86   0.063    -.3423237    .0091087
+       _cons |  -3.628137   .2481265   -14.62   0.000    -4.114456   -3.141818
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0220477   .0065525     3.36   0.001      .009205    .0348904
+             |
+    hintype1 |
+   急診住院  |   .9052065   .2846925     3.18   0.001     .3472195    1.463194
+       wgtcc |   .1878827   .1160941     1.62   0.106    -.0396576    .4154229
+       ce360 |   .0707849   .0222184     3.19   0.001     .0272376    .1143323
+             |
+         sex |
+         男  |   .0204869   .2268767     0.09   0.928    -.4241833    .4651572
+         age |  -.1392024   .0834612    -1.67   0.095    -.3027833    .0243786
+       age10 |   .0738403    .049779     1.48   0.138    -.0237248    .1714053
+             |
+        job1 |
+   重大傷病  |   .8158847   .4097838     1.99   0.046     .0127233    1.619046
+   hdiag_num |  -.0608283   .0956832    -0.64   0.525     -.248364    .1267073
+       _cons |  -4.541942   .3343986   -13.58   0.000    -5.197351   -3.886533
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.78045  
+Iteration 1:   log likelihood = -967.48228  
+Iteration 2:   log likelihood = -957.28559  
+Iteration 3:   log likelihood =  -956.6554  
+Iteration 4:   log likelihood = -956.65124  
+Iteration 5:   log likelihood = -956.65123  
+
+Multinomial logistic regression                 Number of obs     =      4,344
+                                                LR chi2(18)       =      84.26
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -956.65123                     Pseudo R2         =     0.0422
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0159236   .0063647     2.50   0.012      .003449    .0283983
+             |
+    hintype1 |
+   急診住院  |   .7018067   .2117983     3.31   0.001     .2866896    1.116924
+       wgtcc |   .1301026   .1045741     1.24   0.213     -.074859    .3350641
+       ce360 |   .0519776    .021611     2.41   0.016     .0096208    .0943344
+             |
+         sex |
+         男  |   .0630142   .1794144     0.35   0.725    -.2886315    .4146599
+         age |  -.2240558    .066284    -3.38   0.001    -.3539702   -.0941415
+       age10 |    .129422    .038499     3.36   0.001     .0539654    .2048787
+             |
+        job1 |
+   重大傷病  |   1.003996   .3148682     3.19   0.001     .3868661    1.621127
+   hdiag_num |  -.1666075   .0896528    -1.86   0.063    -.3423237    .0091087
+       _cons |  -3.628137   .2481265   -14.62   0.000    -4.114456   -3.141818
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0220477   .0065525     3.36   0.001      .009205    .0348904
+             |
+    hintype1 |
+   急診住院  |   .9052065   .2846925     3.18   0.001     .3472195    1.463194
+       wgtcc |   .1878827   .1160941     1.62   0.106    -.0396576    .4154229
+       ce360 |   .0707849   .0222184     3.19   0.001     .0272376    .1143323
+             |
+         sex |
+         男  |   .0204869   .2268767     0.09   0.928    -.4241833    .4651572
+         age |  -.1392024   .0834612    -1.67   0.095    -.3027833    .0243786
+       age10 |   .0738403    .049779     1.48   0.138    -.0237248    .1714053
+             |
+        job1 |
+   重大傷病  |   .8158847   .4097838     1.99   0.046     .0127233    1.619046
+   hdiag_num |  -.0608283   .0956832    -0.64   0.525     -.248364    .1267073
+       _cons |  -4.541942   .3343986   -13.58   0.000    -5.197351   -3.886533
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -998.88195  
+Iteration 1:   log likelihood = -985.78069  
+Iteration 2:   log likelihood = -982.70753  
+Iteration 3:   log likelihood = -982.15687  
+Iteration 4:   log likelihood = -982.15489  
+Iteration 5:   log likelihood = -982.15489  
+
+Multinomial logistic regression                 Number of obs     =      4,346
+                                                LR chi2(4)        =      33.45
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -982.15489                     Pseudo R2         =     0.0167
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0166555   .0058455     2.85   0.004     .0051986    .0281124
+       ce360 |   .0747931   .0196629     3.80   0.000     .0362545    .1133318
+       _cons |  -3.615458   .1027396   -35.19   0.000    -3.816824   -3.414092
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0208067   .0059908     3.47   0.001      .009065    .0325483
+       ce360 |   .0843088   .0204343     4.13   0.000     .0442583    .1243593
+       _cons |  -4.154224   .1280419   -32.44   0.000    -4.405182   -3.903267
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+檔案名稱:../report/c403b_mlogit_1.html
+(note: file ../report/c403b_mlogit_1.html not found)
+(output written to ../report/c403b_mlogit_1.html)
+檔案名稱:../report/c403b_mlogit_2.html
+(note: file ../report/c403b_mlogit_2.html not found)
+(output written to ../report/c403b_mlogit_2.html)
+檔案名稱:../report/c403b_mlogit_3.html
+(note: file ../report/c403b_mlogit_3.html not found)
+(output written to ../report/c403b_mlogit_3.html)</div></div>
+<div class="expand">
+    <div class="expand-label" onclick="$h = $(this);$h.siblings('div.expand-content').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.siblings('div.expand-content').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fa fa-chevron-right" color="yellow"></i>
+        <span>mlogity2019，利用transfer/target.ds</span>
+    </div><div class="expand-content incode">Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -929.75799  
+Iteration 2:   log likelihood = -927.77115  
+Iteration 3:   log likelihood = -927.76539  
+Iteration 4:   log likelihood = -927.76539  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(2)        =      64.92
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -927.76539                     Pseudo R2         =     0.0338
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+        lace |   .2406899   .0369366     6.52   0.000     .1682955    .3130842
+       _cons |  -5.126884    .303758   -16.88   0.000    -5.722238   -4.531529
+-------------&#43;----------------------------------------------------------------
+2            |
+        lace |   .2251521   .0475333     4.74   0.000     .1319886    .3183156
+       _cons |  -5.535878   .3881677   -14.26   0.000    -6.296673   -4.775083
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -917.69354  
+Iteration 2:   log likelihood = -914.32073  
+Iteration 3:   log likelihood = -914.28993  
+Iteration 4:   log likelihood = -914.28992  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(8)        =      91.87
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -914.28992                     Pseudo R2         =     0.0478
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |    .026313   .0049942     5.27   0.000     .0165245    .0361015
+             |
+    hintype1 |
+   急診住院  |   .3104526   .2097165     1.48   0.139    -.1005842    .7214894
+       wgtcc |  -.0413501   .1656998    -0.25   0.803    -.3661158    .2834156
+          ce |   .2760373   .0485003     5.69   0.000     .1809785    .3710962
+       _cons |  -4.066864   .1941025   -20.95   0.000    -4.447298    -3.68643
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0260435   .0057213     4.55   0.000     .0148299     .037257
+             |
+    hintype1 |
+   急診住院  |  -.3334668   .2491587    -1.34   0.181    -.8218089    .1548752
+       wgtcc |   .1514758   .1381678     1.10   0.273    -.1193282    .4222798
+          ce |   .3666886   .0541494     6.77   0.000     .2605578    .4728195
+       _cons |  -4.349899   .2177804   -19.97   0.000    -4.776741   -3.923058
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -905.40353  
+Iteration 2:   log likelihood = -898.13813  
+Iteration 3:   log likelihood = -898.02442  
+Iteration 4:   log likelihood = -898.02434  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(18)       =     124.40
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -898.02434                     Pseudo R2         =     0.0648
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |    .025094   .0053637     4.68   0.000     .0145814    .0356067
+             |
+    hintype1 |
+   急診住院  |    .549901   .2234081     2.46   0.014     .1120292    .9877727
+       wgtcc |  -.1455833   .1846888    -0.79   0.431    -.5075668    .2164001
+          ce |   .2578396   .0494186     5.22   0.000     .1609808    .3546983
+             |
+         sex |
+         男  |   .0402883   .1826414     0.22   0.825    -.3176823    .3982589
+         age |  -.0501845   .0692873    -0.72   0.469    -.1859851    .0856161
+       age10 |   .0308643   .0404896     0.76   0.446    -.0484938    .1102224
+             |
+        job1 |
+   重大傷病  |   .8355972   .3119426     2.68   0.007     .2242008    1.446994
+   hdiag_num |  -.1548688   .0802258    -1.93   0.054    -.3121085    .0023709
+       _cons |  -4.041165    .260832   -15.49   0.000    -4.552387   -3.529944
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0188821    .006484     2.91   0.004     .0061737    .0315905
+             |
+    hintype1 |
+   急診住院  |  -.0204273   .2698136    -0.08   0.940    -.5492523    .5083977
+       wgtcc |   .0432308   .1660617     0.26   0.795    -.2822442    .3687057
+          ce |   .3454218   .0564515     6.12   0.000     .2347789    .4560646
+             |
+         sex |
+         男  |   .0955819   .2397144     0.40   0.690    -.3742496    .5654135
+         age |  -.2605029   .0963693    -2.70   0.007    -.4493833   -.0716225
+       age10 |   .1229795   .0540576     2.27   0.023     .0170285    .2289305
+             |
+        job1 |
+   重大傷病  |   1.541921   .3701829     4.17   0.000     .8163762    2.267467
+   hdiag_num |  -.0096714   .0864554    -0.11   0.911     -.179121    .1597781
+       _cons |  -4.098981   .3054009   -13.42   0.000    -4.697556   -3.500406
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -928.34032  
+Iteration 2:   log likelihood = -912.31319  
+Iteration 3:   log likelihood =   -905.822  
+Iteration 4:   log likelihood = -904.68579  
+Iteration 5:   log likelihood =  -904.6854  
+Iteration 6:   log likelihood =  -904.6854  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(8)        =     111.08
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood =  -904.6854                     Pseudo R2         =     0.0578
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0281006    .005062     5.55   0.000     .0181793    .0380218
+             |
+    hintype1 |
+   急診住院  |   .6157454   .2109618     2.92   0.004     .2022679    1.029223
+       wgtcc |  -.3291361   .2196031    -1.50   0.134    -.7595502    .1012781
+       ce360 |   .2197492   .0342096     6.42   0.000     .1526997    .2867988
+       _cons |  -4.170879   .2021679   -20.63   0.000    -4.567121   -3.774637
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0284416   .0057404     4.95   0.000     .0171907    .0396925
+             |
+    hintype1 |
+   急診住院  |   .1314071   .2528968     0.52   0.603    -.3642615    .6270758
+       wgtcc |  -.2291958   .2432808    -0.94   0.346    -.7060175    .2476259
+       ce360 |    .255997   .0352297     7.27   0.000     .1869481    .3250458
+       _cons |    -4.4824   .2303114   -19.46   0.000    -4.933802   -4.030998
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -922.29927  
+Iteration 2:   log likelihood = -902.59389  
+Iteration 3:   log likelihood = -896.36071  
+Iteration 4:   log likelihood = -894.88143  
+Iteration 5:   log likelihood = -894.88007  
+Iteration 6:   log likelihood = -894.88007  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(18)       =     130.69
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -894.88007                     Pseudo R2         =     0.0680
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |    .027385   .0054187     5.05   0.000     .0167646    .0380054
+             |
+    hintype1 |
+   急診住院  |    .783689   .2226181     3.52   0.000     .3473656    1.220012
+       wgtcc |  -.3604499   .2228027    -1.62   0.106    -.7971352    .0762353
+       ce360 |   .1928996   .0365116     5.28   0.000     .1213382     .264461
+             |
+         sex |
+         男  |   .0941842   .1834061     0.51   0.608    -.2652851    .4536536
+         age |  -.0270554   .0690763    -0.39   0.695    -.1624426    .1083317
+       age10 |    .015203   .0403399     0.38   0.706    -.0638618    .0942678
+             |
+        job1 |
+   重大傷病  |   .5510581   .3354804     1.64   0.100    -.1064714    1.208587
+   hdiag_num |  -.1423263   .0797842    -1.78   0.074    -.2987005    .0140479
+       _cons |  -4.158975   .2683832   -15.50   0.000    -4.684996   -3.632953
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0221631   .0064066     3.46   0.001     .0096065    .0347198
+             |
+    hintype1 |
+   急診住院  |   .3533377   .2708768     1.30   0.192    -.1775712    .8842465
+       wgtcc |  -.2508323   .2344402    -1.07   0.285    -.7103267    .2086621
+       ce360 |   .2350438   .0378878     6.20   0.000      .160785    .3093026
+             |
+         sex |
+         男  |   .2128171   .2450811     0.87   0.385     -.267533    .6931672
+         age |   -.239752   .0974766    -2.46   0.014    -.4308027   -.0487012
+       age10 |   .1051247   .0546806     1.92   0.055    -.0020474    .2122967
+             |
+        job1 |
+   重大傷病  |   1.141482   .4079773     2.80   0.005     .3418606    1.941102
+   hdiag_num |   .0240274    .083963     0.29   0.775     -.140537    .1885918
+       _cons |  -4.271926   .3200366   -13.35   0.000    -4.899187   -3.644666
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -922.29927  
+Iteration 2:   log likelihood = -902.59389  
+Iteration 3:   log likelihood = -896.36071  
+Iteration 4:   log likelihood = -894.88143  
+Iteration 5:   log likelihood = -894.88007  
+Iteration 6:   log likelihood = -894.88007  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(18)       =     130.69
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -894.88007                     Pseudo R2         =     0.0680
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |    .027385   .0054187     5.05   0.000     .0167646    .0380054
+             |
+    hintype1 |
+   急診住院  |    .783689   .2226181     3.52   0.000     .3473656    1.220012
+       wgtcc |  -.3604499   .2228027    -1.62   0.106    -.7971352    .0762353
+       ce360 |   .1928996   .0365116     5.28   0.000     .1213382     .264461
+             |
+         sex |
+         男  |   .0941842   .1834061     0.51   0.608    -.2652851    .4536536
+         age |  -.0270554   .0690763    -0.39   0.695    -.1624426    .1083317
+       age10 |    .015203   .0403399     0.38   0.706    -.0638618    .0942678
+             |
+        job1 |
+   重大傷病  |   .5510581   .3354804     1.64   0.100    -.1064714    1.208587
+   hdiag_num |  -.1423263   .0797842    -1.78   0.074    -.2987005    .0140479
+       _cons |  -4.158975   .2683832   -15.50   0.000    -4.684996   -3.632953
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0221631   .0064066     3.46   0.001     .0096065    .0347198
+             |
+    hintype1 |
+   急診住院  |   .3533377   .2708768     1.30   0.192    -.1775712    .8842465
+       wgtcc |  -.2508323   .2344402    -1.07   0.285    -.7103267    .2086621
+       ce360 |   .2350438   .0378878     6.20   0.000      .160785    .3093026
+             |
+         sex |
+         男  |   .2128171   .2450811     0.87   0.385     -.267533    .6931672
+         age |   -.239752   .0974766    -2.46   0.014    -.4308027   -.0487012
+       age10 |   .1051247   .0546806     1.92   0.055    -.0020474    .2122967
+             |
+        job1 |
+   重大傷病  |   1.141482   .4079773     2.80   0.005     .3418606    1.941102
+   hdiag_num |   .0240274    .083963     0.29   0.775     -.140537    .1885918
+       _cons |  -4.271926   .3200366   -13.35   0.000    -4.899187   -3.644666
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+
+Iteration 0:   log likelihood = -960.22296  
+Iteration 1:   log likelihood = -933.20138  
+Iteration 2:   log likelihood = -918.11166  
+Iteration 3:   log likelihood = -912.04102  
+Iteration 4:   log likelihood = -911.33195  
+Iteration 5:   log likelihood = -911.33167  
+Iteration 6:   log likelihood = -911.33167  
+
+Multinomial logistic regression                 Number of obs     =      4,108
+                                                LR chi2(4)        =      97.78
+                                                Prob &gt; chi2       =     0.0000
+Log likelihood = -911.33167                     Pseudo R2         =     0.0509
+
+------------------------------------------------------------------------------
+      unplan |      Coef.   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
+-------------&#43;----------------------------------------------------------------
+1            |
+     hindays |   .0237757   .0048334     4.92   0.000     .0143024    .0332491
+       ce360 |   .1761588   .0283538     6.21   0.000     .1205863    .2317312
+       _cons |  -3.725831   .1077345   -34.58   0.000    -3.936987   -3.514675
+-------------&#43;----------------------------------------------------------------
+2            |
+     hindays |   .0266027   .0055201     4.82   0.000     .0157836    .0374218
+       ce360 |   .2310458   .0277112     8.34   0.000     .1767328    .2853588
+       _cons |  -4.400547   .1435928   -30.65   0.000    -4.681984    -4.11911
+-------------&#43;----------------------------------------------------------------
+3            |  (base outcome)
+------------------------------------------------------------------------------
+檔案名稱:../report/c403b_mlogit_4.html
+(note: file ../report/c403b_mlogit_4.html not found)
+(output written to ../report/c403b_mlogit_4.html)
+檔案名稱:../report/c403b_mlogit_5.html
+(note: file ../report/c403b_mlogit_5.html not found)
+(output written to ../report/c403b_mlogit_5.html)
+檔案名稱:../report/c403b_mlogit_6.html
+(note: file ../report/c403b_mlogit_6.html not found)
+(output written to ../report/c403b_mlogit_6.html)</div></div>
+
+. 
+. 
+</code></pre>
+
+<h3 id="span-class-outposix-mlogit-span"><span class='outposix'> <strong>mlogit</strong> </span></h3>
+
+<p><a href="./../report/c403b_mlogit_1.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <caption>mlogit</caption> <tr><td>                </td><td>   model1              </td><td>                       </td><td>                       </td><td>   model2              </td><td>                       </td><td>                       </td><td>   model3              </td><td>                       </td><td>                       </td><td>   model5              </td><td>                       </td><td>                       </td><td>   model6              </td><td>                       </td><td>                       </td><td>   model8              </td><td>                       </td><td>                       </td><td>  model14              </td><td>                       </td><td>                       </td></tr> <tr><td>                </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td></tr> <tr><td>                </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td></tr> <tr><td>lace            </td><td>0.238<sup>***</sup><br />(0.037)<br />[0.165,0.311]              </td><td>0.253<sup>***</sup><br />(0.047)<br />[0.162,0.345]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>住院天數    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.020<sup>***</sup><br />(0.006)<br />[0.008,0.032]              </td><td>0.026<sup>***</sup><br />(0.007)<br />[0.012,0.039]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.015<sup>**</sup><br />(0.006)<br />[0.003,0.028]              </td><td>0.021<sup>***</sup><br />(0.006)<br />[0.009,0.034]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.021<sup>***</sup><br />(0.006)<br />[0.008,0.033]              </td><td>0.026<sup>***</sup><br />(0.007)<br />[0.013,0.039]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.016<sup>**</sup><br />(0.006)<br />[0.003,0.028]              </td><td>0.022<sup>***</sup><br />(0.007)<br />[0.009,0.035]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.016<sup>**</sup><br />(0.006)<br />[0.003,0.028]              </td><td>0.022<sup>***</sup><br />(0.007)<br />[0.009,0.035]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.017<sup>***</sup><br />(0.006)<br />[0.005,0.028]              </td><td>0.021<sup>***</sup><br />(0.006)<br />[0.009,0.033]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>門診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>急診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.172<br />(0.202)<br />[-0.223,0.567]              </td><td>0.406<br />(0.271)<br />[-0.124,0.937]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.476<sup>**</sup><br />(0.214)<br />[0.057,0.896]              </td><td>0.595<sup>**</sup><br />(0.282)<br />[0.042,1.148]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.399<sup>**</sup><br />(0.202)<br />[0.003,0.795]              </td><td>0.724<sup>***</sup><br />(0.276)<br />[0.184,1.264]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.702<sup>***</sup><br />(0.212)<br />[0.287,1.117]              </td><td>0.905<sup>***</sup><br />(0.285)<br />[0.347,1.463]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.702<sup>***</sup><br />(0.212)<br />[0.287,1.117]              </td><td>0.905<sup>***</sup><br />(0.285)<br />[0.347,1.463]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>共病          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.209<sup>**</sup><br />(0.100)<br />[0.013,0.406]              </td><td>0.255<sup>**</sup><br />(0.117)<br />[0.027,0.484]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.140<br />(0.109)<br />[-0.073,0.353]              </td><td>0.196<br />(0.124)<br />[-0.047,0.440]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.187<sup>*</sup><br />(0.096)<br />[-0.001,0.375]              </td><td>0.230<sup>**</sup><br />(0.109)<br />[0.016,0.444]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.130<br />(0.105)<br />[-0.075,0.335]              </td><td>0.188<br />(0.116)<br />[-0.040,0.415]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.130<br />(0.105)<br />[-0.075,0.335]              </td><td>0.188<br />(0.116)<br />[-0.040,0.415]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前6個月急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.246<sup>***</sup><br />(0.040)<br />[0.168,0.325]              </td><td>0.280<sup>***</sup><br />(0.045)<br />[0.192,0.369]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.226<sup>***</sup><br />(0.041)<br />[0.145,0.307]              </td><td>0.267<sup>***</sup><br />(0.046)<br />[0.176,0.357]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>女             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>男             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.066<br />(0.180)<br />[-0.288,0.419]              </td><td>0.044<br />(0.229)<br />[-0.404,0.492]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.063<br />(0.179)<br />[-0.289,0.415]              </td><td>0.020<br />(0.227)<br />[-0.424,0.465]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.063<br />(0.179)<br />[-0.289,0.415]              </td><td>0.020<br />(0.227)<br />[-0.424,0.465]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>年齡          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.228<sup>***</sup><br />(0.067)<br />[-0.360,-0.096]              </td><td>-0.137<br />(0.085)<br />[-0.303,0.029]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.224<sup>***</sup><br />(0.066)<br />[-0.354,-0.094]              </td><td>-0.139<sup>*</sup><br />(0.083)<br />[-0.303,0.024]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.224<sup>***</sup><br />(0.066)<br />[-0.354,-0.094]              </td><td>-0.139<sup>*</sup><br />(0.083)<br />[-0.303,0.024]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>age10           </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.126<sup>***</sup><br />(0.039)<br />[0.049,0.202]              </td><td>0.066<br />(0.050)<br />[-0.033,0.164]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.129<sup>***</sup><br />(0.038)<br />[0.054,0.205]              </td><td>0.074<br />(0.050)<br />[-0.024,0.171]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.129<sup>***</sup><br />(0.038)<br />[0.054,0.205]              </td><td>0.074<br />(0.050)<br />[-0.024,0.171]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>非重大傷病 </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>重大傷病    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.001<sup>***</sup><br />(0.309)<br />[0.395,1.607]              </td><td>0.888<sup>**</sup><br />(0.394)<br />[0.117,1.660]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.004<sup>***</sup><br />(0.315)<br />[0.387,1.621]              </td><td>0.816<sup>**</sup><br />(0.410)<br />[0.013,1.619]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>1.004<sup>***</sup><br />(0.315)<br />[0.387,1.621]              </td><td>0.816<sup>**</sup><br />(0.410)<br />[0.013,1.619]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>張數          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.163<sup>*</sup><br />(0.090)<br />[-0.340,0.013]              </td><td>-0.056<br />(0.097)<br />[-0.246,0.133]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.167<sup>*</sup><br />(0.090)<br />[-0.342,0.009]              </td><td>-0.061<br />(0.096)<br />[-0.248,0.127]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.167<sup>*</sup><br />(0.090)<br />[-0.342,0.009]              </td><td>-0.061<br />(0.096)<br />[-0.248,0.127]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前年急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.073<sup>***</sup><br />(0.020)<br />[0.034,0.112]              </td><td>0.088<sup>***</sup><br />(0.021)<br />[0.047,0.128]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.052<sup>**</sup><br />(0.022)<br />[0.010,0.094]              </td><td>0.071<sup>***</sup><br />(0.022)<br />[0.027,0.114]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.052<sup>**</sup><br />(0.022)<br />[0.010,0.094]              </td><td>0.071<sup>***</sup><br />(0.022)<br />[0.027,0.114]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.075<sup>***</sup><br />(0.020)<br />[0.036,0.113]              </td><td>0.084<sup>***</sup><br />(0.020)<br />[0.044,0.124]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>Constant        </td><td>-5.145<sup>***</sup><br />(0.303)<br />[-5.739,-4.550]              </td><td>-5.745<sup>***</sup><br />(0.386)<br />[-6.502,-4.989]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.988<sup>***</sup><br />(0.186)<br />[-4.353,-3.623]              </td><td>-4.760<sup>***</sup><br />(0.253)<br />[-5.256,-4.264]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.626<sup>***</sup><br />(0.247)<br />[-4.110,-3.142]              </td><td>-4.547<sup>***</sup><br />(0.331)<br />[-5.196,-3.898]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.950<sup>***</sup><br />(0.191)<br />[-4.324,-3.576]              </td><td>-4.754<sup>***</sup><br />(0.265)<br />[-5.274,-4.234]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.628<sup>***</sup><br />(0.248)<br />[-4.114,-3.142]              </td><td>-4.542<sup>***</sup><br />(0.334)<br />[-5.197,-3.887]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.628<sup>***</sup><br />(0.248)<br />[-4.114,-3.142]              </td><td>-4.542<sup>***</sup><br />(0.334)<br />[-5.197,-3.887]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.615<sup>***</sup><br />(0.103)<br />[-3.817,-3.414]              </td><td>-4.154<sup>***</sup><br />(0.128)<br />[-4.405,-3.903]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>N               </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td></tr> <tr><td>aic             </td><td> 1935.647              </td><td>                       </td><td>                       </td><td> 1933.284              </td><td>                       </td><td>                       </td><td> 1917.373              </td><td>                       </td><td>                       </td><td> 1968.416              </td><td>                       </td><td>                       </td><td> 1953.302              </td><td>                       </td><td>                       </td><td> 1953.302              </td><td>                       </td><td>                       </td><td> 1976.310              </td><td>                       </td><td>                       </td></tr> <tr><td>bic             </td><td> 1961.155              </td><td>                       </td><td>                       </td><td> 1997.055              </td><td>                       </td><td>                       </td><td> 2044.904              </td><td>                       </td><td>                       </td><td> 2032.186              </td><td>                       </td><td>                       </td><td> 2080.833              </td><td>                       </td><td>                       </td><td> 2080.833              </td><td>                       </td><td>                       </td><td> 2014.572              </td><td>                       </td><td>                       </td></tr> <tr><td>r2_p            </td><td>    0.035              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.060              </td><td>                       </td><td>                       </td><td>    0.025              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.017              </td><td>                       </td><td>                       </td></tr> <tr><td>chi2            </td><td>   70.117              </td><td>                       </td><td>                       </td><td>   84.479              </td><td>                       </td><td>                       </td><td>  120.187              </td><td>                       </td><td>                       </td><td>   49.348              </td><td>                       </td><td>                       </td><td>   84.258              </td><td>                       </td><td>                       </td><td>   84.258              </td><td>                       </td><td>                       </td><td>   33.454              </td><td>                       </td><td>                       </td></tr> <tr><td>p               </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td></tr> </table></div>
+
+<hr/> 
+
+<p><a href="./../report/c403b_mlogit_2.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <caption>mlogit</caption> <tr><td>                </td><td>   model1              </td><td>                       </td><td>                       </td><td>   model2              </td><td>                       </td><td>                       </td><td>   model3              </td><td>                       </td><td>                       </td><td>   model5              </td><td>                       </td><td>                       </td><td>   model6              </td><td>                       </td><td>                       </td><td>   model8              </td><td>                       </td><td>                       </td><td>  model14              </td><td>                       </td><td>                       </td></tr> <tr><td>                </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td></tr> <tr><td>                </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td></tr> <tr><td>lace            </td><td>1.269<sup>***</sup><br />(0.047)<br />[1.180,1.365]              </td><td>1.288<sup>***</sup><br />(0.060)<br />[1.175,1.412]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>住院天數    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.020<sup>***</sup><br />(0.006)<br />[1.008,1.033]              </td><td>1.026<sup>***</sup><br />(0.007)<br />[1.013,1.039]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.015<sup>**</sup><br />(0.006)<br />[1.003,1.028]              </td><td>1.021<sup>***</sup><br />(0.007)<br />[1.009,1.034]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.021<sup>***</sup><br />(0.006)<br />[1.008,1.033]              </td><td>1.027<sup>***</sup><br />(0.007)<br />[1.013,1.040]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.016<sup>**</sup><br />(0.006)<br />[1.003,1.029]              </td><td>1.022<sup>***</sup><br />(0.007)<br />[1.009,1.036]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.016<sup>**</sup><br />(0.006)<br />[1.003,1.029]              </td><td>1.022<sup>***</sup><br />(0.007)<br />[1.009,1.036]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.017<sup>***</sup><br />(0.006)<br />[1.005,1.029]              </td><td>1.021<sup>***</sup><br />(0.006)<br />[1.009,1.033]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td></tr> <tr><td>門診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>急診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.188<br />(0.240)<br />[0.800,1.763]              </td><td>1.501<br />(0.406)<br />[0.883,2.552]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.610<sup>**</sup><br />(0.345)<br />[1.058,2.449]              </td><td>1.813<sup>**</sup><br />(0.512)<br />[1.043,3.153]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.490<sup>**</sup><br />(0.301)<br />[1.003,2.214]              </td><td>2.062<sup>***</sup><br />(0.568)<br />[1.202,3.539]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>2.017<sup>***</sup><br />(0.427)<br />[1.332,3.055]              </td><td>2.472<sup>***</sup><br />(0.704)<br />[1.415,4.320]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>2.017<sup>***</sup><br />(0.427)<br />[1.332,3.055]              </td><td>2.472<sup>***</sup><br />(0.704)<br />[1.415,4.320]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>共病          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.233<sup>**</sup><br />(0.123)<br />[1.013,1.500]              </td><td>1.291<sup>**</sup><br />(0.151)<br />[1.027,1.623]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.150<br />(0.125)<br />[0.930,1.423]              </td><td>1.217<br />(0.151)<br />[0.954,1.552]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.206<sup>*</sup><br />(0.116)<br />[0.999,1.455]              </td><td>1.258<sup>**</sup><br />(0.137)<br />[1.016,1.558]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.139<br />(0.119)<br />[0.928,1.398]              </td><td>1.207<br />(0.140)<br />[0.961,1.515]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.139<br />(0.119)<br />[0.928,1.398]              </td><td>1.207<br />(0.140)<br />[0.961,1.515]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前6個月急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.279<sup>***</sup><br />(0.051)<br />[1.183,1.383]              </td><td>1.324<sup>***</sup><br />(0.060)<br />[1.211,1.446]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.254<sup>***</sup><br />(0.052)<br />[1.157,1.359]              </td><td>1.305<sup>***</sup><br />(0.060)<br />[1.192,1.429]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>女             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>男             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.068<br />(0.193)<br />[0.750,1.521]              </td><td>1.044<br />(0.239)<br />[0.667,1.635]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.065<br />(0.191)<br />[0.749,1.514]              </td><td>1.021<br />(0.232)<br />[0.654,1.592]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.065<br />(0.191)<br />[0.749,1.514]              </td><td>1.021<br />(0.232)<br />[0.654,1.592]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>年齡          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.796<sup>***</sup><br />(0.054)<br />[0.698,0.909]              </td><td>0.872<br />(0.074)<br />[0.739,1.030]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.799<sup>***</sup><br />(0.053)<br />[0.702,0.910]              </td><td>0.870<sup>*</sup><br />(0.073)<br />[0.739,1.025]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.799<sup>***</sup><br />(0.053)<br />[0.702,0.910]              </td><td>0.870<sup>*</sup><br />(0.073)<br />[0.739,1.025]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>age10           </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.134<sup>***</sup><br />(0.044)<br />[1.050,1.224]              </td><td>1.068<br />(0.054)<br />[0.968,1.178]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.138<sup>***</sup><br />(0.044)<br />[1.055,1.227]              </td><td>1.077<br />(0.054)<br />[0.977,1.187]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.138<sup>***</sup><br />(0.044)<br />[1.055,1.227]              </td><td>1.077<br />(0.054)<br />[0.977,1.187]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>非重大傷病 </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>重大傷病    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>2.721<sup>***</sup><br />(0.841)<br />[1.484,4.988]              </td><td>2.431<sup>**</sup><br />(0.957)<br />[1.124,5.260]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>2.729<sup>***</sup><br />(0.859)<br />[1.472,5.059]              </td><td>2.261<sup>**</sup><br />(0.927)<br />[1.013,5.048]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>2.729<sup>***</sup><br />(0.859)<br />[1.472,5.059]              </td><td>2.261<sup>**</sup><br />(0.927)<br />[1.013,5.048]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>張數          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.849<sup>*</sup><br />(0.077)<br />[0.712,1.014]              </td><td>0.945<br />(0.091)<br />[0.782,1.142]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.847<sup>*</sup><br />(0.076)<br />[0.710,1.009]              </td><td>0.941<br />(0.090)<br />[0.780,1.135]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.847<sup>*</sup><br />(0.076)<br />[0.710,1.009]              </td><td>0.941<br />(0.090)<br />[0.780,1.135]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前年急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.076<sup>***</sup><br />(0.021)<br />[1.035,1.118]              </td><td>1.091<sup>***</sup><br />(0.023)<br />[1.048,1.137]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.053<sup>**</sup><br />(0.023)<br />[1.010,1.099]              </td><td>1.073<sup>***</sup><br />(0.024)<br />[1.028,1.121]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.053<sup>**</sup><br />(0.023)<br />[1.010,1.099]              </td><td>1.073<sup>***</sup><br />(0.024)<br />[1.028,1.121]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.078<sup>***</sup><br />(0.021)<br />[1.037,1.120]              </td><td>1.088<sup>***</sup><br />(0.022)<br />[1.045,1.132]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td></tr> <tr><td>N               </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4344.000              </td><td>                       </td><td>                       </td><td> 4346.000              </td><td>                       </td><td>                       </td></tr> <tr><td>aic             </td><td> 1935.647              </td><td>                       </td><td>                       </td><td> 1933.284              </td><td>                       </td><td>                       </td><td> 1917.373              </td><td>                       </td><td>                       </td><td> 1968.416              </td><td>                       </td><td>                       </td><td> 1953.302              </td><td>                       </td><td>                       </td><td> 1953.302              </td><td>                       </td><td>                       </td><td> 1976.310              </td><td>                       </td><td>                       </td></tr> <tr><td>bic             </td><td> 1961.155              </td><td>                       </td><td>                       </td><td> 1997.055              </td><td>                       </td><td>                       </td><td> 2044.904              </td><td>                       </td><td>                       </td><td> 2032.186              </td><td>                       </td><td>                       </td><td> 2080.833              </td><td>                       </td><td>                       </td><td> 2080.833              </td><td>                       </td><td>                       </td><td> 2014.572              </td><td>                       </td><td>                       </td></tr> <tr><td>r2_p            </td><td>    0.035              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.060              </td><td>                       </td><td>                       </td><td>    0.025              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.042              </td><td>                       </td><td>                       </td><td>    0.017              </td><td>                       </td><td>                       </td></tr> <tr><td>chi2            </td><td>   70.117              </td><td>                       </td><td>                       </td><td>   84.479              </td><td>                       </td><td>                       </td><td>  120.187              </td><td>                       </td><td>                       </td><td>   49.348              </td><td>                       </td><td>                       </td><td>   84.258              </td><td>                       </td><td>                       </td><td>   84.258              </td><td>                       </td><td>                       </td><td>   33.454              </td><td>                       </td><td>                       </td></tr> <tr><td>p               </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td></tr> <tr><td colspan=22> Exponentiated coefficients </td></tr> </table></div>
+
+<hr/> 
+
+<p><a href="./../report/c403b_mlogit_3.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <thead> <tr><td></td><td>model1</td><td></td><td></td><td>model2</td><td></td><td></td><td>model3</td><td></td><td></td><td>model5</td><td></td><td></td><td>model6</td><td></td><td></td><td>model8</td><td></td><td></td><td>model14</td><td></td><td></td></tr> <tr><td></td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td></tr> <tr><td></td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td></tr> </thead><tbody>  <tr><td>lace</td><td>1.269*** <br/>(0.047)<br/> [1.180,1.365]</td><td>1.288*** <br/>(0.060)<br/> [1.175,1.412]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr> <tr><td>住院天數</td><td>  </td><td>  </td><td>  </td><td>1.020*** <br/>(0.006)<br/> [1.008,1.033]</td><td>1.026*** <br/>(0.007)<br/> [1.013,1.039]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.015** <br/>(0.006)<br/> [1.003,1.028]</td><td>1.021*** <br/>(0.007)<br/> [1.009,1.034]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.021*** <br/>(0.006)<br/> [1.008,1.033]</td><td>1.027*** <br/>(0.007)<br/> [1.013,1.040]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.016** <br/>(0.006)<br/> [1.003,1.029]</td><td>1.022*** <br/>(0.007)<br/> [1.009,1.036]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.016** <br/>(0.006)<br/> [1.003,1.029]</td><td>1.022*** <br/>(0.007)<br/> [1.009,1.036]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.017*** <br/>(0.006)<br/> [1.005,1.029]</td><td>1.021*** <br/>(0.006)<br/> [1.009,1.033]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>門診住院</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>急診住院</td><td>  </td><td>  </td><td>  </td><td>1.188 <br/>(0.240)<br/> [0.800,1.763]</td><td>1.501 <br/>(0.406)<br/> [0.883,2.552]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.610** <br/>(0.345)<br/> [1.058,2.449]</td><td>1.813** <br/>(0.512)<br/> [1.043,3.153]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.490** <br/>(0.301)<br/> [1.003,2.214]</td><td>2.062*** <br/>(0.568)<br/> [1.202,3.539]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>2.017*** <br/>(0.427)<br/> [1.332,3.055]</td><td>2.472*** <br/>(0.704)<br/> [1.415,4.320]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>2.017*** <br/>(0.427)<br/> [1.332,3.055]</td><td>2.472*** <br/>(0.704)<br/> [1.415,4.320]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>共病</td><td>  </td><td>  </td><td>  </td><td>1.233** <br/>(0.123)<br/> [1.013,1.500]</td><td>1.291** <br/>(0.151)<br/> [1.027,1.623]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.150 <br/>(0.125)<br/> [0.930,1.423]</td><td>1.217 <br/>(0.151)<br/> [0.954,1.552]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.206* <br/>(0.116)<br/> [0.999,1.455]</td><td>1.258** <br/>(0.137)<br/> [1.016,1.558]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.139 <br/>(0.119)<br/> [0.928,1.398]</td><td>1.207 <br/>(0.140)<br/> [0.961,1.515]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.139 <br/>(0.119)<br/> [0.928,1.398]</td><td>1.207 <br/>(0.140)<br/> [0.961,1.515]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>前6個月急診次數</td><td>  </td><td>  </td><td>  </td><td>1.279*** <br/>(0.051)<br/> [1.183,1.383]</td><td>1.324*** <br/>(0.060)<br/> [1.211,1.446]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.254*** <br/>(0.052)<br/> [1.157,1.359]</td><td>1.305*** <br/>(0.060)<br/> [1.192,1.429]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr> <tr><td>女</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>男</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.068 <br/>(0.193)<br/> [0.750,1.521]</td><td>1.044 <br/>(0.239)<br/> [0.667,1.635]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.065 <br/>(0.191)<br/> [0.749,1.514]</td><td>1.021 <br/>(0.232)<br/> [0.654,1.592]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.065 <br/>(0.191)<br/> [0.749,1.514]</td><td>1.021 <br/>(0.232)<br/> [0.654,1.592]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>年齡</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>0.796*** <br/>(0.054)<br/> [0.698,0.909]</td><td>0.872 <br/>(0.074)<br/> [0.739,1.030]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>0.799*** <br/>(0.053)<br/> [0.702,0.910]</td><td>0.870* <br/>(0.073)<br/> [0.739,1.025]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.799*** <br/>(0.053)<br/> [0.702,0.910]</td><td>0.870* <br/>(0.073)<br/> [0.739,1.025]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>age10</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.134*** <br/>(0.044)<br/> [1.050,1.224]</td><td>1.068 <br/>(0.054)<br/> [0.968,1.178]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.138*** <br/>(0.044)<br/> [1.055,1.227]</td><td>1.077 <br/>(0.054)<br/> [0.977,1.187]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.138*** <br/>(0.044)<br/> [1.055,1.227]</td><td>1.077 <br/>(0.054)<br/> [0.977,1.187]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>非重大傷病</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>重大傷病</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>2.721*** <br/>(0.841)<br/> [1.484,4.988]</td><td>2.431** <br/>(0.957)<br/> [1.124,5.260]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>2.729*** <br/>(0.859)<br/> [1.472,5.059]</td><td>2.261** <br/>(0.927)<br/> [1.013,5.048]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>2.729*** <br/>(0.859)<br/> [1.472,5.059]</td><td>2.261** <br/>(0.927)<br/> [1.013,5.048]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>張數</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>0.849* <br/>(0.077)<br/> [0.712,1.014]</td><td>0.945 <br/>(0.091)<br/> [0.782,1.142]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>0.847* <br/>(0.076)<br/> [0.710,1.009]</td><td>0.941 <br/>(0.090)<br/> [0.780,1.135]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.847* <br/>(0.076)<br/> [0.710,1.009]</td><td>0.941 <br/>(0.090)<br/> [0.780,1.135]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>前年急診次數</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.076*** <br/>(0.021)<br/> [1.035,1.118]</td><td>1.091*** <br/>(0.023)<br/> [1.048,1.137]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.053** <br/>(0.023)<br/> [1.010,1.099]</td><td>1.073*** <br/>(0.024)<br/> [1.028,1.121]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.053** <br/>(0.023)<br/> [1.010,1.099]</td><td>1.073*** <br/>(0.024)<br/> [1.028,1.121]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.078*** <br/>(0.021)<br/> [1.037,1.120]</td><td>1.088*** <br/>(0.022)<br/> [1.045,1.132]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>_cons</td><td>0.006*** <br/>(0.002)<br/> [0.003,0.011]</td><td>0.003*** <br/>(0.001)<br/> [0.002,0.007]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.019*** <br/>(0.003)<br/> [0.013,0.027]</td><td>0.009*** <br/>(0.002)<br/> [0.005,0.014]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.027*** <br/>(0.007)<br/> [0.016,0.043]</td><td>0.011*** <br/>(0.004)<br/> [0.006,0.020]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.019*** <br/>(0.004)<br/> [0.013,0.028]</td><td>0.009*** <br/>(0.002)<br/> [0.005,0.014]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.027*** <br/>(0.007)<br/> [0.016,0.043]</td><td>0.011*** <br/>(0.004)<br/> [0.006,0.021]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.027*** <br/>(0.007)<br/> [0.016,0.043]</td><td>0.011*** <br/>(0.004)<br/> [0.006,0.021]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.027*** <br/>(0.003)<br/> [0.022,0.033]</td><td>0.016*** <br/>(0.002)<br/> [0.012,0.020]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>N</td><td>4346.000</td><td></td><td></td><td>4346.000</td><td></td><td></td><td>4344.000</td><td></td><td></td><td>4346.000</td><td></td><td></td><td>4344.000</td><td></td><td></td><td>4344.000</td><td></td><td></td><td>4346.000</td><td></td><td></td></tr> <tr><td>aic</td><td>1935.647</td><td></td><td></td><td>1933.284</td><td></td><td></td><td>1917.373</td><td></td><td></td><td>1968.416</td><td></td><td></td><td>1953.302</td><td></td><td></td><td>1953.302</td><td></td><td></td><td>1976.310</td><td></td><td></td></tr> <tr><td>bic</td><td>1961.155</td><td></td><td></td><td>1997.055</td><td></td><td></td><td>2044.904</td><td></td><td></td><td>2032.186</td><td></td><td></td><td>2080.833</td><td></td><td></td><td>2080.833</td><td></td><td></td><td>2014.572</td><td></td><td></td></tr> <tr><td>r2_p</td><td>0.035</td><td></td><td></td><td>0.042</td><td></td><td></td><td>0.060</td><td></td><td></td><td>0.025</td><td></td><td></td><td>0.042</td><td></td><td></td><td>0.042</td><td></td><td></td><td>0.017</td><td></td><td></td></tr> <tr><td>chi2</td><td>70.117</td><td></td><td></td><td>84.479</td><td></td><td></td><td>120.187</td><td></td><td></td><td>49.348</td><td></td><td></td><td>84.258</td><td></td><td></td><td>84.258</td><td></td><td></td><td>33.454</td><td></td><td></td></tr> <tr><td>p</td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td></tr> </tbody></table></div>
+
+<hr/> 
+
+<p><a href="./../report/c403b_mlogit_4.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <caption>mlogit</caption> <tr><td>                </td><td>   model1              </td><td>                       </td><td>                       </td><td>   model2              </td><td>                       </td><td>                       </td><td>   model3              </td><td>                       </td><td>                       </td><td>   model5              </td><td>                       </td><td>                       </td><td>   model6              </td><td>                       </td><td>                       </td><td>   model8              </td><td>                       </td><td>                       </td><td>  model14              </td><td>                       </td><td>                       </td></tr> <tr><td>                </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td></tr> <tr><td>                </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td></tr> <tr><td>lace            </td><td>0.241<sup>***</sup><br />(0.037)<br />[0.168,0.313]              </td><td>0.225<sup>***</sup><br />(0.048)<br />[0.132,0.318]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>住院天數    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.026<sup>***</sup><br />(0.005)<br />[0.017,0.036]              </td><td>0.026<sup>***</sup><br />(0.006)<br />[0.015,0.037]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.025<sup>***</sup><br />(0.005)<br />[0.015,0.036]              </td><td>0.019<sup>***</sup><br />(0.006)<br />[0.006,0.032]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.028<sup>***</sup><br />(0.005)<br />[0.018,0.038]              </td><td>0.028<sup>***</sup><br />(0.006)<br />[0.017,0.040]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.027<sup>***</sup><br />(0.005)<br />[0.017,0.038]              </td><td>0.022<sup>***</sup><br />(0.006)<br />[0.010,0.035]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.027<sup>***</sup><br />(0.005)<br />[0.017,0.038]              </td><td>0.022<sup>***</sup><br />(0.006)<br />[0.010,0.035]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.024<sup>***</sup><br />(0.005)<br />[0.014,0.033]              </td><td>0.027<sup>***</sup><br />(0.006)<br />[0.016,0.037]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>門診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>急診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.310<br />(0.210)<br />[-0.101,0.721]              </td><td>-0.333<br />(0.249)<br />[-0.822,0.155]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.550<sup>**</sup><br />(0.223)<br />[0.112,0.988]              </td><td>-0.020<br />(0.270)<br />[-0.549,0.508]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.616<sup>***</sup><br />(0.211)<br />[0.202,1.029]              </td><td>0.131<br />(0.253)<br />[-0.364,0.627]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.784<sup>***</sup><br />(0.223)<br />[0.347,1.220]              </td><td>0.353<br />(0.271)<br />[-0.178,0.884]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.784<sup>***</sup><br />(0.223)<br />[0.347,1.220]              </td><td>0.353<br />(0.271)<br />[-0.178,0.884]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>共病          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.041<br />(0.166)<br />[-0.366,0.283]              </td><td>0.151<br />(0.138)<br />[-0.119,0.422]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.146<br />(0.185)<br />[-0.508,0.216]              </td><td>0.043<br />(0.166)<br />[-0.282,0.369]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.329<br />(0.220)<br />[-0.760,0.101]              </td><td>-0.229<br />(0.243)<br />[-0.706,0.248]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.360<br />(0.223)<br />[-0.797,0.076]              </td><td>-0.251<br />(0.234)<br />[-0.710,0.209]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.360<br />(0.223)<br />[-0.797,0.076]              </td><td>-0.251<br />(0.234)<br />[-0.710,0.209]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前6個月急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.276<sup>***</sup><br />(0.049)<br />[0.181,0.371]              </td><td>0.367<sup>***</sup><br />(0.054)<br />[0.261,0.473]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.258<sup>***</sup><br />(0.049)<br />[0.161,0.355]              </td><td>0.345<sup>***</sup><br />(0.056)<br />[0.235,0.456]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>女             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>男             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.040<br />(0.183)<br />[-0.318,0.398]              </td><td>0.096<br />(0.240)<br />[-0.374,0.565]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.094<br />(0.183)<br />[-0.265,0.454]              </td><td>0.213<br />(0.245)<br />[-0.268,0.693]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.094<br />(0.183)<br />[-0.265,0.454]              </td><td>0.213<br />(0.245)<br />[-0.268,0.693]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>年齡          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.050<br />(0.069)<br />[-0.186,0.086]              </td><td>-0.261<sup>***</sup><br />(0.096)<br />[-0.449,-0.072]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.027<br />(0.069)<br />[-0.162,0.108]              </td><td>-0.240<sup>**</sup><br />(0.097)<br />[-0.431,-0.049]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.027<br />(0.069)<br />[-0.162,0.108]              </td><td>-0.240<sup>**</sup><br />(0.097)<br />[-0.431,-0.049]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>age10           </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.031<br />(0.040)<br />[-0.048,0.110]              </td><td>0.123<sup>**</sup><br />(0.054)<br />[0.017,0.229]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.015<br />(0.040)<br />[-0.064,0.094]              </td><td>0.105<sup>*</sup><br />(0.055)<br />[-0.002,0.212]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.015<br />(0.040)<br />[-0.064,0.094]              </td><td>0.105<sup>*</sup><br />(0.055)<br />[-0.002,0.212]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>非重大傷病 </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>重大傷病    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.836<sup>***</sup><br />(0.312)<br />[0.224,1.447]              </td><td>1.542<sup>***</sup><br />(0.370)<br />[0.816,2.267]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.551<br />(0.335)<br />[-0.106,1.209]              </td><td>1.141<sup>***</sup><br />(0.408)<br />[0.342,1.941]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.551<br />(0.335)<br />[-0.106,1.209]              </td><td>1.141<sup>***</sup><br />(0.408)<br />[0.342,1.941]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>張數          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.155<sup>*</sup><br />(0.080)<br />[-0.312,0.002]              </td><td>-0.010<br />(0.086)<br />[-0.179,0.160]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>-0.142<sup>*</sup><br />(0.080)<br />[-0.299,0.014]              </td><td>0.024<br />(0.084)<br />[-0.141,0.189]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-0.142<sup>*</sup><br />(0.080)<br />[-0.299,0.014]              </td><td>0.024<br />(0.084)<br />[-0.141,0.189]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前年急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.220<sup>***</sup><br />(0.034)<br />[0.153,0.287]              </td><td>0.256<sup>***</sup><br />(0.035)<br />[0.187,0.325]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.193<sup>***</sup><br />(0.037)<br />[0.121,0.264]              </td><td>0.235<sup>***</sup><br />(0.038)<br />[0.161,0.309]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.193<sup>***</sup><br />(0.037)<br />[0.121,0.264]              </td><td>0.235<sup>***</sup><br />(0.038)<br />[0.161,0.309]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>0.176<sup>***</sup><br />(0.028)<br />[0.121,0.232]              </td><td>0.231<sup>***</sup><br />(0.028)<br />[0.177,0.285]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>Constant        </td><td>-5.127<sup>***</sup><br />(0.304)<br />[-5.722,-4.532]              </td><td>-5.536<sup>***</sup><br />(0.388)<br />[-6.297,-4.775]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-4.067<sup>***</sup><br />(0.194)<br />[-4.447,-3.686]              </td><td>-4.350<sup>***</sup><br />(0.218)<br />[-4.777,-3.923]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-4.041<sup>***</sup><br />(0.261)<br />[-4.552,-3.530]              </td><td>-4.099<sup>***</sup><br />(0.305)<br />[-4.698,-3.500]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-4.171<sup>***</sup><br />(0.202)<br />[-4.567,-3.775]              </td><td>-4.482<sup>***</sup><br />(0.230)<br />[-4.934,-4.031]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-4.159<sup>***</sup><br />(0.268)<br />[-4.685,-3.633]              </td><td>-4.272<sup>***</sup><br />(0.320)<br />[-4.899,-3.645]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-4.159<sup>***</sup><br />(0.268)<br />[-4.685,-3.633]              </td><td>-4.272<sup>***</sup><br />(0.320)<br />[-4.899,-3.645]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td><td>-3.726<sup>***</sup><br />(0.108)<br />[-3.937,-3.515]              </td><td>-4.401<sup>***</sup><br />(0.144)<br />[-4.682,-4.119]              </td><td>0.000<br />(.)<br />[0.000,0.000]              </td></tr> <tr><td>N               </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td></tr> <tr><td>aic             </td><td> 1863.531              </td><td>                       </td><td>                       </td><td> 1848.580              </td><td>                       </td><td>                       </td><td> 1836.049              </td><td>                       </td><td>                       </td><td> 1829.371              </td><td>                       </td><td>                       </td><td> 1829.760              </td><td>                       </td><td>                       </td><td> 1829.760              </td><td>                       </td><td>                       </td><td> 1834.663              </td><td>                       </td><td>                       </td></tr> <tr><td>bic             </td><td> 1888.814              </td><td>                       </td><td>                       </td><td> 1911.787              </td><td>                       </td><td>                       </td><td> 1962.463              </td><td>                       </td><td>                       </td><td> 1892.578              </td><td>                       </td><td>                       </td><td> 1956.174              </td><td>                       </td><td>                       </td><td> 1956.174              </td><td>                       </td><td>                       </td><td> 1872.587              </td><td>                       </td><td>                       </td></tr> <tr><td>r2_p            </td><td>    0.034              </td><td>                       </td><td>                       </td><td>    0.048              </td><td>                       </td><td>                       </td><td>    0.065              </td><td>                       </td><td>                       </td><td>    0.058              </td><td>                       </td><td>                       </td><td>    0.068              </td><td>                       </td><td>                       </td><td>    0.068              </td><td>                       </td><td>                       </td><td>    0.051              </td><td>                       </td><td>                       </td></tr> <tr><td>chi2            </td><td>   64.915              </td><td>                       </td><td>                       </td><td>   91.866              </td><td>                       </td><td>                       </td><td>  124.397              </td><td>                       </td><td>                       </td><td>  111.075              </td><td>                       </td><td>                       </td><td>  130.686              </td><td>                       </td><td>                       </td><td>  130.686              </td><td>                       </td><td>                       </td><td>   97.783              </td><td>                       </td><td>                       </td></tr> <tr><td>p               </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td></tr> </table></div>
+
+<hr/> 
+
+<p><a href="./../report/c403b_mlogit_5.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <caption>mlogit</caption> <tr><td>                </td><td>   model1              </td><td>                       </td><td>                       </td><td>   model2              </td><td>                       </td><td>                       </td><td>   model3              </td><td>                       </td><td>                       </td><td>   model5              </td><td>                       </td><td>                       </td><td>   model6              </td><td>                       </td><td>                       </td><td>   model8              </td><td>                       </td><td>                       </td><td>  model14              </td><td>                       </td><td>                       </td></tr> <tr><td>                </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td><td>        1              </td><td>        2              </td><td>        3              </td></tr> <tr><td>                </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td><td>b/se/ci95              </td></tr> <tr><td>lace            </td><td>1.272<sup>***</sup><br />(0.047)<br />[1.183,1.368]              </td><td>1.253<sup>***</sup><br />(0.060)<br />[1.141,1.375]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>住院天數    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.027<sup>***</sup><br />(0.005)<br />[1.017,1.037]              </td><td>1.026<sup>***</sup><br />(0.006)<br />[1.015,1.038]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.025<sup>***</sup><br />(0.005)<br />[1.015,1.036]              </td><td>1.019<sup>***</sup><br />(0.007)<br />[1.006,1.032]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.028<sup>***</sup><br />(0.005)<br />[1.018,1.039]              </td><td>1.029<sup>***</sup><br />(0.006)<br />[1.017,1.040]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.028<sup>***</sup><br />(0.006)<br />[1.017,1.039]              </td><td>1.022<sup>***</sup><br />(0.007)<br />[1.010,1.035]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.028<sup>***</sup><br />(0.006)<br />[1.017,1.039]              </td><td>1.022<sup>***</sup><br />(0.007)<br />[1.010,1.035]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.024<sup>***</sup><br />(0.005)<br />[1.014,1.034]              </td><td>1.027<sup>***</sup><br />(0.006)<br />[1.016,1.038]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td></tr> <tr><td>門診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>急診住院    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.364<br />(0.286)<br />[0.904,2.057]              </td><td>0.716<br />(0.179)<br />[0.440,1.168]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.733<sup>**</sup><br />(0.387)<br />[1.119,2.685]              </td><td>0.980<br />(0.264)<br />[0.577,1.663]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.851<sup>***</sup><br />(0.390)<br />[1.224,2.799]              </td><td>1.140<br />(0.288)<br />[0.695,1.872]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>2.190<sup>***</sup><br />(0.487)<br />[1.415,3.387]              </td><td>1.424<br />(0.386)<br />[0.837,2.421]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>2.190<sup>***</sup><br />(0.487)<br />[1.415,3.387]              </td><td>1.424<br />(0.386)<br />[0.837,2.421]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>共病          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.959<br />(0.159)<br />[0.693,1.328]              </td><td>1.164<br />(0.161)<br />[0.888,1.525]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.865<br />(0.160)<br />[0.602,1.242]              </td><td>1.044<br />(0.173)<br />[0.754,1.446]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.720<br />(0.158)<br />[0.468,1.107]              </td><td>0.795<br />(0.193)<br />[0.494,1.281]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.697<br />(0.155)<br />[0.451,1.079]              </td><td>0.778<br />(0.182)<br />[0.491,1.232]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.697<br />(0.155)<br />[0.451,1.079]              </td><td>0.778<br />(0.182)<br />[0.491,1.232]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前6個月急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.318<sup>***</sup><br />(0.064)<br />[1.198,1.449]              </td><td>1.443<sup>***</sup><br />(0.078)<br />[1.298,1.605]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.294<sup>***</sup><br />(0.064)<br />[1.175,1.426]              </td><td>1.413<sup>***</sup><br />(0.080)<br />[1.265,1.578]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>女             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>男             </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.041<br />(0.190)<br />[0.728,1.489]              </td><td>1.100<br />(0.264)<br />[0.688,1.760]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.099<br />(0.202)<br />[0.767,1.574]              </td><td>1.237<br />(0.303)<br />[0.765,2.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.099<br />(0.202)<br />[0.767,1.574]              </td><td>1.237<br />(0.303)<br />[0.765,2.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>年齡          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.951<br />(0.066)<br />[0.830,1.089]              </td><td>0.771<sup>***</sup><br />(0.074)<br />[0.638,0.931]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.973<br />(0.067)<br />[0.850,1.114]              </td><td>0.787<sup>**</sup><br />(0.077)<br />[0.650,0.952]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.973<br />(0.067)<br />[0.850,1.114]              </td><td>0.787<sup>**</sup><br />(0.077)<br />[0.650,0.952]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>age10           </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.031<br />(0.042)<br />[0.953,1.117]              </td><td>1.131<sup>**</sup><br />(0.061)<br />[1.017,1.257]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.015<br />(0.041)<br />[0.938,1.099]              </td><td>1.111<sup>*</sup><br />(0.061)<br />[0.998,1.237]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.015<br />(0.041)<br />[0.938,1.099]              </td><td>1.111<sup>*</sup><br />(0.061)<br />[0.998,1.237]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>非重大傷病 </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>重大傷病    </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>2.306<sup>***</sup><br />(0.719)<br />[1.251,4.250]              </td><td>4.674<sup>***</sup><br />(1.730)<br />[2.262,9.655]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.735<br />(0.582)<br />[0.899,3.349]              </td><td>3.131<sup>***</sup><br />(1.278)<br />[1.408,6.966]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.735<br />(0.582)<br />[0.899,3.349]              </td><td>3.131<sup>***</sup><br />(1.278)<br />[1.408,6.966]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>張數          </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.857<sup>*</sup><br />(0.069)<br />[0.732,1.002]              </td><td>0.990<br />(0.086)<br />[0.836,1.173]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>0.867<sup>*</sup><br />(0.069)<br />[0.742,1.014]              </td><td>1.024<br />(0.086)<br />[0.869,1.208]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>0.867<sup>*</sup><br />(0.069)<br />[0.742,1.014]              </td><td>1.024<br />(0.086)<br />[0.869,1.208]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td></tr> <tr><td>前年急診次數</td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td><br /><br />              </td><td>1.246<sup>***</sup><br />(0.043)<br />[1.165,1.332]              </td><td>1.292<sup>***</sup><br />(0.046)<br />[1.206,1.384]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.213<sup>***</sup><br />(0.044)<br />[1.129,1.303]              </td><td>1.265<sup>***</sup><br />(0.048)<br />[1.174,1.362]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.213<sup>***</sup><br />(0.044)<br />[1.129,1.303]              </td><td>1.265<sup>***</sup><br />(0.048)<br />[1.174,1.362]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td><td>1.193<sup>***</sup><br />(0.034)<br />[1.128,1.261]              </td><td>1.260<sup>***</sup><br />(0.035)<br />[1.193,1.330]              </td><td>1.000<br />(.)<br />[1.000,1.000]              </td></tr> <tr><td>N               </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td><td> 4108.000              </td><td>                       </td><td>                       </td></tr> <tr><td>aic             </td><td> 1863.531              </td><td>                       </td><td>                       </td><td> 1848.580              </td><td>                       </td><td>                       </td><td> 1836.049              </td><td>                       </td><td>                       </td><td> 1829.371              </td><td>                       </td><td>                       </td><td> 1829.760              </td><td>                       </td><td>                       </td><td> 1829.760              </td><td>                       </td><td>                       </td><td> 1834.663              </td><td>                       </td><td>                       </td></tr> <tr><td>bic             </td><td> 1888.814              </td><td>                       </td><td>                       </td><td> 1911.787              </td><td>                       </td><td>                       </td><td> 1962.463              </td><td>                       </td><td>                       </td><td> 1892.578              </td><td>                       </td><td>                       </td><td> 1956.174              </td><td>                       </td><td>                       </td><td> 1956.174              </td><td>                       </td><td>                       </td><td> 1872.587              </td><td>                       </td><td>                       </td></tr> <tr><td>r2_p            </td><td>    0.034              </td><td>                       </td><td>                       </td><td>    0.048              </td><td>                       </td><td>                       </td><td>    0.065              </td><td>                       </td><td>                       </td><td>    0.058              </td><td>                       </td><td>                       </td><td>    0.068              </td><td>                       </td><td>                       </td><td>    0.068              </td><td>                       </td><td>                       </td><td>    0.051              </td><td>                       </td><td>                       </td></tr> <tr><td>chi2            </td><td>   64.915              </td><td>                       </td><td>                       </td><td>   91.866              </td><td>                       </td><td>                       </td><td>  124.397              </td><td>                       </td><td>                       </td><td>  111.075              </td><td>                       </td><td>                       </td><td>  130.686              </td><td>                       </td><td>                       </td><td>  130.686              </td><td>                       </td><td>                       </td><td>   97.783              </td><td>                       </td><td>                       </td></tr> <tr><td>p               </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td><td>    0.000              </td><td>                       </td><td>                       </td></tr> <tr><td colspan=22> Exponentiated coefficients </td></tr> </table></div>
+
+<hr/> 
+
+<p><a href="./../report/c403b_mlogit_6.html">html link </a></p>
+
+<div class='outTable'><table border="0" width="*"> <thead> <tr><td></td><td>model1</td><td></td><td></td><td>model2</td><td></td><td></td><td>model3</td><td></td><td></td><td>model5</td><td></td><td></td><td>model6</td><td></td><td></td><td>model8</td><td></td><td></td><td>model14</td><td></td><td></td></tr> <tr><td></td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td><td>3</td></tr> <tr><td></td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td><td>b/se/ci95</td></tr> </thead><tbody>  <tr><td>lace</td><td>1.272*** <br/>(0.047)<br/> [1.183,1.368]</td><td>1.253*** <br/>(0.060)<br/> [1.141,1.375]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr> <tr><td>住院天數</td><td>  </td><td>  </td><td>  </td><td>1.027*** <br/>(0.005)<br/> [1.017,1.037]</td><td>1.026*** <br/>(0.006)<br/> [1.015,1.038]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.025*** <br/>(0.005)<br/> [1.015,1.036]</td><td>1.019*** <br/>(0.007)<br/> [1.006,1.032]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.028*** <br/>(0.005)<br/> [1.018,1.039]</td><td>1.029*** <br/>(0.006)<br/> [1.017,1.040]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.028*** <br/>(0.006)<br/> [1.017,1.039]</td><td>1.022*** <br/>(0.007)<br/> [1.010,1.035]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.028*** <br/>(0.006)<br/> [1.017,1.039]</td><td>1.022*** <br/>(0.007)<br/> [1.010,1.035]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.024*** <br/>(0.005)<br/> [1.014,1.034]</td><td>1.027*** <br/>(0.006)<br/> [1.016,1.038]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>門診住院</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>急診住院</td><td>  </td><td>  </td><td>  </td><td>1.364 <br/>(0.286)<br/> [0.904,2.057]</td><td>0.716 <br/>(0.179)<br/> [0.440,1.168]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.733** <br/>(0.387)<br/> [1.119,2.685]</td><td>0.980 <br/>(0.264)<br/> [0.577,1.663]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.851*** <br/>(0.390)<br/> [1.224,2.799]</td><td>1.140 <br/>(0.288)<br/> [0.695,1.872]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>2.190*** <br/>(0.487)<br/> [1.415,3.387]</td><td>1.424 <br/>(0.386)<br/> [0.837,2.421]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>2.190*** <br/>(0.487)<br/> [1.415,3.387]</td><td>1.424 <br/>(0.386)<br/> [0.837,2.421]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>共病</td><td>  </td><td>  </td><td>  </td><td>0.959 <br/>(0.159)<br/> [0.693,1.328]</td><td>1.164 <br/>(0.161)<br/> [0.888,1.525]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.865 <br/>(0.160)<br/> [0.602,1.242]</td><td>1.044 <br/>(0.173)<br/> [0.754,1.446]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.720 <br/>(0.158)<br/> [0.468,1.107]</td><td>0.795 <br/>(0.193)<br/> [0.494,1.281]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.697 <br/>(0.155)<br/> [0.451,1.079]</td><td>0.778 <br/>(0.182)<br/> [0.491,1.232]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.697 <br/>(0.155)<br/> [0.451,1.079]</td><td>0.778 <br/>(0.182)<br/> [0.491,1.232]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>前6個月急診次數</td><td>  </td><td>  </td><td>  </td><td>1.318*** <br/>(0.064)<br/> [1.198,1.449]</td><td>1.443*** <br/>(0.078)<br/> [1.298,1.605]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.294*** <br/>(0.064)<br/> [1.175,1.426]</td><td>1.413*** <br/>(0.080)<br/> [1.265,1.578]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr> <tr><td>女</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>男</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.041 <br/>(0.190)<br/> [0.728,1.489]</td><td>1.100 <br/>(0.264)<br/> [0.688,1.760]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.099 <br/>(0.202)<br/> [0.767,1.574]</td><td>1.237 <br/>(0.303)<br/> [0.765,2.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.099 <br/>(0.202)<br/> [0.767,1.574]</td><td>1.237 <br/>(0.303)<br/> [0.765,2.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>年齡</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>0.951 <br/>(0.066)<br/> [0.830,1.089]</td><td>0.771*** <br/>(0.074)<br/> [0.638,0.931]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>0.973 <br/>(0.067)<br/> [0.850,1.114]</td><td>0.787** <br/>(0.077)<br/> [0.650,0.952]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.973 <br/>(0.067)<br/> [0.850,1.114]</td><td>0.787** <br/>(0.077)<br/> [0.650,0.952]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>age10</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.031 <br/>(0.042)<br/> [0.953,1.117]</td><td>1.131** <br/>(0.061)<br/> [1.017,1.257]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.015 <br/>(0.041)<br/> [0.938,1.099]</td><td>1.111* <br/>(0.061)<br/> [0.998,1.237]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.015 <br/>(0.041)<br/> [0.938,1.099]</td><td>1.111* <br/>(0.061)<br/> [0.998,1.237]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>非重大傷病</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>重大傷病</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>2.306*** <br/>(0.719)<br/> [1.251,4.250]</td><td>4.674*** <br/>(1.730)<br/> [2.262,9.655]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>1.735 <br/>(0.582)<br/> [0.899,3.349]</td><td>3.131*** <br/>(1.278)<br/> [1.408,6.966]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.735 <br/>(0.582)<br/> [0.899,3.349]</td><td>3.131*** <br/>(1.278)<br/> [1.408,6.966]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>張數</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>0.857* <br/>(0.069)<br/> [0.732,1.002]</td><td>0.990 <br/>(0.086)<br/> [0.836,1.173]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td><td>0.867* <br/>(0.069)<br/> [0.742,1.014]</td><td>1.024 <br/>(0.086)<br/> [0.869,1.208]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.867* <br/>(0.069)<br/> [0.742,1.014]</td><td>1.024 <br/>(0.086)<br/> [0.869,1.208]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>  </td><td>  </td><td>  </td></tr> <tr><td>前年急診次數</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1.246*** <br/>(0.043)<br/> [1.165,1.332]</td><td>1.292*** <br/>(0.046)<br/> [1.206,1.384]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.213*** <br/>(0.044)<br/> [1.129,1.303]</td><td>1.265*** <br/>(0.048)<br/> [1.174,1.362]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.213*** <br/>(0.044)<br/> [1.129,1.303]</td><td>1.265*** <br/>(0.048)<br/> [1.174,1.362]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>1.193*** <br/>(0.034)<br/> [1.128,1.261]</td><td>1.260*** <br/>(0.035)<br/> [1.193,1.330]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>_cons</td><td>0.006*** <br/>(0.002)<br/> [0.003,0.011]</td><td>0.004*** <br/>(0.002)<br/> [0.002,0.008]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.017*** <br/>(0.003)<br/> [0.012,0.025]</td><td>0.013*** <br/>(0.003)<br/> [0.008,0.020]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.018*** <br/>(0.005)<br/> [0.011,0.029]</td><td>0.017*** <br/>(0.005)<br/> [0.009,0.030]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.015*** <br/>(0.003)<br/> [0.010,0.023]</td><td>0.011*** <br/>(0.003)<br/> [0.007,0.018]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.016*** <br/>(0.004)<br/> [0.009,0.026]</td><td>0.014*** <br/>(0.004)<br/> [0.007,0.026]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.016*** <br/>(0.004)<br/> [0.009,0.026]</td><td>0.014*** <br/>(0.004)<br/> [0.007,0.026]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td><td>0.024*** <br/>(0.003)<br/> [0.020,0.030]</td><td>0.012*** <br/>(0.002)<br/> [0.009,0.016]</td><td>1.000 <br/>(.)<br/> [1.000,1.000]</td></tr> <tr><td>N</td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td><td>4108.000</td><td></td><td></td></tr> <tr><td>aic</td><td>1863.531</td><td></td><td></td><td>1848.580</td><td></td><td></td><td>1836.049</td><td></td><td></td><td>1829.371</td><td></td><td></td><td>1829.760</td><td></td><td></td><td>1829.760</td><td></td><td></td><td>1834.663</td><td></td><td></td></tr> <tr><td>bic</td><td>1888.814</td><td></td><td></td><td>1911.787</td><td></td><td></td><td>1962.463</td><td></td><td></td><td>1892.578</td><td></td><td></td><td>1956.174</td><td></td><td></td><td>1956.174</td><td></td><td></td><td>1872.587</td><td></td><td></td></tr> <tr><td>r2_p</td><td>0.034</td><td></td><td></td><td>0.048</td><td></td><td></td><td>0.065</td><td></td><td></td><td>0.058</td><td></td><td></td><td>0.068</td><td></td><td></td><td>0.068</td><td></td><td></td><td>0.051</td><td></td><td></td></tr> <tr><td>chi2</td><td>64.915</td><td></td><td></td><td>91.866</td><td></td><td></td><td>124.397</td><td></td><td></td><td>111.075</td><td></td><td></td><td>130.686</td><td></td><td></td><td>130.686</td><td></td><td></td><td>97.783</td><td></td><td></td></tr> <tr><td>p</td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td><td>0.000</td><td></td><td></td></tr> </tbody></table></div>
+
+<hr/> 
+
+  </article><div class="collapse fs-6 pt-2" id="qnote-list">
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
+        <span >
+            
+            <span class="fw-semibold">
+                <button  class="btn btn-primary btn-inline" 
+                   data-bs-toggle="collapse" data-bs-target="#qnote-edit"><span data-bs-toggle="tooltip" title="加入速記">加</span></button>
+                <button id="qnote-gsave" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="存到硬碟"
+                   onclick="qnSaveGoogle()">存</button>
+                <label for="qnote-load" class="btn btn-primary btn-inline"  data-bs-toggle="tooltip" data-bs-placement="left" title="從檔案載入">載</label>   
+                <input style="display:none" type="file" id="qnote-load" onchange="qnLoadGoogle(this)" />
+                <button id="qnote-clear" class="btn btn-primary btn-inline" 
+                   data-bs-toggle="tooltip" data-bs-placement="left" title="清除全部速記"
+                   onclick="cleanNotes()">清</button>
+            </span>
+        </span>
+        <span class="fw-semibold collapse" id="qnote-edit"> 
+            <input type="text" class="txtitle d-block w-100 h-25 " placeholder="抬頭" />
+            <textarea class="txtBox  d-block w-100 h-75 " placeholder="本文"></textarea>
+            
+            <button id="qnote-add-item" onclick="addNote()" class="btn btn-primary">存</button> 
+        </span>
+
+    </div>
+</div>
+
+<link href="../css/quicknote.css?1629561305" rel="stylesheet">
+<script src="../js/quicknote.js?1629561305"></script>
+<div id="page-guide" class="bg-dark">  
+  
+    
+          
+          <a href="../hugonote/shortcode.html" 
+                   class="btn btn-primary" 
+                   data-bs-toggle="tooltip" 
+                   data-bs-placement="left" title=hugo&#32;shortcode>前</a>
+                   
+          
+            <a href="../hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=baseURL的路徑測試>後</a>            
+          
+          
+
+  
+<script src="../js/packhtml.js?1629561305"></script>    
+<button class="btn btn-primary " onclick="packthis(this)"
+data-bs-toggle="tooltip" data-bs-placement="left" title="打包成單一檔案">包</button>
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="div#qnote-list">
+  <span data-bs-toggle="tooltip" data-bs-placement="left" title="快速註記">速</span></button>
+ 
+</div>
+  </div>
+
+
+  <script src="../js/featherlight.min.js?1629561305"></script>
+  <script src="../js/featherlight.gallery.min.js?1629561305"></script>
+  <link href="../css/featherlight.min.css?1629561305" rel="stylesheet">
+  <link href="../css/featherlight.gallery.min.css?1629561305" rel="stylesheet">
+
+  <script src="../js/highlight.pack.js?1629561305"></script>
+  
+  <script>
+ 
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre:not(.chroma) code').forEach((el) => {
+    hljs.highlightBlock(el);
+  });
+});   
+ 
+  </script>
+  <link href="../css/demoContainer.css?1629561305" rel="stylesheet"><link href="../css/rmd.css?1629561305" rel="stylesheet">
+  <link href="../css/mystyle.css?1629561305" rel="stylesheet">    
+  <script src='../js/variant.js?1629561305'></script>
+
+<script>
+  var idxfile = "\//index.json"
+</script>
+<script src='../js/localsearch.js?1629561305'></script>
+    
+
+
+  
+
+  <script>
+    
+      MathJax = {
+        tex: {
+          inlineMath: [['\($', '$\)'], ['\\(', '\\)']],
+          displayMath: [['$$','$$']]  
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+
+
+    
+<script>
+   
+
+</script> 
+
+<script>
+ 
+tocbot.init({
+
+tocSelector: '.toa',
+
+
+contentSelector: '#body-inner',
+
+headingSelector: '.toa-item', 
+
+ignoreSelector: '.js-toc-ignore',
+
+hasInnerContainers: true,
+
+linkClass: 'toa-item',
+
+extraLinkClasses: '',
+
+
+activeLinkClass: '',
+
+listClass: '',
+
+extraListClasses: '',
+
+isCollapsedClass: 'is-collapsed',
+
+
+collapsibleClass: 'is-collapsible',
+
+listItemClass: '',
+
+
+
+
+
+collapseDepth: 0,
+
+scrollSmooth: true,
+
+scrollSmoothDuration: 420,
+
+scrollEndCallback: function(e) {},
+
+headingsOffset: 1,
+
+
+throttleTimeout: 50,
+
+positionFixedSelector: null,
+
+
+positionFixedClass: 'is-position-fixed',
+
+
+
+fixedSidebarOffset: 'auto',
+
+
+includeHtml: false,
+
+
+orderedList: false,
+
+scrollContainer: null,
+
+skipRendering: false,
+
+
+
+
+headingLabelCallback: false,
+
+ignoreHiddenElements: false,
+
+
+
+
+
+headingObjectCallback: null,
+
+
+
+onClick: false
+});
+
+
+</script> 
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    jumpto = document.querySelector("#sidebar .active");
+     if (jumpto!=null) jumpto.scrollIntoViewIfNeeded(true);
+  
+  });    
+  
+  </script>
+</body>
+</html>

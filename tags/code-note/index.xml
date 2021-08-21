@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code note on 我的測試區</title>
+    <link>/tags/code-note.html</link>
+    <description>Recent content in code note on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/code-note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解說attachemt</title>
+      <link>/hugonote/%E8%A7%A3%E8%AA%AAattachment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hugonote/%E8%A7%A3%E8%AA%AAattachment.html</guid>
+      <description>short siteparams 後面加上config.toml 中要找的參數,例如editURL, 就會去找對應的值出來
+{{- $paramName := (.Get 0) -}} {{- $siteParams := .Site.Params -}} {{- with $paramName -}} {{- with $siteParams -}} {{- index . (lower $paramName) -}} {{- end -}} {{- end -}}   第一行,讀取本指令(shortcode)的第一個參數 第二行,讀取所有toml 參數 index 找出KEY,例如 editURL對應的值  程式碼解說2 #🏷adfprintf(&amp;#34;dfdfd&amp;#34;)#    {{ $_hugo_config := `{ &amp;quot;version&amp;quot;: 1 }` }} &amp;lt;section class=&amp;quot;attachments {{ with .Get &amp;quot;style&amp;quot;}}{{.}}{{ end }}&amp;quot;&amp;gt; &amp;lt;label&amp;gt; &amp;lt;i class=&amp;quot;fas fa-paperclip&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; {{with .</description>
+    </item>
+    
+  </channel>
+</rss>

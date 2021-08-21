@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 我的測試區</title>
+    <link>/tags.html</link>
+    <description>Recent content in Tags on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Site.Data</title>
+      <link>/tags/.site.data.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/.site.data.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
+      <link>/tags/blogdown.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogdown.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bootstrap</title>
+      <link>/tags/bootstrap.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bootstrap.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>/tags/code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/code.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code note</title>
+      <link>/tags/code-note.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/code-note.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>config</title>
+      <link>/tags/config.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/config.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>/tags/css.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/css.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data</title>
+      <link>/tags/data.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data-url</title>
+      <link>/tags/data-url.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-url.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>demo</title>
+      <link>/tags/demo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/demo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drone</title>
+      <link>/tags/drone.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/drone.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>expand</title>
+      <link>/tags/expand.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/expand.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitea</title>
+      <link>/tags/gitea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gitea.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>/tags/github.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo_variable</title>
+      <link>/tags/hugo_variable.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugo_variable.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugocmd</title>
+      <link>/tags/hugocmd.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugocmd.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>/tags/json.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/json.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>localedit</title>
+      <link>/tags/localedit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/localedit.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manual.quote</title>
+      <link>/tags/manual.quote.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/manual.quote.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mathjax</title>
+      <link>/tags/mathjax.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mathjax.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>option</title>
+      <link>/tags/option.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/option.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>page boundle</title>
+      <link>/tags/page-boundle.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/page-boundle.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>position</title>
+      <link>/tags/position.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/position.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ppt</title>
+      <link>/tags/ppt.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ppt.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quote</title>
+      <link>/tags/quote.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/quote.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>/tags/r.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>readFile</title>
+      <link>/tags/readfile.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/readfile.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regexp</title>
+      <link>/tags/regexp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/regexp.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relativeURL</title>
+      <link>/tags/relativeurl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/relativeurl.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relURL</title>
+      <link>/tags/relurl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/relurl.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resource</title>
+      <link>/tags/resource.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/resource.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s1</title>
+      <link>/tags/s1.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/s1.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s2</title>
+      <link>/tags/s2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/s2.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s3</title>
+      <link>/tags/s3.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/s3.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s4</title>
+      <link>/tags/s4.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/s4.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>setup</title>
+      <link>/tags/setup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/setup.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcoce</title>
+      <link>/tags/shortcoce.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shortcoce.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcode</title>
+      <link>/tags/shortcode.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shortcode.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>siteparams</title>
+      <link>/tags/siteparams.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/siteparams.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stata</title>
+      <link>/tags/stata.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stata.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>table</title>
+      <link>/tags/table.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/table.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taxonomy</title>
+      <link>/tags/taxonomy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/taxonomy.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theme</title>
+      <link>/tags/theme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/theme.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>todo</title>
+      <link>/tags/todo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/todo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toml</title>
+      <link>/tags/toml.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/toml.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>version</title>
+      <link>/tags/version.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/version.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>實驗</title>
+      <link>/tags/%E5%AF%A6%E9%A9%97.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%AF%A6%E9%A9%97.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>排序</title>
+      <link>/tags/%E6%8E%92%E5%BA%8F.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%8E%92%E5%BA%8F.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>本地</title>
+      <link>/tags/%E6%9C%AC%E5%9C%B0.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%9C%AC%E5%9C%B0.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>短碼</title>
+      <link>/tags/%E7%9F%AD%E7%A2%BC.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E7%9F%AD%E7%A2%BC.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

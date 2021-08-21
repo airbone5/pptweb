@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>expand on 我的測試區</title>
+    <link>/tags/expand.html</link>
+    <description>Recent content in expand on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/expand/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>執行結果加入TOC</title>
+      <link>/stata/short_attachfiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stata/short_attachfiles.html</guid>
+      <description>&lt;p&gt;測試短碼:attachfiles 在STATA中的運作情況&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>短碼 in stata - expand</title>
+      <link>/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</guid>
+      <description>背景資料  清除CSS的方式
+div.expand { all: initial; * { all: unset; } }  測
+  shortcode- expand 靜態測試  在本文中 執行 {{&amp;lt; expand &amp;quot;xxx&amp;quot; &amp;gt;}},以下為執行結果: xxx正不正常 📝以下在md 方塊中,測試的expand運作是否正常:
+``` {{&amp;lt; expand &amp;quot;xxx&amp;quot; &amp;gt;}} 正不正常 {{&amp;lt; /expand &amp;gt;}} ```  xxx正不正常   原本的觸發程式碼next(&#39;div&#39;) 在chunk 中會被插入&amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; 因此找不到要伸展的部分 改成siblings(&#39;div.expand-content&#39;) 就可以找到了 效果一樣
+/*-- 方法1 --*/ div.expand *:not(.expand-content) { white-space:normal; } /*-- 方法2 --*/ div.</description>
+    </item>
+    
+    <item>
+      <title>短碼expand紀錄.md</title>
+      <link>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E7%9F%AD%E7%A2%BCexpand%E7%B4%80%E9%8C%84.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E7%9F%AD%E7%A2%BCexpand%E7%B4%80%E9%8C%84.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

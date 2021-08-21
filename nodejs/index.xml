@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs 測試 on 我的測試區</title>
+    <link>/nodejs.html</link>
+    <description>Recent content in nodejs 測試 on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>t1 basic</title>
+      <link>/nodejs/tutorial/t1_basic.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/nodejs/tutorial/t1_basic.html</guid>
+      <description>基礎 🏷應該要連結到classnote\bcc\html\Nodejs   參考 利用NPM快速建置Node.js網路應用框架 Using HTML in Express instead of Jade A Jade Tutorial for Beginners asp.net 上對nodejs 的解釋 mongoose document 尋找 mongo todolist heroku tutorial us no sql, mongodb,中文 node middleware1,middleware 2  window console  [Alternative Windows shells, besides CMD.EXE?]](https://stackoverflow.com/questions/17349022/alternative-windows-shells-besides-cmd-exe) 4 Better Windows Console Tools Alternative to Windows Built-In Command Prompt  demo 1 直接在目錄下敲入 (🏷註解參看註解 )
+app.js
+console.log(&amp;quot;hello&amp;quot;)  執行
+node app.js  demo 2 在tutorial1目錄中</description>
+    </item>
+    
+    <item>
+      <title>t2 cors 的實驗</title>
+      <link>/nodejs/tutorial/t2_cors.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/nodejs/tutorial/t2_cors.html</guid>
+      <description>參考
+ 大致 2 什麼是 Cookie First-Party and Third-Party [Day 27] Cross-Origin Resource Sharing (CORS)  檔案結構程式碼快速T1產生的app.jsvar createError = require(&#39;http-errors&#39;); var express = require(&#39;express&#39;); var path = require(&#39;path&#39;); var cookieParser = require(&#39;cookie-parser&#39;); var logger = require(&#39;morgan&#39;); var indexRouter = require(&#39;./routes/index&#39;);🏷註解  var usersRouter = require(&#39;./routes/users&#39;); var app = express(); // view engine setup app.set(&#39;views&#39;, path.join(__dirname, &#39;views&#39;)); app.set(&#39;view engine&#39;, &#39;pug&#39;); app.use(logger(&#39;dev&#39;)); app.</description>
+    </item>
+    
+    <item>
+      <title>t3_cookies</title>
+      <link>/nodejs/tutorial/t3_cookies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/nodejs/tutorial/t3_cookies.html</guid>
+      <description>相關  1  實作  模組
+npm install --save cookie-parser  app.js中,加入
+var cookieParser = require(&#39;cookie-parser&#39;); //不使用編碼 //app.use(cookieParser(credentials.cookieSecret));   圖但是我執行http://localhost:3000/的時候,是沒有cookies的。
+🏷如果要保持這個cookies需要session</description>
+    </item>
+    
+    <item>
+      <title>t4_session</title>
+      <link>/nodejs/tutorial/t4_session.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/nodejs/tutorial/t4_session.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

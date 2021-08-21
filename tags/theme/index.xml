@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme on 我的測試區</title>
+    <link>/tags/theme.html</link>
+    <description>Recent content in theme on 我的測試區</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo theme log</title>
+      <link>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/hugo-theme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/hugo-theme.html</guid>
+      <description>uglyurls 設定uglyurls=true 可能會導致tags 運作不正常。 我做了修改,在layout\tags.html可以找到,但是需要再config.yml有兩行設定,複製兩次,一個在[params] 節,一個不用。 這樣的話
+![xx](./gitmemo.files/gitdiffmarklodato.png) {{*&amp;lt; figure src=&amp;quot;gitdiffmarklodato.png&amp;quot; height=&amp;quot;200px&amp;quot; &amp;gt;*}}  兩個都可以作用
+theme editURL 在config.toml 中的這一行,改成 editURL = &amp;quot;vscode://file/D:/stata/myhugotheme/variant-learn/exampleSite/content/&amp;quot;(🔑 注意最後一個/)
+在檔案&#39;layout/partial/head.html&#39; 中的這個 href=&amp;quot;{{ $Site.Params.editURL}} 改成 href=&amp;quot;{{ $Site.Params.editURL | safeURL}}因為HUGO只翻譯http等正常協定。我的解讀意思是說嘿,這裡是安全的,放我過。</description>
+    </item>
+    
+  </channel>
+</rss>
