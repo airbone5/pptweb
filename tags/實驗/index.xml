@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>實驗 on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/%E5%AF%A6%E9%A9%97.html</link>
+    <link>/tags/%E5%AF%A6%E9%A9%97.html</link>
     <description>Recent content in 實驗 on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/%E5%AF%A6%E9%A9%97/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/%E5%AF%A6%E9%A9%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>排序測試</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</link>
+      <link>/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</guid>
+      <guid>/hugonote/%E6%8E%92%E5%BA%8F%E6%B8%AC%E8%A9%A6.html</guid>
       <description>測試用的程式碼 wsort1.html
 {{/* {{ range .Site.Sections }} &amp;lt;h1&amp;gt;{{ .Name }} &amp;lt;/h1&amp;gt; {{ $pages := partial &amp;quot;sort1.html&amp;quot; . }} {{ range $pages }} 🏷{{ .weight }} &amp;lt;br/&amp;gt; {{end}} {{ end }} */}} {{ $root := .Site.GetPage &amp;quot;hugonote&amp;quot; }} {{ $normal :=slice }} {{ range where $root.Pages &amp;quot;Kind&amp;quot; &amp;quot;page&amp;quot; }} {{ $weight := index (findRE &amp;quot;^.?([\\d][\\d|.]?[\\d|.]*)&amp;quot; .Title) 0 }} {{ $sw:=split $weight &amp;quot;.&amp;quot;}} {{ $data := newScratch }} {{ $data.Set &amp;quot;tmp&amp;quot; &amp;quot;&amp;quot; }} {{ with $weight }} {{range $idx:=(seq 0 2) }} {{if lt $idx (len $sw) }} {{ $data.</description>
     </item>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/hugo.html</link>
+    <link>/tags/hugo.html</link>
     <description>Recent content in hugo on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>解說HUGO內定的參數</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/parameters.html</link>
+      <link>/hugonote/parameters.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/parameters.html</guid>
+      <guid>/hugonote/parameters.html</guid>
       <description>📝 比較好用的是本頁的的路徑:{{ .Page.File.Path}}
  .Site.Pages = All pages in site. [.Data.Pages&#39;(https://gohugo.io/variables/taxonomy/#taxonomy-terms-page-variables) = The list of pages in the taxonomy .Paginator.Pages can also be used in place of .Data.Pages to enable pagination.
 {{ $paginator := .Paginate (where .Data.Pages &amp;quot;Type&amp;quot; &amp;quot;posts&amp;quot;) }}   posts 指的是content下的子目錄posts
@@ -21,10 +21,10 @@ You can overwrite the default pagination behaviour using the following code.</de
     
     <item>
       <title>baseURL的路徑測試</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</link>
+      <link>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</guid>
+      <guid>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</guid>
       <description>背景 目的 看看config.toml 中的baseURL 怎樣影響文章的路徑。
 材料和程式碼 baseURL: {{ .Site.BaseURL}} {{ $pages := (where (where .Site.Pages &amp;quot;Type&amp;quot; &amp;quot;pages&amp;quot;) &amp;quot;IsPage&amp;quot; true) }} {{ range first 5 $pages }} &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Title }} &amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Permalink }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;absURL: {{ .Permalink | absURL }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;relURL: {{ .Permalink | relURL }}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/ul&amp;gt; {{ end }}  實驗記錄 根據不同的 baseURL (config.toml 中的設定)來看結果:
 📝.Site.BaseURL =&amp;gt; 在config.toml 中設定(不知道有沒有分大小寫,但是在.Site.Params.* 的時候,*不分大小寫。
@@ -33,13 +33,13 @@ You can overwrite the default pagination behaviour using the following code.</de
     
     <item>
       <title>Encode image in html</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</link>
+      <link>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</guid>
+      <guid>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</guid>
       <description>HUGO 變數 執行碼: {{&amp;lt; HugoVarTest &amp;gt;}}
  執行結果live .Page.CurrentSection: Page(/hugonote/_index.md)  .Section: can not evaluate  .Page.Section: hugonote
- .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc0008f1620}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
+ .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc0007c2f00}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage
 
@@ -49,10 +49,10 @@ $anyfile := $page.Resources.GetMatch &amp;quot;*.docx&amp;quot;:
     
     <item>
       <title>hugo快速設定</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</link>
+      <link>/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</guid>
+      <guid>/hugonote/hugo%E5%BF%AB%E9%80%9F%E8%A8%AD%E5%AE%9A.html</guid>
       <description>Hugo related site hugo 的設定 提到是不是要hardlinebreak ,markdown 設定 範例❓ example
 [blackfriday] angledQuotes = true fractions = false plainIDAnchors = true extensions = [&amp;quot;hardLineBreak&amp;quot;]  👍 footnote
 This is a footnote.[^1] [^1]: the footnote text.  網頁建立工具  font awesome 版面(Bootstrap Grid System) blogdown,Github
@@ -65,20 +65,20 @@ This is a footnote.[^1] [^1]: the footnote text.  網頁建立工具  font aweso
     
     <item>
       <title>怎樣存取.Site.Data</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/sitedata.html</link>
+      <link>/hugonote/sitedata.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/sitedata.html</guid>
+      <guid>/hugonote/sitedata.html</guid>
       <description>背景  怪怪,好像不是很正確的參考  目的 怎樣存取.Site.Data 裡面的json
 實驗和材料 ├─content │ └─blogs | └─sitedata.md 🔑 執行短碼whatdata(.html)的文件,實驗時候是本文。 ├─data │ │ │ ├─xxx | │ └─xx.toml 🔑實驗要存取的對象 | └──x2.toml 🔑實驗要存取的對象 ├─resources ├─static └─themes   簡單記憶的話,就是.Site.Pages 是content 子目錄下的檔案,而.Site.Data就是Data子目錄下的檔案。  所以,這個data子目錄,和content是平行的,如上圖。 在這個子目錄下可以有多個yml 或toml 每個yml 如下 yml```ymlname: Leo Tolstoybio: &amp;#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&amp;#34;sources:- title: &amp;#34;Anna Karenina&amp;#34;quotes:- entry: &amp;#34;quote no.</description>
     </item>
     
     <item>
       <title>自動發布到ftp</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugotoftp.html</link>
+      <link>/hugonote/hugotoftp.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugotoftp.html</guid>
+      <guid>/hugonote/hugotoftp.html</guid>
       <description>背景 目的 hugo 修改完以後,自動更新到ftp
 材料 檔案內容.drone.yml
 kind: pipeline type: docker name: default trigger: branch: - master steps: - name: submodules image: alpine/git commands: - git submodule init - git submodule update --recursive --remote - name: Version check image: linchao/hugo-builder pull: never commands: - echo &amp;quot;Checking Hugo version. e&amp;quot; - hugo version - name: Build image: linchao/hugo-builder volumes: - name: srcsite path: /drone/src/build pull: never commands: - hugo --destination /drone/src/build #- minify -r -o /drone/src/build /drone/src/build - name: deploy image: cschlosser/drone-ftps volumes: - name: srcsite path: /_site environment: FTP_USERNAME: from_secret: linchao FTP_PASSWORD: from_secret: a2236527 PLUGIN_HOSTNAME: www2.</description>

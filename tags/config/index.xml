@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>config on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/config.html</link>
+    <link>/tags/config.html</link>
     <description>Recent content in config on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>baseURL的路徑測試</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</link>
+      <link>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</guid>
+      <guid>/hugonote/baseurl%E5%B0%8D%E8%B7%AF%E5%BE%91%E7%9A%84%E5%BD%B1%E9%9F%BF.html</guid>
       <description>背景 目的 看看config.toml 中的baseURL 怎樣影響文章的路徑。
 材料和程式碼 baseURL: {{ .Site.BaseURL}} {{ $pages := (where (where .Site.Pages &amp;quot;Type&amp;quot; &amp;quot;pages&amp;quot;) &amp;quot;IsPage&amp;quot; true) }} {{ range first 5 $pages }} &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Title }} &amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;{{ .Permalink }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;absURL: {{ .Permalink | absURL }}&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;relURL: {{ .Permalink | relURL }}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/ul&amp;gt; {{ end }}  實驗記錄 根據不同的 baseURL (config.toml 中的設定)來看結果:
 📝.Site.BaseURL =&amp;gt; 在config.toml 中設定(不知道有沒有分大小寫,但是在.Site.Params.* 的時候,*不分大小寫。

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>r on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/r.html</link>
+    <link>/tags/r.html</link>
     <description>Recent content in r on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chunk output in Rmarkdown</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/chunk_output.html</link>
+      <link>/r/chunk_output.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/chunk_output.html</guid>
+      <guid>/r/chunk_output.html</guid>
       <description>結論 不能 {{&amp;lt; notice tip &amp;gt;}} 只能 {{% notice tip %}}，就是說只能使用%❓。
 tip 1
 tip 2
@@ -26,10 +26,10 @@ note 2
     
     <item>
       <title>global option in R</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/global_options.html</link>
+      <link>/r/global_options.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/global_options.html</guid>
+      <guid>/r/global_options.html</guid>
       <description>options 沒看到所謂的global option: blogdown.method
 options(); #&amp;gt; $add.smooth #&amp;gt; [1] TRUE #&amp;gt; #&amp;gt; $blogdown.hugo.version #&amp;gt; [1] &amp;quot;0.84.4&amp;quot; #&amp;gt; #&amp;gt; $blogdown.knit.on_save #&amp;gt; [1] TRUE #&amp;gt; #&amp;gt; $blogdown.method #&amp;gt; [1] &amp;quot;custom&amp;quot; #&amp;gt; #&amp;gt; $blogdown.serve_site.startup #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $browserNLdisabled #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $CBoundsCheck #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $check.bounds #&amp;gt; [1] FALSE #&amp;gt; #&amp;gt; $citation.bibtex.max #&amp;gt; [1] 1 #&amp;gt; #&amp;gt; $continue #&amp;gt; [1] &amp;quot;+ &amp;quot; #&amp;gt; #&amp;gt; $contrasts #&amp;gt; unordered ordered #&amp;gt; &amp;quot;contr.</description>
     </item>

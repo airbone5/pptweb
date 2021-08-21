@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>.Site.Data on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/.site.data.html</link>
+    <link>/tags/.site.data.html</link>
     <description>Recent content in .Site.Data on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/.site.data/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/.site.data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎樣存取.Site.Data</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/sitedata.html</link>
+      <link>/hugonote/sitedata.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/sitedata.html</guid>
+      <guid>/hugonote/sitedata.html</guid>
       <description>背景  怪怪,好像不是很正確的參考  目的 怎樣存取.Site.Data 裡面的json
 實驗和材料 ├─content │ └─blogs | └─sitedata.md 🔑 執行短碼whatdata(.html)的文件,實驗時候是本文。 ├─data │ │ │ ├─xxx | │ └─xx.toml 🔑實驗要存取的對象 | └──x2.toml 🔑實驗要存取的對象 ├─resources ├─static └─themes   簡單記憶的話,就是.Site.Pages 是content 子目錄下的檔案,而.Site.Data就是Data子目錄下的檔案。  所以,這個data子目錄,和content是平行的,如上圖。 在這個子目錄下可以有多個yml 或toml 每個yml 如下 yml```ymlname: Leo Tolstoybio: &amp;#34;Russian novelist, best known for his novels *War and Peace*, *Anna Karenina* and various essays.&amp;#34;sources:- title: &amp;#34;Anna Karenina&amp;#34;quotes:- entry: &amp;#34;quote no.</description>
     </item>

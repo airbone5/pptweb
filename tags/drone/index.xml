@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>drone on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/drone.html</link>
+    <link>/tags/drone.html</link>
     <description>Recent content in drone on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/drone/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/drone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自動發布到ftp</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugotoftp.html</link>
+      <link>/hugonote/hugotoftp.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/hugotoftp.html</guid>
+      <guid>/hugonote/hugotoftp.html</guid>
       <description>背景 目的 hugo 修改完以後,自動更新到ftp
 材料 檔案內容.drone.yml
 kind: pipeline type: docker name: default trigger: branch: - master steps: - name: submodules image: alpine/git commands: - git submodule init - git submodule update --recursive --remote - name: Version check image: linchao/hugo-builder pull: never commands: - echo &amp;quot;Checking Hugo version. e&amp;quot; - hugo version - name: Build image: linchao/hugo-builder volumes: - name: srcsite path: /drone/src/build pull: never commands: - hugo --destination /drone/src/build #- minify -r -o /drone/src/build /drone/src/build - name: deploy image: cschlosser/drone-ftps volumes: - name: srcsite path: /_site environment: FTP_USERNAME: from_secret: linchao FTP_PASSWORD: from_secret: a2236527 PLUGIN_HOSTNAME: www2.</description>

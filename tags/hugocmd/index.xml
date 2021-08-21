@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugocmd on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/hugocmd.html</link>
+    <link>/tags/hugocmd.html</link>
     <description>Recent content in hugocmd on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/hugocmd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/hugocmd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>測試stata hugocmd</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</link>
+      <link>/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</guid>
+      <guid>/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</guid>
       <description>套表 sysuse auto eststo clear qui estpost tab foreign hugocmd quote, harg(tip) genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;./tmp/&amp;quot;) post(&amp;quot;.html&amp;quot;) autoinc return list hugocmd quote,end esttab , /// cells(b(fmt(%9.0g) label(個數)) pct(fmt(%9.1f) label(百分比) par) ) /// unstack nolines mtitle nonumbers nonote noobs  &amp;gt; . sysuse auto (1978 Automobile Data) . eststo clear . . qui estpost tab foreign . hugocmd quote, harg(tip) 🏷. . genfilename &amp;#34;$outposix&amp;#34;, pre(&amp;#34;./tmp/&amp;#34;) post(&amp;#34;.html&amp;#34;) autoinc檔案名稱:./tmp/hugocmd_1.html. return listmacros:r(base) : &amp;#34;hugocmd_1&amp;#34;r(fn3) : &amp;#34;.</description>
     </item>
     

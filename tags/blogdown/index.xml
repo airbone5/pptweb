@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blogdown on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/blogdown.html</link>
+    <link>/tags/blogdown.html</link>
     <description>Recent content in blogdown on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blogdown &amp; hugo</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/blog_setup.html</link>
+      <link>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/blog_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/blog_setup.html</guid>
+      <guid>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/blog_setup.html</guid>
       <description>&lt;p&gt;有關blogdown,hugo的設定,例如&lt;code&gt;config.html&lt;/code&gt;等等。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>chunk output in Rmarkdown</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/chunk_output.html</link>
+      <link>/r/chunk_output.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/chunk_output.html</guid>
+      <guid>/r/chunk_output.html</guid>
       <description>結論 不能 {{&amp;lt; notice tip &amp;gt;}} 只能 {{% notice tip %}}，就是說只能使用%❓。
 tip 1
 tip 2

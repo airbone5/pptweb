@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shortcode on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/categories/shortcode.html</link>
+    <link>/categories/shortcode.html</link>
     <description>Recent content in shortcode on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/categories/shortcode/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/categories/shortcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>短碼 - foldergallery</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/gallery.html</link>
+      <link>/basic/gallery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/gallery.html</guid>
+      <guid>/basic/gallery.html</guid>
       <description>test1 ex1 {{*&amp;lt; foldergallery path=&amp;quot;./gallery.files/&amp;quot; cols=&amp;quot;4&amp;quot;&amp;gt;*}} 內定show=&amp;quot;one&amp;quot; morediv.galleryimgs+a{display:block;}$(document).ready(function(){$(&#39;.gallery-5d2bf4e786808748c9feb89b0aaf74d7&#39;).featherlightGallery({gallery: {next: &#39;&#39;}});}); ex2 {{*&amp;lt; foldergallery path=&amp;quot;./gallery.files/&amp;quot; cols=&amp;quot;4&amp;quot; show=&amp;quot;all&amp;quot;&amp;gt;*}} 全部顯示,分為4欄 div.galleryimgs+a{display:block;}$(document).ready(function(){$(&#39;.gallery-5d2bf4e786808748c9feb89b0aaf74d7&#39;).featherlightGallery({gallery: {next: &#39;&#39;}});}); ex3 pre 下的行為more            div.</description>
     </item>
     

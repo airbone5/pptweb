@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>基本 on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/basic.html</link>
+    <link>/basic.html</link>
     <description>Recent content in 基本 on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/basic/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>標籤</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/tagtest.html</link>
+      <link>/basic/tagtest.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/tagtest.html</guid>
+      <guid>/basic/tagtest.html</guid>
       <description> 有關標籤的設定 相關檔案在partial\tags.html
 在config.toml 中,我設定了uglyURLs=true 然後,要讀取這個值的時候,HUGO說沒有這個(error),所以config.toml 有兩行uglyURLs=true 一個不在params中,一個在params裡面.
  前面是給HUGO用的, 後面params節中設定是給shortcode用的。  </description>
@@ -19,10 +19,10 @@
     
     <item>
       <title>編輯副檔名</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/short_editurl.html</link>
+      <link>/basic/short_editurl.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/short_editurl.html</guid>
+      <guid>/basic/short_editurl.html</guid>
       <description>&lt;h2 id=&#34;問題描述&#34;&gt;問題描述&lt;/h2&gt;
 
 &lt;p&gt;按下EDIT,希望可以針對實際上的檔案編輯,而不是預設md檔案,因為有時是在Rmarkdown 中寫的。&lt;/p&gt;</description>
@@ -30,48 +30,48 @@
     
     <item>
       <title>vscode 的設定</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/vscode.html</link>
+      <link>/basic/vscode.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/vscode.html</guid>
+      <guid>/basic/vscode.html</guid>
       <description>  滑鼠捲動控制字型大小  在設定中查找關鍵字 mousewheel  emoji 的色彩設定不對  在設定中查找關鍵字 font ,添加Segoe Emoji或Segoe UI Emoji,前者好像顏色有問題✔。   常用工具  html to md html decode word to html  </description>
     </item>
     
     <item>
       <title>vscode快速</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/vscode%E5%BF%AB%E9%80%9F.html</link>
+      <link>/basic/vscode%E5%BF%AB%E9%80%9F.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/vscode%E5%BF%AB%E9%80%9F.html</guid>
+      <guid>/basic/vscode%E5%BF%AB%E9%80%9F.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>使用slice</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E4%BD%BF%E7%94%A8slice.html</link>
+      <link>/basic/%E4%BD%BF%E7%94%A8slice.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E4%BD%BF%E7%94%A8slice.html</guid>
+      <guid>/basic/%E4%BD%BF%E7%94%A8slice.html</guid>
       <description>加入兩個座標到陣列
 {{ $pages := slice}} {{ $pages := $pages | append (dict &amp;quot;x&amp;quot; 1 &amp;quot;y&amp;quot; 1) }} {{ $pages := $pages | append (dict &amp;quot;x&amp;quot; 2 &amp;quot;y&amp;quot; 2) }} {{ $pages1 := slice}} {{ $pages1 := $pages1 | append (dict &amp;quot;x&amp;quot; 3 &amp;quot;y&amp;quot; 1) }} {{ $pages := append $pages $pages1 }} {{ range $pages }} {{.x}} &amp;lt;br/&amp;gt; {{end}} 🏷{{ $pages}} &amp;lt;br/&amp;gt; {{/* 只是看一下甚麼是 array of dict */}}  把partial當成一個副程式,傳回一個陣列: 對照上面的寫法,我要測試是否能把partial 當成副程式。</description>
     </item>
     
     <item>
       <title>內建指令relref測試.md</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html</link>
+      <link>/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html</guid>
+      <guid>/basic/%E5%85%A7%E5%BB%BA%E6%8C%87%E4%BB%A4relref%E6%B8%AC%E8%A9%A6.html</guid>
       <description>短碼 myref.html 歷史紀錄 短碼 myref.html
 {{- if in (.Get 0) &amp;quot;/_index.md&amp;quot; -}} {{- $paths := (split (.Get 0) &amp;quot;_index.md&amp;quot;) -}} {{- $pagepath := index $paths 0 -}} {{- $anchor := index $paths 1 -}} {{- with .Site.GetPage &amp;quot;section&amp;quot; (trim $pagepath &amp;quot;/&amp;quot;) -}} {{- ( printf &amp;quot;%s%s&amp;quot; $pagepath $anchor ) | relURL -}} {{- end -}} {{- else -}} {{- with .Site.GetPage &amp;quot;section&amp;quot; (.Get 0) }} {{- .RelPermalink -}} {{- else -}} {{- .</description>
     </item>
     
     <item>
       <title>打光議題</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%89%93%E5%85%89.html</link>
+      <link>/basic/%E6%89%93%E5%85%89.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%89%93%E5%85%89.html</guid>
+      <guid>/basic/%E6%89%93%E5%85%89.html</guid>
       <description> 注意事項 HUGO的內建打光，可以這樣操控
 pygmentsUseClasses = true 是不是要加類別 pygmentsCodeFences = false 不對```圈起來的程式碼作用  但是這個內建打光好像會自動判斷短碼是否在註解裡面,否則就不會作用,我把它關掉,因為我的程式碼本來就是註解用,不是用來直接複製貼上執行。例如下面的短碼,不作用❌()，除非前面加上註解 //
 ```js ❌{{&amp;lt; quote &amp;gt;}} 沒作用,而且消失,應該是被刪掉{{&amp;lt; /quote &amp;gt;}} ✔//{{&amp;lt; quote &amp;gt;}} 這樣可以{{&amp;lt; /quote &amp;gt;}} ```  手動打光 document.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&amp;gt; { document.querySelectorAll(&#39;pre code&#39;).forEach((el) =&amp;gt; { hljs.highlightElement(el); }); });  </description>
@@ -79,85 +79,85 @@ pygmentsUseClasses = true 是不是要加類別 pygmentsCodeFences = false 不�
     
     <item>
       <title>打包文件</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html</link>
+      <link>/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html</guid>
+      <guid>/basic/%E6%89%93%E5%8C%85%E6%96%87%E4%BB%B6.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>有關variant 的config.toml</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html</link>
+      <link>/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html</guid>
+      <guid>/basic/%E6%9C%89%E9%97%9Cthemes%E8%A8%AD%E5%AE%9A.html</guid>
       <description>&lt;p&gt;TOML JSON 的對照範例
 config.toml 的設定&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>正規表達式</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html</link>
+      <link>/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html</guid>
+      <guid>/basic/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E9%81%94%E5%BC%8F.html</guid>
       <description>## - 參考hugo
 {{ $xx := replaceRE &amp;quot;^.?([\\d][\\d|.]?[\\d|.]*).*&amp;quot; &amp;quot;$1&amp;quot; (.Get 0)}} {{ $xx }}  抽第一組數字 {{&amp;lt; test1 &amp;quot;t1 xx d&amp;quot; &amp;gt;}} =&amp;gt; 1 {{&amp;lt; test1 &amp;quot;1 xx d&amp;quot; &amp;gt;}} 1 {{&amp;lt; test1 &amp;quot;s 1 xx d&amp;quot; &amp;gt;}} s 1 xx d {{&amp;lt; test1 &amp;quot;t1.2 x3 dd.d1d &amp;gt;}} 1.2 {{&amp;lt; test1 &amp;quot;t12.2.3 xx d&amp;quot; &amp;gt;}} 12.2.3 {{&amp;lt; test1 &amp;quot; 12.2.3 xx d&amp;quot; &amp;gt;}} 12.2.3</description>
     </item>
     
     <item>
       <title>短碼 - foldergallery</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/gallery.html</link>
+      <link>/basic/gallery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/gallery.html</guid>
+      <guid>/basic/gallery.html</guid>
       <description>test1 ex1 {{*&amp;lt; foldergallery path=&amp;quot;./gallery.files/&amp;quot; cols=&amp;quot;4&amp;quot;&amp;gt;*}} 內定show=&amp;quot;one&amp;quot; morediv.galleryimgs+a{display:block;}$(document).ready(function(){$(&#39;.gallery-5d2bf4e786808748c9feb89b0aaf74d7&#39;).featherlightGallery({gallery: {next: &#39;&#39;}});}); ex2 {{*&amp;lt; foldergallery path=&amp;quot;./gallery.files/&amp;quot; cols=&amp;quot;4&amp;quot; show=&amp;quot;all&amp;quot;&amp;gt;*}} 全部顯示,分為4欄 div.galleryimgs+a{display:block;}$(document).ready(function(){$(&#39;.gallery-5d2bf4e786808748c9feb89b0aaf74d7&#39;).featherlightGallery({gallery: {next: &#39;&#39;}});}); ex3 pre 下的行為more            div.</description>
     </item>
     
     <item>
       <title>短碼 expand</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCexpand.html</link>
+      <link>/basic/%E7%9F%AD%E7%A2%BCexpand.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCexpand.html</guid>
-      <description>在stata中使用expand /~linchao/test/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html 其他相關:在stata上的測試案例(variant)
+      <guid>/basic/%E7%9F%AD%E7%A2%BCexpand.html</guid>
+      <description>在stata中使用expand /stata/%E7%9F%AD%E7%A2%BCexpand-stata.html 其他相關:在stata上的測試案例(variant)
 短碼: expand.html 1 2 3 4 5 6 7 8 9 10 11 12 13 14  {{- print &amp;#34;&amp;#34; -}}&amp;lt;div class=&amp;#34;expand&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;expand-label&amp;#34; style=&amp;#34;cursor: pointer;&amp;#34; onclick=&amp;#34;$h = $(this);$h.siblings(&amp;#39;div.expand-content&amp;#39;).slideToggle(100,function () {$h.children(&amp;#39;i&amp;#39;).attr(&amp;#39;class&amp;#39;,function () {return $h.siblings(&amp;#39;div.expand-content&amp;#39;).is(&amp;#39;:visible&amp;#39;) ? &amp;#39;fa fa-chevron-down&amp;#39; : &amp;#39;fa fa-chevron-right&amp;#39;;});});&amp;#34;&amp;gt; &amp;lt;i style=&amp;#34;font-size:x-small;&amp;#34; class=&amp;#34;fa fa-chevron-right&amp;#34; color=&amp;#34;yellow&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span&amp;gt; {{- $expandMessage := T &amp;#34;Expand-title&amp;#34; -}} {{- if .IsNamedParams -}} {{- (.Get &amp;#34;default&amp;#34; | default $expandMessage )| emojify -}} {{- else -}} {{- (.</description>
     </item>
     
     <item>
       <title>短碼attachfiles</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCattachfiles.html</link>
+      <link>/basic/%E7%9F%AD%E7%A2%BCattachfiles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCattachfiles.html</guid>
+      <guid>/basic/%E7%9F%AD%E7%A2%BCattachfiles.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>短碼demo_container_md</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/short_demo_container_md.html</link>
+      <link>/basic/short_demo_container_md.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/short_demo_container_md.html</guid>
+      <guid>/basic/short_demo_container_md.html</guid>
       <description>&lt;p&gt;要設定HTML實驗的短碼,會涉及到怎樣取得html,css,js這裡就會用到&lt;code&gt;relURL&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>短碼docfile註解.md</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html</link>
+      <link>/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html</guid>
+      <guid>/basic/%E7%9F%AD%E7%A2%BCdocfile%E8%A8%BB%E8%A7%A3.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>短碼github.html</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html</link>
+      <link>/basic/%E7%9F%AD%E7%A2%BCgithub.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html</guid>
+      <guid>/basic/%E7%9F%AD%E7%A2%BCgithub.html</guid>
       <description>插入github 上的程式碼 顯示github上的程式碼 ,可以利用短碼
 ⛳範例(來自)
 例如要插入的檔案在https://github.com/airbone5/blogtest/blob/master/content/post/2015-01-01-lorem-ipsum.md,則指令如下
@@ -169,20 +169,20 @@ more   div.galleryimgs+a{ display:block; }
     
     <item>
       <title>編號</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%B7%A8%E8%99%9F.html</link>
+      <link>/basic/%E7%B7%A8%E8%99%9F.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%B7%A8%E8%99%9F.html</guid>
+      <guid>/basic/%E7%B7%A8%E8%99%9F.html</guid>
       <description> 參考  這是
 /* Auto Numbering */ body {counter-reset: h2} h2 {counter-reset: h3} h3 {counter-reset: h4} h4 {counter-reset: h5} article[autonumbering] h2:before {counter-increment: h2; content: counter(h2) &amp;quot;. &amp;quot;} article[autonumbering] h3:before {counter-increment: h3; content: counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;. &amp;quot;} article[autonumbering] h4:before {counter-increment: h4; content: counter(h2) &amp;quot;.&amp;quot; counter(h3) &amp;quot;.&amp;quot; counter(h4) &amp;quot;. &amp;quot;} article[autonumbering] .toc__menu ul { counter-reset: item } article[autonumbering] .toc__menu li a:before { content: counters(item, &amp;quot;.&amp;quot;) &amp;quot;. &amp;quot;; counter-increment: item }  </description>
     </item>
     
     <item>
       <title>討論區</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html</link>
+      <link>/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html</guid>
+      <guid>/basic/%E8%A8%8E%E8%AB%96%E5%8D%80.html</guid>
       <description></description>
     </item>
     

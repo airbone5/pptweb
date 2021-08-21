@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>workflow on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/series/workflow.html</link>
+    <link>/series/workflow.html</link>
     <description>Recent content in workflow on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/series/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/series/workflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>0. 引擎測試準備工作</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</link>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</guid>
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A6%E6%BA%96%E5%82%99%E5%B7%A5%E4%BD%9C.html</guid>
       <description>有用的訊息  class.output的寫法
 knitr::opts_chunk$set( class.output = &amp;quot;bg-success&amp;quot;, class.message = &amp;quot;bg-info text-info&amp;quot;, class.warning = &amp;quot;bg-warning text-warning&amp;quot;, class.error = &amp;quot;bg-danger text-danger&amp;quot; )  hook
  輸出設定?
@@ -22,37 +22,37 @@ content &amp;lt;- c( &amp;quot;---&amp;quot;, &amp;quot;title: Leaflet Demo&amp;
     
     <item>
       <title>1. 引擎測試1</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</link>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</guid>
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A61.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>2. 引擎測試2</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</link>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</guid>
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A62.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>3. 引擎測試3</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</link>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</guid>
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A63.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>4. 引擎測試4</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</link>
+      <link>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</guid>
+      <guid>/r/%E5%BC%95%E6%93%8E%E6%B8%AC%E8%A9%A64.html</guid>
       <description></description>
     </item>
     

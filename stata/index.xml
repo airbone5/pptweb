@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sata on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/stata.html</link>
+    <link>/stata.html</link>
     <description>Recent content in Sata on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/stata/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/stata/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>測試stata</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E8%A8%BB%E8%A7%A3.html</link>
+      <link>/stata/%E8%A8%BB%E8%A7%A3.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E8%A8%BB%E8%A7%A3.html</guid>
+      <guid>/stata/%E8%A8%BB%E8%A7%A3.html</guid>
       <description>r common # 🏷檔案名稱所在子目錄要配合outposix   套表 sysuse auto eststo clear qui estpost tab foreign // 🏷檔案名稱所在子目錄要配合outposix  genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;./tmp/&amp;quot;) post(&amp;quot;.html&amp;quot;) autoinc return list esttab using &amp;quot;`r(fn)&#39;&amp;quot;, /// cells(b(fmt(%9.0g) label(個數)) pct(fmt(%9.1f) label(百分比) par) ) /// unstack nolines mtitle nonumbers nonote noobs  &amp;gt; . sysuse auto (1978 Automobile Data) . eststo clear . . qui estpost tab foreign . // 🏷檔案名稱所在子目錄要配合outposix  . genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;.</description>
     </item>
     
     <item>
       <title>測試stata hugocmd</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</link>
+      <link>/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</guid>
+      <guid>/stata/%E6%B8%AC%E8%A9%A6hugocmd.html</guid>
       <description>套表 sysuse auto eststo clear qui estpost tab foreign hugocmd quote, harg(tip) genfilename &amp;quot;$outposix&amp;quot;, pre(&amp;quot;./tmp/&amp;quot;) post(&amp;quot;.html&amp;quot;) autoinc return list hugocmd quote,end esttab , /// cells(b(fmt(%9.0g) label(個數)) pct(fmt(%9.1f) label(百分比) par) ) /// unstack nolines mtitle nonumbers nonote noobs  &amp;gt; . sysuse auto (1978 Automobile Data) . eststo clear . . qui estpost tab foreign . hugocmd quote, harg(tip) 🏷. . genfilename &amp;#34;$outposix&amp;#34;, pre(&amp;#34;./tmp/&amp;#34;) post(&amp;#34;.html&amp;#34;) autoinc檔案名稱:./tmp/hugocmd_1.html. return listmacros:r(base) : &amp;#34;hugocmd_1&amp;#34;r(fn3) : &amp;#34;.</description>
     </item>
     
     <item>
       <title>將文字檔顯示在文件內容</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/test_short_code.html</link>
+      <link>/stata/test_short_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/test_short_code.html</guid>
+      <guid>/stata/test_short_code.html</guid>
       <description>背景  把空白行殺掉
  問題是,linux 的換行是\n 底下可以把文字檔顯示在文件中
 &amp;lt;pre&amp;gt; {{*&amp;lt; trim (readFile $filepath) &amp;quot;\r\n&amp;quot; | safeHTML &amp;gt;*}} &amp;lt;/pre&amp;gt;   利用hugo 提供的函數chomp
@@ -42,10 +42,10 @@
     
     <item>
       <title></title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/quote-in-stata.html</link>
+      <link>/stata/quote-in-stata.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/quote-in-stata.html</guid>
+      <guid>/stata/quote-in-stata.html</guid>
       <description>title: quote in stata description: 測試sortcode quote EditExt: &amp;quot;Rmarkdown&amp;quot; tags: [&amp;quot;manual.quote&amp;quot;]
 categories: [&amp;quot;stata&amp;quot;] 背景資料  目前的expand.html
  &amp;lt;div class=&amp;quot;tooltip&amp;quot;&amp;gt;{{- emojify &amp;quot;📝&amp;quot; -}} {{- $anchor := (cond .IsNamedParams (.Get &amp;quot;anchor&amp;quot;) (.Get 0)) -}} {{- $content := .Inner -}} {{- with $anchor -}} &amp;lt;a class=&amp;quot;codenote&amp;quot; href=&amp;quot;#{{- $anchor -}}&amp;quot;&amp;gt;{{$anchor}}&amp;lt;/a&amp;gt;&amp;lt;span class=&amp;quot;tooltiptext&amp;quot; style=&amp;quot;background: rgb(255 255 255 / 37%); margin: 0; padding: 0;border:solid orange;&amp;quot;&amp;gt; {{- replaceRE &amp;quot;(.*)/{2,3}$&amp;quot; &amp;quot;$1&amp;quot; $content -}} &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; {{- else -}} &amp;lt;span class=&amp;quot;tooltiptext&amp;quot; style=&amp;quot;background: rgb(255 255 255 / 37%); margin: 0; padding: 0;border:solid orange;&amp;quot;&amp;gt; {{- .</description>
@@ -53,19 +53,19 @@ categories: [&amp;quot;stata&amp;quot;] 背景資料  目前的expand.html
     
     <item>
       <title>執行結果加入TOC</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/short_attachfiles.html</link>
+      <link>/stata/short_attachfiles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/short_attachfiles.html</guid>
+      <guid>/stata/short_attachfiles.html</guid>
       <description>&lt;p&gt;測試短碼:attachfiles 在STATA中的運作情況&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>短碼 in stata - expand</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</link>
+      <link>/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</guid>
+      <guid>/stata/%E7%9F%AD%E7%A2%BCexpand-stata.html</guid>
       <description>背景資料  清除CSS的方式
 div.expand { all: initial; * { all: unset; } }  測
   shortcode- expand 靜態測試  在本文中 執行 {{&amp;lt; expand &amp;quot;xxx&amp;quot; &amp;gt;}},以下為執行結果: xxx正不正常 📝以下在md 方塊中,測試的expand運作是否正常:

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>json on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/json.html</link>
+    <link>/tags/json.html</link>
     <description>Recent content in json on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>短碼 preview-external</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/sc_preview.html</link>
+      <link>/hugonote/sc_preview.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/sc_preview.html</guid>
+      <guid>/hugonote/sc_preview.html</guid>
       <description>背景 目的 連結可以出現預視
  參考  使用方法 {{&amp;lt; preview-external src=&amp;quot;http://www2.nkust.edu.tw/~linchao/test&amp;quot; &amp;gt;}} ,例如
 後台技巧 在瀏覽器打https://api.microlink.io/?url=連結,例如https://api.microlink.io/?url=http://www.chinatimes.com.tw,傳回的資料如下: 傳回的JSON資料```{&amp;#34;status&amp;#34;:&amp;#34;success&amp;#34;,&amp;#34;data&amp;#34;:{&amp;#34;title&amp;#34;:&amp;#34;中時新聞網 - Chinatimes.com&amp;#34;,&amp;#34;description&amp;#34;:&amp;#34;《中時新聞網》前身為《中時電子報》，於1995年創立，是全台第一家且歷史最悠久的網路媒體，開啟新聞數位時代。近來以最具影響力的政治新聞引領先驅外，首創娛樂、生活、社會專題式新聞報導，帶起同業間仿效風潮；精闢的言論、財經、國際、兩岸、軍事、體育、網推頻道，網羅忠實讀者群；新型態的汽車、房屋、玩食、科技頻道，成為閱聽眾休閒必看選擇。視覺影音上，結合中天新聞直播、FB直播、中時新聞網APP等平台的精彩內容皆能滿足數位時代所有的閱聽者。&amp;#34;,&amp;#34;lang&amp;#34;:&amp;#34;zh&amp;#34;,&amp;#34;author&amp;#34;:&amp;#34;中時新聞網&amp;#34;,&amp;#34;publisher&amp;#34;:&amp;#34;中時新聞網&amp;#34;,&amp;#34;image&amp;#34;:{&amp;#34;url&amp;#34;:&amp;#34;https://static.chinatimes.com/images/2020/logo-chinatimes2020-1200x635.png&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;png&amp;#34;,&amp;#34;size&amp;#34;:47886,&amp;#34;height&amp;#34;:635,&amp;#34;width&amp;#34;:1200,&amp;#34;size_pretty&amp;#34;:&amp;#34;47.9 kB&amp;#34;},&amp;#34;date&amp;#34;:&amp;#34;2021-06-17T06:22:00.000Z&amp;#34;,&amp;#34;url&amp;#34;:&amp;#34;https://www.chinatimes.com&amp;#34;,&amp;#34;logo&amp;#34;:{&amp;#34;url&amp;#34;:&amp;#34;https://logo.clearbit.com/chinatimes.com&amp;#34;,&amp;#34;type&amp;#34;:&amp;#34;png&amp;#34;,&amp;#34;size&amp;#34;:9524,&amp;#34;height&amp;#34;:128,&amp;#34;width&amp;#34;:128,&amp;#34;size_pretty&amp;#34;:&amp;#34;9.52 kB&amp;#34;}},&amp;#34;statusCode&amp;#34;:200,&amp;#34;headers&amp;#34;:{&amp;#34;date&amp;#34;:&amp;#34;Thu, 17 Jun 2021 14:22:16 GMT&amp;#34;,&amp;#34;content-type&amp;#34;:&amp;#34;text/html; charset=utf-8&amp;#34;,&amp;#34;cf-ray&amp;#34;:&amp;#34;660cedd769101791-EWR&amp;#34;,&amp;#34;vary&amp;#34;:&amp;#34;Accept-Encoding&amp;#34;,&amp;#34;via&amp;#34;:&amp;#34;1.1 google&amp;#34;,&amp;#34;cf-cache-status&amp;#34;:&amp;#34;DYNAMIC&amp;#34;,&amp;#34;alt-svc&amp;#34;:&amp;#34;h3-27=\&amp;#34;:443\&amp;#34;; ma=86400, h3-28=\&amp;#34;:443\&amp;#34;; ma=86400, h3-29=\&amp;#34;:443\&amp;#34;; ma=86400, h3=\&amp;#34;:443\&amp;#34;; ma=86400&amp;#34;,&amp;#34;cf-request-id&amp;#34;:&amp;#34;0abbf2fa9c0000179141157000000001&amp;#34;,&amp;#34;expect-ct&amp;#34;:&amp;#34;max-age=604800, report-uri=\&amp;#34;https://report-uri.</description>

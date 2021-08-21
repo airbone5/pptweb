@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bootstrap on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/bootstrap.html</link>
+    <link>/tags/bootstrap.html</link>
     <description>Recent content in bootstrap on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>練習overflow</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92overflow.html</link>
+      <link>/paneltest/%E7%B7%B4%E7%BF%92overflow.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/paneltest/%E7%B7%B4%E7%BF%92overflow.html</guid>
+      <guid>/paneltest/%E7%B7%B4%E7%BF%92overflow.html</guid>
       <description>&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&#34;en&#34;&gt;
 

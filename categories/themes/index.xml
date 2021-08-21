@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>themes on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/categories/themes.html</link>
+    <link>/categories/themes.html</link>
     <description>Recent content in themes on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/categories/themes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/categories/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>短碼github.html</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html</link>
+      <link>/basic/%E7%9F%AD%E7%A2%BCgithub.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/%E7%9F%AD%E7%A2%BCgithub.html</guid>
+      <guid>/basic/%E7%9F%AD%E7%A2%BCgithub.html</guid>
       <description>插入github 上的程式碼 顯示github上的程式碼 ,可以利用短碼
 ⛳範例(來自)
 例如要插入的檔案在https://github.com/airbone5/blogtest/blob/master/content/post/2015-01-01-lorem-ipsum.md,則指令如下

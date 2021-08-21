@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code on 我的測試區</title>
-    <link>http://www2.nkust.edu.tw/~linchao/test/tags/code.html</link>
+    <link>/tags/code.html</link>
     <description>Recent content in code on 我的測試區</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www2.nkust.edu.tw/~linchao/test/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>解說HUGO內定的參數</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/hugonote/parameters.html</link>
+      <link>/hugonote/parameters.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/hugonote/parameters.html</guid>
+      <guid>/hugonote/parameters.html</guid>
       <description>📝 比較好用的是本頁的的路徑:{{ .Page.File.Path}}
  .Site.Pages = All pages in site. [.Data.Pages&#39;(https://gohugo.io/variables/taxonomy/#taxonomy-terms-page-variables) = The list of pages in the taxonomy .Paginator.Pages can also be used in place of .Data.Pages to enable pagination.
 {{ $paginator := .Paginate (where .Data.Pages &amp;quot;Type&amp;quot; &amp;quot;posts&amp;quot;) }}   posts 指的是content下的子目錄posts
@@ -21,10 +21,10 @@ You can overwrite the default pagination behaviour using the following code.</de
     
     <item>
       <title>編輯副檔名</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/basic/short_editurl.html</link>
+      <link>/basic/short_editurl.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/basic/short_editurl.html</guid>
+      <guid>/basic/short_editurl.html</guid>
       <description>&lt;h2 id=&#34;問題描述&#34;&gt;問題描述&lt;/h2&gt;
 
 &lt;p&gt;按下EDIT,希望可以針對實際上的檔案編輯,而不是預設md檔案,因為有時是在Rmarkdown 中寫的。&lt;/p&gt;</description>
@@ -32,10 +32,10 @@ You can overwrite the default pagination behaviour using the following code.</de
     
     <item>
       <title>部件 - menu.html</title>
-      <link>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6_menu.html</link>
+      <link>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6_menu.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www2.nkust.edu.tw/~linchao/test/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6_menu.html</guid>
+      <guid>/%E6%8F%9B%E8%A3%9D%E7%B4%80%E9%8C%84/%E9%83%A8%E4%BB%B6_menu.html</guid>
       <description>問題描述 我想要左邊的欄位,section 按照weight, section 裡面的文章則是按照Weight。
 menu.html 修改成如果設定Site.Params.order=&amp;quot;mix&amp;quot; 那麼就是section 依照Weight排序(原來的版本內定是Weight),而section裡面按照Title排序。 config.toml` 的設定
 # Order sections in menu by &amp;quot;weight&amp;quot; or &amp;quot;title&amp;quot;. Default to &amp;quot;weight&amp;quot; ordersectionsby = &amp;quot;mix&amp;quot;  bootstrap expand &amp;lt;ul class=&amp;quot;nav flex-column topics&amp;quot; id=&amp;quot;home-topics&amp;quot;&amp;gt; &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt; &amp;lt;!-- 第一層選單中的第一個選項 --&amp;gt; &amp;lt;a class=&amp;quot;nav-link&amp;quot; data-bs-toggle=&amp;quot;collapse&amp;quot; data-bs-target=&amp;quot;#menu_item_1&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fas fa-caret-down&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;DEMO Expand &amp;lt;/a&amp;gt; &amp;lt;ul id=&amp;quot;menu_item_1&amp;quot; class=&amp;quot;submenu collapse show&amp;quot; data-bs-parent=&amp;quot;#home-topics&amp;quot; style=&amp;quot;&amp;quot;&amp;gt; &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt; &amp;lt;!-- 第二層選單中的第一個選項 --&amp;gt; &amp;lt;a class=&amp;quot;nav-link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;chunk output in Rmarkdown &amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt; &amp;lt;a class=&amp;quot;nav-link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;global option in R &amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt; &amp;lt;!</description>
