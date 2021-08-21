@@ -73,7 +73,7 @@ menu.html 修改成如果設定Site.Params.order=&amp;quot;mix&amp;quot; 那麼�
       <guid>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</guid>
       <description>HUGO 變數 執行碼: {{&amp;lt; HugoVarTest &amp;gt;}}
  執行結果live .Page.CurrentSection: Page(/hugonote/_index.md)  .Section: can not evaluate  .Page.Section: hugonote
- .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc0007c2f00}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
+ .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc000c249f0}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage
 

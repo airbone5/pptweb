@@ -359,7 +359,7 @@ content &amp;lt;- c( &amp;quot;---&amp;quot;, &amp;quot;title: Leaflet Demo&amp;
       <guid>/hugonote/%E5%BD%B1%E5%83%8F%E7%B7%A8%E7%A2%BC1.html</guid>
       <description>HUGO 變數 執行碼: {{&amp;lt; HugoVarTest &amp;gt;}}
  執行結果live .Page.CurrentSection: Page(/hugonote/_index.md)  .Section: can not evaluate  .Page.Section: hugonote
- .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc0007c2f00}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
+ .Page: {Page(/hugonote/影像編碼1.md) nopPage 0xc000c249f0}  .Page.Name: Encode image in html  .Page.Parent: Page(/hugonote/_index.md) 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage 
 (.Site.GetPage &amp;quot;section&amp;quot; &amp;quot;report&amp;quot;): nopPage
 
@@ -523,10 +523,10 @@ node app.js  demo 2 在tutorial1目錄中</description>
     
     <item>
       <title>t1 google_api</title>
-      <link>/basic/token/google_api.html</link>
+      <link>/basic/token/t1_google_api.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/basic/token/google_api.html</guid>
+      <guid>/basic/token/t1_google_api.html</guid>
       <description></description>
     </item>
     
@@ -542,10 +542,10 @@ node app.js  demo 2 在tutorial1目錄中</description>
     
     <item>
       <title>t2 token實驗</title>
-      <link>/basic/token/token%E5%AF%A6%E9%A9%97.html</link>
+      <link>/basic/token/t2_token%E5%AF%A6%E9%A9%97.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/basic/token/token%E5%AF%A6%E9%A9%97.html</guid>
+      <guid>/basic/token/t2_token%E5%AF%A6%E9%A9%97.html</guid>
       <description>&lt;p&gt;-&lt;a href=&#34;https://documenter.getpostman.com/view/6034746/SzYaUd8j#75b6d376-af19-45ec-82bb-01d9bb14eae6&#34;&gt;curl test&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     

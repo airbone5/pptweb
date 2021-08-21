@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-  <title>樣式 in Rmd</title>  
+  <title>t2 token實驗</title>  
       
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,7 +42,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#在-democontainer-css-中">在<code>democontainer.css</code>中</a></li>
+<li><a href="#顯示帳號訊息">顯示帳號訊息</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -52,15 +52,13 @@
 </div>
 </span>
 <span class="fs-5 accessory" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-      title='最後修改August 9, 2021'>樣式 in Rmd</span>
+      title='最後修改August 21, 2021'>t2 token實驗</span>
         
     
 
     </span>
   
-  <span><a class="btn btn-outline-dark p-0" style="font-size:12px" href="../../tags/css.html">
-    <i class="fas fa-tag"></i>css
-</a></span><span >
+  <span></span><span >
     <span >
     <label for="search-query" id="search-button"><i class="fas fa-search"></i></label>
     <input id="search-query" type="search" placeholder="搜尋" autocomplete="off">
@@ -262,7 +260,7 @@
     <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_59852a0c5987b8e2611de46cc1c512a6"><i class="fas fa-caret-right"></i></span>
       
   <ul id="menu_item_59852a0c5987b8e2611de46cc1c512a6"  
-  class="submenu collapse" 
+  class="submenu collapse show" 
   data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
     
 
@@ -272,7 +270,7 @@
   
     
   
-        <li class="nav-item">
+        <li class="nav-item active">
           
           <a class="nav-link" href="../../basic/token/t2_token%E5%AF%A6%E9%A9%97.html" data-bs-toggle="tooltip" title="t2 token實驗">t2 token實驗</a></li>
     
@@ -313,7 +311,7 @@
     <span class="ps-1" data-bs-toggle="collapse" data-bs-target="#menu_item_a2e7f9311576d18267924c12ad26059e"><i class="fas fa-caret-right"></i></span>
       
   <ul id="menu_item_a2e7f9311576d18267924c12ad26059e"  
-  class="submenu collapse show" 
+  class="submenu collapse" 
   data-bs-parent="#menu_item_e1c118151bd2cc204dc463b4dbcd4102"> 
     
 
@@ -326,7 +324,7 @@
           <a class="nav-link" href="../../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" data-bs-toggle="tooltip" title="樣式 in Rmarkdown">樣式 in Rmarkdown</a></li>
     
   
-        <li class="nav-item active">
+        <li class="nav-item">
           
           <a class="nav-link" href="../../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle.html" data-bs-toggle="tooltip" title="樣式 in Rmd">樣式 in Rmd</a></li>
     </ul>
@@ -448,29 +446,132 @@
     </section>
   
 </nav><article class="article mx-2 mt-3" id="body-inner">
+    <p>-<a href="https://documenter.getpostman.com/view/6034746/SzYaUd8j#75b6d376-af19-45ec-82bb-01d9bb14eae6">curl test</a></p>
+
+<h2 id="顯示帳號訊息">顯示帳號訊息</h2>
+
+<p>顯示登入後使用者的訊息,只有用到clientid。</p>
+
+<p><a href="https://developers.google.com/identity/sign-in/web/sign-in">官方參考</a></p>
+
+<p>檔案名稱:byclientid.html。
+<style>
+.hframe > .infobar{
+    position: absolute;
+    top: .3em;
+    right: .2em;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;        
+}
+  .hframe > .infobar button,
+  .hframe > .infobar a
+  {
+    color: #bbb;
+    font-size: .8em;
+    padding: 0 .5em;
+    background: rgba(224, 224, 224, 0.2);
+    box-shadow: 0 2px 0 0 rgb(0 0 0 / 20%);
+    border-radius: .5em;
+  }
+.hframe{
+      padding-top: 1.5rem;
+      position: relative;
+      box-shadow: 6px 4px 6px #9baccb;
+    border: 2px solid #9baccb;      
+}
+.hframe:hover > .infobar{
+      opacity: 1;
+  }
+.hframe .frame-code {
+      display: none;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 4px rgb(74 146 197) dotted;
+  }    
+</style>
+<script>
+function showhide(aevent){
+           let e= aevent.target;
+           let ele= e.parentElement.parentElement;
+           ele = ele.querySelector("div.frame-code");
+           if (ele.style.display=="block"){
+              ele.style.display = "none";
+              e.innerText="看內容";
+           }  
+           else{
+            ele.style.display = "block";
+            e.innerText="關閉內容";
+           }
+           aevent.preventDefault();
+         }
+</script>
+<div class="hframe">
+  <div class="infobar">
+  
+    <a href="./byclientid.html">外部連結</a>
     
+  <a href="#" onclick="showhide(event)">看內容</a>
 
-<h2 id="在-democontainer-css-中">在<code>democontainer.css</code>中</h2>
+  </div>  
+   <iframe loading="lazy" style="border: none;width:100%" 
+       src="./byclientid.html" >
+     
+  </iframe>
+  
+     
+    <div class="frame-code">
+  <pre><code class="language-html">---
+title: byclientid
+description: toke2
+tags: []
+categories: []
+series: []
+editext: html
+hidden: true
+---
+&lt;!--more--&gt;
 
-<ul>
-<li>只有在副檔名<code>RMD</code>檔案中有作用,在<code>MD</code>,<code>Rmarkdown</code>副檔名中無用。</li>
-<li><strong>區塊前面要空一行才正常。</strong></li>
-</ul>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt; 
+&lt;meta name=&#34;google-signin-client_id&#34; content=&#34;481947092768-53dhr9tr3ah7o7devccd6oqpmh5a7goe.apps.googleusercontent.com&#34;&gt;
+&lt;script src=&#34;https://apis.google.com/js/platform.js&#34; async defer&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&#34;g-signin2&#34; data-onsuccess=&#34;onSignIn&#34;&gt;&lt;/div&gt;
+        &lt;div id=&#34;profileinfo&#34;&gt;
 
-<dl>
-<dt>base</dt>
-<dt>:::</dt>
-<dt>::: quiz
-quiz
-:::</dt>
-<dt>::: sidebar
-sidebar
-:::</dt>
-</dl>
+        &lt;/div&gt;
+        &lt;button onclick=&#34;signOut()&#34; &gt;登出&lt;/button&gt;
+        &lt;script&gt;
+            function onSignIn(googleUser){
+                var profile = googleUser.getBasicProfile();
+                var name=`&lt;h2&gt; Name - ${profile.getName()} &lt;/h2&gt;`;
+                
+                $(&#34;#profileinfo&#34;).append(name);
+                var imageurl=`&lt;img style=width:150px;height:150px&#39; src=&#39;${profile.getImageUrl()}&#39;&gt;&lt;/br&gt;`;
+                $(&#34;#profileinfo&#34;).append(imageurl);
+                var emailstr = `&lt;p&gt; email is ${profile.getEmail()} &lt;/p&gt;`;
+                $(&#34;#profileinfo&#34;).append(emailstr);
+            }
+            function signOut(){
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function(){
+                    $(&#34;#profileinfo&#34;).empty();
+                    $(&#34;#profileinfo&#34;).append(&#34;sigined out&#34;);
+                    
+                })
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>    
+</div>
+    
+</div>
 
-<p>ebar
-:::</p>
-
+</p>
   </article><div class="collapse fs-6 pt-2" id="qnote-list">
     <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white ">
         <span >
@@ -504,11 +605,15 @@ sidebar
   
     
           
-          <a href="../../basic/%E4%BD%BF%E7%94%A8%E6%99%82%E7%99%BC%E7%94%9F%E7%9A%84%E5%95%8F%E9%A1%8C/cssstyle2.html" 
+          <a href="../../basic/token/t1_google_api.html" 
                    class="btn btn-primary" 
                    data-bs-toggle="tooltip" 
-                   data-bs-placement="left" title=樣式&#32;in&#32;Rmarkdown>前</a>
+                   data-bs-placement="left" title=t1&#32;google_api>前</a>
                    
+          
+            <a href="../../basic/token/test.html" 
+               class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" 
+               title=test>後</a>            
           
           
 
